@@ -22,9 +22,6 @@ book:
     - 12-typescript-iii.qmd
     - 13-typescript-iv.qmd
     - 14-typescript-excel.qmd
-    - references.qmd
-
-bibliography: references.bib
 
 format:
   html:
