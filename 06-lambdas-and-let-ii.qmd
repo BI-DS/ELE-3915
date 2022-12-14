@@ -1,0 +1,26 @@
+# `LET`, `LAMBDA`, and dynamic arrays
+
+::: callout-important
+This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
+:::
+
+## Curriculum
+
+Excel is equipped with many functions for handling dynamic arrays and `LAMBDA` functions. The most important are `FILTER`, `MAP` (and its cousins `BYCOL`, `BYROW`, and `MAKEARRAY`), and `REDUCE`.
+
+To use `FILTER`, `MAP`, and `reduce`, we will need convenience functions such as 
+
+## Exercises
+
+### Utility functions
+We have discussed
+
+Recall that `FILTER` does not take the same sort of arguments as e.g. `MAP`. Its second argument is an array of truth values, not a `LAMBDA` function. That is OK, but it's inconsistent with most ofther functions of dynamic arrays. Make a function 
+
+* `FILTER_(array; lambda)` Returns the array consisting of elements from `array` where `lambda(x)` is `TRUE`.
+* `TAKEWHILE(array; lambda)` Takes elements from `array` until the `LAMBDA` function `lambda` returns false. 
+* `MAPWHILE(array;mapper;predicate)` Maps `mapper` onto array untile the `predicate` function returns `FALSE`.
+* `FILTERBY(out;filter_array;lambda)` Returns the array consisting of elements from `out` where `lambda(x)` evaluates to `TRUE`.
+* `ENUMERATE(array)` Takes a one-dimensional array (a column) merges it with `SEQUENCE(R)`, yielding a two-dimensional array.
+
+## Recommended resources

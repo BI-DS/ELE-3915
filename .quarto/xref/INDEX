@@ -1,0 +1,59 @@
+{
+  "index.qmd": {
+    "index.html": "4dd6e7de"
+  },
+  "intro.qmd": {
+    "intro.html": "74ad9fa6"
+  },
+  "summary.qmd": {
+    "summary.html": "5dc9d8c8"
+  },
+  "references.qmd": {
+    "references.html": "2e8812f2"
+  },
+  "01-excelbasics-i.qmd": {
+    "01-excelbasics-i.html": "d4d5551b"
+  },
+  "05-lambdas-let.qmd": {
+    "05-lambdas-let.html": "d9cd2e8f"
+  },
+  "02-excelbasics-ii.qmd": {
+    "02-excelbasics-ii.html": "77c9f4e5"
+  },
+  "03-excelbasics-iii.qmd": {
+    "03-excelbasics-iii.html": "63970f04"
+  },
+  "04-dynamic-arrays.qmd": {
+    "04-dynamic-arrays.html": "3d029433"
+  },
+  "06-data-viz-power-pivot.qmd": {
+    "06-data-viz-power-pivot.html": "db8f4844"
+  },
+  "07-power-query-i.qmd": {
+    "07-power-query-i.html": "442654ef"
+  },
+  "08-power-query-ii.qmd": {
+    "08-power-query-ii.html": "bcd41961"
+  },
+  "09-power-pivot-and-dax.qmd": {
+    "09-power-pivot-and-dax.html": "ecc76e82"
+  },
+  "06-lambdas-and-let-ii.qmd": {
+    "06-lambdas-and-let-ii.html": "7bdc5dbe"
+  },
+  "10-typescript-i.qmd": {
+    "10-typescript-i.html": "d73ccbd9"
+  },
+  "11-typescript-ii.qmd": {
+    "11-typescript-ii.html": "cb9b16b2"
+  },
+  "12-typescript-iii.qmd": {
+    "12-typescript-iii.html": "5ae214c0"
+  },
+  "13-typescript-iv.qmd": {
+    "13-typescript-iv.html": "f40f0087"
+  },
+  "14-typescript-excel.qmd": {
+    "14-typescript-excel.html": "9769a735"
+  }
+}

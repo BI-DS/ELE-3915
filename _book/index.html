@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jonas Moss">
+<meta name="dcterms.date" content="2022-12-12">
+
+<title>Excel Programming and Automation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./01-excelbasics-i.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Excel Programming and Automation</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Excel Programming and Automation</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-excelbasics-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Excel basics (i): Introduction to formulas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-excelbasics-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Excel basics (ii): More formulas; conditional formatting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-excelbasics-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Look-up functions and tables</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-dynamic-arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamic arrays</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-lambdas-let.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-made functions with <code>LAMBDA</code></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-lambdas-and-let-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><code>LET</code>, <code>LAMBDA</code>, and dynamic arrays</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-power-query-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power query (i)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-power-query-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Power query (ii)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-power-pivot-and-dax.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-typescript-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (i)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-typescript-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-typescript-iv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#rough-structure" id="toc-rough-structure" class="nav-link" data-scroll-target="#rough-structure">Rough structure</a></li>
+  <li><a href="#a-note-on-difficulty" id="toc-a-note-on-difficulty" class="nav-link" data-scroll-target="#a-note-on-difficulty">A note on difficulty</a></li>
+  <li><a href="#about-this-site" id="toc-about-this-site" class="nav-link" data-scroll-target="#about-this-site">About this site</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Excel Programming and Automation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jonas Moss </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 12, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level1 unnumbered">
+<h1 class="unnumbered">Introduction</h1>
+<p>Welcome to the course <a href="https://programmeinfo.bi.no/nb/kurs/ELE-3915/2023-var">ELE 3915 Excel Programming and Automation</a>.You’re about to get your hands dirty! This course is about being able to do cool things Excel and TypeScript. It should give you the confidence to assert that you can program in Excel. And it gives you an introduction to TypeScript, a popular general-purpose programming language used in Microsoft Office on the web. The slides can be found on <a href="https://github.com/BI-DS/ELE-3915">Github</a>, in the <a href="https://github.com/BI-DS/ELE-3915/slides"><code>slides</code></a> directory.</p>
+<p>If you need to get in contact with me, please send an e-mail to <code>jonas.moss@bi.no</code>. I do not check It’s learning often.</p>
+<section id="rough-structure" class="level2">
+<h2 class="anchored" data-anchor-id="rough-structure">Rough structure</h2>
+<p>The course is split into into four parts.</p>
+<ol type="1">
+<li><p><strong>Lecture 1–3</strong>. Basic Excel usage, including formulas such as <code>SUM</code> ,<code>COUNTIFS</code>, <code>INDEX</code>, and <code>MATCH</code>. We focus on general mathematical formulas and data manipulation, in addition to simple formatting. Roughly speaking, these lectures cover the sort of Excel you should expect to see in lecacy Excel sheets. Most of the curriculum is covered on the excellent webpage <a href="https://exceljet.net/">ExcelJet</a>.</p></li>
+<li><p><strong>Lecture 4–6</strong>. These lectures covers modern Excel formulas using dynamic arrays, <a href="https://www.microsoft.com/en-us/research/blog/lambda-the-ultimatae-excel-worksheet-function/"><code>LAMBDA</code></a> and <a href="https://exceljet.net/functions/let-function"><code>LET</code></a>. Many of these features are just a couple of years old (as of 2023). I would not expect most employers to know about them. These features can do quite a bit of what <a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">Visual Basic for Applications</a> (VBA) did in legacy worksheets. Programming using <code>LAMBDA</code> and <code>LET</code> is difficult, so make sure you take the exercises seriously. Again, most of the curriculum is covered on <a href="https://exceljet.net/">ExcelJet</a>.</p></li>
+<li><p><strong>Lecture 7–9</strong>. Covers power query, power pivot, and DAX. These are modern tools for data visualization, data cleaning, and data manipulation. These tools are likely to form the core of your automation in Excel. They are widely regarded as the most important tools in the Excel analysts toolbox.</p></li>
+<li><p><strong>Lecture 10–14</strong>. These lectures contain an introduction to TypeScript and its application in Excel. Take note that we assume no previous exposure to programming in this course. <a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a> is a <em>typed</em> modification of <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, the dominant language in web development, and has application far beyond Excel. The lectures will focus on programming in TypeScript in general, and the emphasis is on exercises.</p></li>
+</ol>
+</section>
+<section id="a-note-on-difficulty" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-on-difficulty">A note on difficulty</h2>
+<p>Most of the course is about programming. Students often find programming hard. <strong>Don’t expect to be able solve every exercise in 5 minutes!</strong> Solving programming exercises often take a long time, and you need to persevere.</p>
+<p>Be aware that the difficulty of this course is uneven. For instance, lectures on <code>LAMBDA</code> and <code>LET</code> are harder than the first three lectures, and the lectures on power query are likely to be easier. Do not think this course will be a walk in the park.</p>
+<p>To become a decent programmer it’s a good idea to</p>
+<ol type="1">
+<li>Do a lot of exercises.</li>
+<li>Spend at least 20 minutes on each exercise before you give up. You need <a href="https://www.benkuhn.net/thinkrealhard/">to think really hard</a>. Don’t expect to be able to solve the problem without making an effort.</li>
+<li>Do the exercise yourself after you have looked at the solution! Close the window and do it from memory. It’s also a good idea to revisit the same exercise later on, e.g.&nbsp;the next day, to make sure you’re able to do it.</li>
+<li>Tinker around, either modifying exercises yourself, or with your own ideas. If your tinkering leads to something cool, tell me! Use <a href="https://www.kaggle.com/">Kaggle</a> to download data sets to tinker with and <a href="https://mockaroo.com/">Mockaroo</a> to generate fake but plausible-looking data sets.</li>
+</ol>
+<p>Do not to spend an inordinate amount of time on an exercise before you check the solution. If you have spent 1 hour on an exercise and haven’t gotten anywhere, it might be smart save yourself some time and look at the solution.</p>
+<p>Moreover, be aware that programming is often <em>extremely frustrating</em>. It’s like talking to someone who just simply refuses to understand what you’re saying, no matter how many times you repeat yourself. <strong>It’s normal and expected to feel frustrated</strong>!</p>
+<p>There are many tips online about learning to program, e.g., <a href="https://www.codingdojo.com/blog/7-tips-learn-programming-faster">this collection of tips</a>. But it mostly boils down to spending a lot of time solving problems.</p>
+</section>
+<section id="about-this-site" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-site">About this site</h2>
+<p>Curious how this site was made? It is written using <a href="https://quarto.org/docs/books">Quarto books</a>.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01-excelbasics-i.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Excel basics (i): Introduction to formulas</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

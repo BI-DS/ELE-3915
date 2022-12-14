@@ -1,0 +1,47 @@
+# Excel basics (i): Introduction to formulas
+
+::: callout-warning
+This page is not finished yet.
+:::
+
+## Curriculum
+
+-   Basics of Excel, including cells, active cells, and ranges. Worksheets, basic formatting, data types and blank cells.
+
+-   Understanding what [formulas and functions](https://exceljet.net/articles/excel-formulas-and-functions) are, including copying of formulas using relative references.
+
+-   Using [flash fill](https://support.microsoft.com/en-us/office/save-time-with-flash-fill-9159216a-75a0-4c11-82e6-8eca29cb3b89).
+
+-   Using the operators `+`,`-`,`/`, and `*`.
+
+-   Three shortcuts.
+
+    -   Press F2 to edit a cell and see its dependencies.
+
+    -   Press escape to exit editing a formula.
+
+    -   Press tab to auto-complete a formula.
+
+-   Simple use of the [Excel IF function](https://exceljet.net/functions/if-function), not including nested IFs.
+
+Basic functions using one range as argument.
+
+| Name      | Description  |
+| --------- | ------------ |
+| [`SUM`](https://exceljet.net/functions/sum-function)     | Sum all numbers in a range.
+| [`PRODUCT`](https://exceljet.net/functions/product-function) | The product of all numbers in a range.
+| [`MAX`](https://exceljet.net/functions/max-function)     | The maximum of numbers in a range.
+| [`MIN`](https://exceljet.net/functions/min-function)     | The minimum of numbers in a range.
+| [`COUNT`](https://exceljet.net/functions/count-function)/[`COUNTA`](https://exceljet.net/functions/counta-function)/[`COUNTBLANK`](https://exceljet.net/functions/countblank-function)| Count the number of cells in a range that contain numbers (`COUNT`), are non-empty (`COUNTA`), or empty (`COUNTBLANK`).
+| [`AVERAGE`](https://exceljet.net/functions/average-function) | The average of the numbers in a range. Empty cells are ignored.
+| [`MEDIAN`](https://exceljet.net/functions/median-function)  | The median of the numbers in a range.
+| [`STDEV`](https://exceljet.net/functions/median-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
+
+## Exercises
+Remember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.
+
+### Exercises without solutions
+### Exercises with solutions
+
+## Recommended resources
+There are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert [here](https://www.youtube.com/watch?v=Jl0Qk63z2ZY&ab_channel=KevinStratvert), but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas [here](https://www.youtube.com/watch?v=y1126PQ5zRU&ab_channel=LeilaGharani).

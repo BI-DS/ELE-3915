@@ -1,0 +1,34 @@
+# User-made functions with `LAMBDA` 
+::: callout-important
+This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
+:::
+## Curriculum
+
+Here is an example of a complex function.
+``` scala
+=LET(
+    tab; FILTER(vgsales; (vgsales[Genre] = genre) * (vgsales[Platform] = platform));
+    rows; {7; 8; 9; 10};
+    regions; {"NA"; "EU"; "JP"; "Other"};
+    VSTACK(
+        HSTACK(""; TRANSPOSE(Years));
+        HSTACK(
+            regions;
+            MAKEARRAY(
+                ROWS(rows);
+                ROWS(Years);
+                LAMBDA(row_index; year_index; 
+                LET(
+                    row;index(rows;row_index);
+                    year;index(Years;year_index);
+                    IFERROR(SUM(FILTER(CHOOSECOLS(tab; row); CHOOSECOLS(tab; 4) = year)); 0))
+                )
+            )
+        )
+    )
+)
+```
+
+## Exercises
+
+## Recommended resources

@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "Excel Programming and Automation"
+  author: "Jonas Moss"
+  date: "12.12.2022"
+  chapters:
+    - index.qmd
+    - 01-excelbasics-i.qmd
+    - 02-excelbasics-ii.qmd
+    - 03-excelbasics-iii.qmd
+    - 04-dynamic-arrays.qmd
+    - 05-lambdas-let.qmd
+    - 06-lambdas-and-let-ii.qmd
+    - 07-power-query-i.qmd
+    - 08-power-query-ii.qmd
+    - 09-power-pivot-and-dax.qmd
+    - 10-typescript-i.qmd
+    - 11-typescript-ii.qmd
+    - 12-typescript-iii.qmd
+    - 13-typescript-iv.qmd
+    - 14-typescript-excel.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: simplex
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

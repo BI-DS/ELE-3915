@@ -1,0 +1,11 @@
+# Excel basics (iii): Look-up functions and tables
+
+::: callout-important
+This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
+:::
+
+## Curriculum
+
+## Exercises
+
+## Recommended resources
