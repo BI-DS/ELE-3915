@@ -1,8 +1,12 @@
 # Introduction {.unnumbered}
 
-Welcome to the course [ELE 3915 Excel Programming and Automation](https://programmeinfo.bi.no/nb/kurs/ELE-3915/2023-var).You're about to get your hands dirty! This course is about being able to do cool things Excel and TypeScript. It should give you the confidence to assert that you can program in Excel. And it gives you an introduction to TypeScript, a popular general-purpose programming language used in Microsoft Office on the web. The slides can be found on [Github](https://github.com/BI-DS/ELE-3915), in the [`slides`](https://github.com/BI-DS/ELE-3915/slides) directory.
+Welcome to the course [ELE 3915 Excel Programming and Automation](https://programmeinfo.bi.no/nb/kurs/ELE-3915/2023-var). You're about to get your hands dirty! This course is about being able to do cool things Excel and TypeScript. It should give you the confidence to assert that you can program in Excel. And it gives you an introduction to TypeScript, a popular general-purpose programming language used in Microsoft Office on the web. The slides can be found on [Github](https://github.com/BI-DS/ELE-3915), in the [`slides`](https://github.com/BI-DS/ELE-3915/slides) directory.
 
 If you need to get in contact with me, please send an e-mail to `jonas.moss@bi.no`. I do not check It's learning often.
+
+::: callout-warning
+This webpage is being continuously updated during. Most of the chapters are not finished.
+:::
 
 ## Rough structure
 
