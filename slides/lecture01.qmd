@@ -2,6 +2,20 @@
 title: "ELE3915 Lecture 1: Excel basics (i)"
 author: "Jonas Moss"
 editor: visual
+format: 
+  revealjs:
+    self-contained: true
+    theme: beige
+    highlight-style: nord
+    slide-number: c/t
+    width: 1440
+    height: 810
+    margin: 0.20
+    min-scale: 0.2
+    max-scale: 2
+    echo: true
+    incremental: true   
+    auto-stretch: true
 ---
 
 ## First things first
@@ -33,10 +47,13 @@ editor: visual
 -   You can add (`+`), subtract (`-`), multiply (`*`), and divide (`/`).
 -   To add two numbers `x` and `y`, use `=x+y`. To show the formula, prepend 
     a `'`, i.e., `'=x+y`.
--   The operations can be combined, e.g., 
--   Using references such as `=A1+B1` instead of hard coded formulas.
+-   The operations can be combined, e.g., `=(1+2)/3`.
+-   You can use references, e.g., `=A1+B1` instead of hard coded formulas.
 
 ## The sum function
+
+-   Use the `SUM` function to sum load of numbers at once.
+-   Blank cells at cells with text are ignored.
 
 ## Errors
 
