@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jonas Moss">
+
+<title>ELE3915 Lecture 1: Excel basics (i)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="lecture01_files/libs/clipboard/clipboard.min.js"></script>
+<script src="lecture01_files/libs/quarto-html/quarto.js"></script>
+<script src="lecture01_files/libs/quarto-html/popper.min.js"></script>
+<script src="lecture01_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="lecture01_files/libs/quarto-html/anchor.min.js"></script>
+<link href="lecture01_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="lecture01_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="lecture01_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="lecture01_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="lecture01_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ELE3915 Lecture 1: Excel basics (i)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jonas Moss </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="first-things-first" class="level2">
+<h2 class="anchored" data-anchor-id="first-things-first">First things first</h2>
+<ul>
+<li>Will will use both Excel on the Web and Excel 365 Desktop.</li>
+<li>In this lecture I use the desktop version – but you can use the online version too. For now.</li>
+<li>But! Power query and the important name manager is only for desktop.</li>
+<li>And TypeScript is only for Excel on the Web!</li>
+<li>I’ll use the desktop version for now.</li>
+<li>Bring your computer to the lectures.</li>
+<li>I use the Norwegian locale, where “0,0” is a decimal number. In the English locale, “0.0” is a decimal number.</li>
+</ul>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<ul>
+<li>Cells and active cells</li>
+<li>Data entry
+<ul>
+<li>Click on cell to modify</li>
+<li>Press ESC to ignore changes</li>
+</ul></li>
+<li>Data types and blank cells</li>
+<li>Formatting</li>
+<li>Themes</li>
+<li>Flash fill</li>
+<li>Worksheets</li>
+</ul>
+</section>
+<section id="arithmetic-and-logical-formulas" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-and-logical-formulas">Arithmetic and logical formulas</h2>
+</section>
+<section id="the-sum-function" class="level2">
+<h2 class="anchored" data-anchor-id="the-sum-function">The sum function</h2>
+</section>
+<section id="errors" class="level2">
+<h2 class="anchored" data-anchor-id="errors">Errors</h2>
+<ul>
+<li>If write a formula incorrectly, you will see errors.</li>
+<li>Hover over the warning sign to see an explanation of the errors.</li>
+<li>Error messages are important, as they help you <em>debugging</em> your formulas!</li>
+</ul>
+</section>
+<section id="types" class="level2">
+<h2 class="anchored" data-anchor-id="types">Types</h2>
+<ul>
+<li>Each cell in Excel has one of five types.</li>
+<li>You can check the type with the <code>=TYPE</code> function.
+<ul>
+<li>1: Number</li>
+<li>2: Text</li>
+<li>4: Logical value</li>
+<li>16: Error</li>
+<li>64: Dynamic array</li>
+</ul></li>
+<li>Dynamic arrays will be covered later.</li>
+<li>Two gotchas: Blank cells have the number type. Dates also have the number type!</li>
+</ul>
+</section>
+<section id="formulas" class="level2">
+<h2 class="anchored" data-anchor-id="formulas">Formulas</h2>
+<ul>
+<li>Using <code>=</code> to create formulas.</li>
+<li>Use <code>TAB</code> for auto-complete.</li>
+<li>You can read a short description of what the function does in its tooltip.</li>
+<li>For examples and detailed explanation, Google the name of the function along with “ExcelJet”.</li>
+<li>When writing the function name and a single parenthesis, you will see the arguments a function takes. This is called its <em>signature</em>.</li>
+<li>Optional arguments are enclosed in square brackets [].</li>
+<li>Ex: <code>=SUM(number1;[number2];...)</code> The <code>SUM</code> function has one mandatory <code>number1</code> argument and an arbitrary number of additional arguments <code>number2</code>, <code>number3</code>, etc.</li>
+<li>References</li>
+<li>Ranges: “Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range.”</li>
+</ul>
+</section>
+<section id="please-fill-out-the-survey" class="level2">
+<h2 class="anchored" data-anchor-id="please-fill-out-the-survey">Please fill out the survey!</h2>
+<p>This survey contains three simple questions. Answering the survey helps us organize the course better. http://bitly.ws/xSZK</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

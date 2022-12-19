@@ -10,19 +10,33 @@ This page is not finished yet.
 
 -   Understanding what [formulas and functions](https://exceljet.net/articles/excel-formulas-and-functions) are, including copying of formulas using relative references.
 
+-   Reading the signature and short documentation of functions inside Excel.
+
 -   Using [flash fill](https://support.microsoft.com/en-us/office/save-time-with-flash-fill-9159216a-75a0-4c11-82e6-8eca29cb3b89).
 
 -   Using the operators `+`,`-`,`/`, and `*`.
 
--   Three shortcuts.
+-   Four shortcuts shortcuts.
 
     -   Press F2 to edit a cell and see its dependencies.
 
     -   Press escape to exit editing a formula.
 
     -   Press tab to auto-complete a formula.
+    
+    - Press SHIFT to add contiguous cells to a selection.
+    
+    - Press CTRL+DOWN to go to the last non-blank cell in a contiguous column. And CTRL+UP to go to the first column-wise, CTRL+LEFT-ARROW to go to the first row-wise, and CTRL+RIGHT-ARROW to go to the last row-wise.
+    
+    - Hold CTRL to add cells to a selection.
+    
+    - Press F4 to taggle absolute references.
 
--   Simple use of the [Excel IF function](https://exceljet.net/functions/if-function), not including nested IFs.
+- Boolean values and the boolean functions.
+
+- Simple use of the [Excel IF function](https://exceljet.net/functions/if-function), not including nested IFs.
+
+- Overview of [error messages](https://exceljet.net/articles/excel-formula-errors).
 
 Basic functions using one range as argument.
 
@@ -33,9 +47,13 @@ Basic functions using one range as argument.
 | [`MAX`](https://exceljet.net/functions/max-function)     | The maximum of numbers in a range.
 | [`MIN`](https://exceljet.net/functions/min-function)     | The minimum of numbers in a range.
 | [`COUNT`](https://exceljet.net/functions/count-function)/[`COUNTA`](https://exceljet.net/functions/counta-function)/[`COUNTBLANK`](https://exceljet.net/functions/countblank-function)| Count the number of cells in a range that contain numbers (`COUNT`), are non-empty (`COUNTA`), or empty (`COUNTBLANK`).
+| [`ROWS`](https://exceljet.net/functions/rows-function) / [`COLS`](https://exceljet.net/functions/cols-function) | Counts the number of rows / columns in a reference.
 | [`AVERAGE`](https://exceljet.net/functions/average-function) | The average of the numbers in a range. Empty cells are ignored.
+| [`GEOMEAN`](https://exceljet.net/functions/geomean-function) | The geometric mean of the numbers in a range.
 | [`MEDIAN`](https://exceljet.net/functions/median-function)  | The median of the numbers in a range.
 | [`STDEV`](https://exceljet.net/functions/median-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
+
+## Slides and sheets used in the lecture
 
 ## Exercises
 Remember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.
@@ -45,3 +63,9 @@ Remember to look at the solutions only after giving the exercises a serious atte
 
 ## Recommended resources
 There are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert [here](https://www.youtube.com/watch?v=Jl0Qk63z2ZY&ab_channel=KevinStratvert), but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas [here](https://www.youtube.com/watch?v=y1126PQ5zRU&ab_channel=LeilaGharani).
+
+There are many introductions to flash fill too, e.g. [this one](https://www.youtube.com/watch?v=1KimYFzET1w&ab_channel=LeilaGharani).
+
+The site [Excel Exercises](https://excelexercises.com/) provides some decent exercises, but goes beyond the content of this lecture.
+
+There is a staggering number of shortcuts in Excel, see e.g. [here](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f). It's easy to get overwhelmed by shortcuts, so make sure you don't try to learn too many at once though!

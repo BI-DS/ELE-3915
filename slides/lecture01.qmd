@@ -1,0 +1,72 @@
+---
+title: "ELE3915 Lecture 1: Excel basics (i)"
+author: "Jonas Moss"
+editor: visual
+---
+
+## First things first
+
+- Will will use both Excel on the Web and Excel 365 Desktop.
+- In this lecture I use the desktop version -- but you can use the online 
+  version too. For now.
+- But! Power query and the important name manager is only for desktop.
+- And TypeScript is only for Excel on the Web!
+- I'll use the desktop version for now.
+- Bring your computer to the lectures.
+- I use the Norwegian locale, where "0,0" is a decimal number. In the English
+  locale, "0.0" is a decimal number. 
+
+## Getting started
+
+-   Cells and active cells
+-   Data entry
+    - Click on cell to modify
+    - Press ESC to ignore changes
+-   Data types and blank cells
+-   Formatting
+-   Themes
+-   Flash fill
+-   Worksheets
+
+## Arithmetic and logical formulas 
+
+-   You can add (`+`), subtract (`-`), multiply (`*`), and divide (`/`).
+-   To add two numbers `x` and `y`, use `=x+y`. To show the formula, prepend 
+    a `'`, i.e., `'=x+y`.
+-   The operations can be combined, e.g., 
+-   Using references such as `=A1+B1` instead of hard coded formulas.
+
+## The sum function
+
+## Errors
+
+- If write a formula incorrectly, you will see errors.
+- Hover over the warning sign to see an explanation of the errors.
+- Error messages are important, as they help you *debugging* your formulas!
+
+## Types
+- Each cell in Excel has one of five types.
+- You can check the type with the `=TYPE` function.
+  - 1: Number
+  - 2: Text
+  - 4: Logical value
+  - 16: Error
+  - 64: Dynamic array
+- Dynamic arrays will be covered later.
+- Two gotchas: Blank cells have the number type. Dates also have the number type!
+
+## Formulas
+
+-   Using `=` to create formulas.
+-   Use `TAB` for auto-complete. 
+-   You can read a short description of what the function does in its tooltip.
+-   For examples and detailed explanation, Google the name of the function along with "ExcelJet".
+-   When writing the function name and a single parenthesis, you will see the arguments a function takes. This is called its *signature*. 
+  - Optional arguments are enclosed in square brackets [].
+  - Ex: `=SUM(number1;[number2];...)` The `SUM` function has one mandatory `number1` argument and an arbitrary number of additional arguments `number2`, `number3`, etc.
+-   Ranges: "Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range."
+
+## Please fill out the survey!
+This survey contains three simple questions. Answering the survey helps us 
+organize the course better.
+http://bitly.ws/xSZK

@@ -18,21 +18,21 @@
     "href": "01-excelbasics-i.html#curriculum",
     "title": "1  Excel basics (i): Introduction to formulas",
     "section": "1.1 Curriculum",
-    "text": "1.1 Curriculum\n\nBasics of Excel, including cells, active cells, and ranges. Worksheets, basic formatting, data types and blank cells.\nUnderstanding what formulas and functions are, including copying of formulas using relative references.\nUsing flash fill.\nUsing the operators +,-,/, and *.\nThree shortcuts.\n\nPress F2 to edit a cell and see its dependencies.\nPress escape to exit editing a formula.\nPress tab to auto-complete a formula.\n\nSimple use of the Excel IF function, not including nested IFs.\n\nBasic functions using one range as argument.\n\n\n\nName\nDescription\n\n\n\n\nSUM\nSum all numbers in a range.\n\n\nPRODUCT\nThe product of all numbers in a range.\n\n\nMAX\nThe maximum of numbers in a range.\n\n\nMIN\nThe minimum of numbers in a range.\n\n\nCOUNT/COUNTA/COUNTBLANK\nCount the number of cells in a range that contain numbers (COUNT), are non-empty (COUNTA), or empty (COUNTBLANK).\n\n\nAVERAGE\nThe average of the numbers in a range. Empty cells are ignored.\n\n\nMEDIAN\nThe median of the numbers in a range.\n\n\nSTDEV\nThe standard deviation of the numbers in a range. Empty cells are ignored."
+    "text": "1.1 Curriculum\n\nBasics of Excel, including cells, active cells, and ranges. Worksheets, basic formatting, data types and blank cells.\nUnderstanding what formulas and functions are, including copying of formulas using relative references.\nReading the signature and short documentation of functions inside Excel.\nUsing flash fill.\nUsing the operators +,-,/, and *.\nFour shortcuts shortcuts.\n\nPress F2 to edit a cell and see its dependencies.\nPress escape to exit editing a formula.\nPress tab to auto-complete a formula.\nPress SHIFT to add contiguous cells to a selection.\nPress CTRL+DOWN to go to the last non-blank cell in a contiguous column. And CTRL+UP to go to the first column-wise, CTRL+LEFT-ARROW to go to the first row-wise, and CTRL+RIGHT-ARROW to go to the last row-wise.\nHold CTRL to add cells to a selection.\nPress F4 to taggle absolute references.\n\nBoolean values and the boolean functions.\nSimple use of the Excel IF function, not including nested IFs.\nOverview of error messages.\n\nBasic functions using one range as argument.\n\n\n\nName\nDescription\n\n\n\n\nSUM\nSum all numbers in a range.\n\n\nPRODUCT\nThe product of all numbers in a range.\n\n\nMAX\nThe maximum of numbers in a range.\n\n\nMIN\nThe minimum of numbers in a range.\n\n\nCOUNT/COUNTA/COUNTBLANK\nCount the number of cells in a range that contain numbers (COUNT), are non-empty (COUNTA), or empty (COUNTBLANK).\n\n\nROWS / COLS\nCounts the number of rows / columns in a reference.\n\n\nAVERAGE\nThe average of the numbers in a range. Empty cells are ignored.\n\n\nGEOMEAN\nThe geometric mean of the numbers in a range.\n\n\nMEDIAN\nThe median of the numbers in a range.\n\n\nSTDEV\nThe standard deviation of the numbers in a range. Empty cells are ignored."
   },
   {
     "objectID": "01-excelbasics-i.html#exercises",
     "href": "01-excelbasics-i.html#exercises",
     "title": "1  Excel basics (i): Introduction to formulas",
-    "section": "1.2 Exercises",
-    "text": "1.2 Exercises\nRemember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.\n\n1.2.1 Exercises without solutions\n\n\n1.2.2 Exercises with solutions"
+    "section": "1.3 Exercises",
+    "text": "1.3 Exercises\nRemember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.\n\n1.3.1 Exercises without solutions\n\n\n1.3.2 Exercises with solutions"
   },
   {
     "objectID": "01-excelbasics-i.html#recommended-resources",
     "href": "01-excelbasics-i.html#recommended-resources",
     "title": "1  Excel basics (i): Introduction to formulas",
-    "section": "1.3 Recommended resources",
-    "text": "1.3 Recommended resources\nThere are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert here, but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas here."
+    "section": "1.4 Recommended resources",
+    "text": "1.4 Recommended resources\nThere are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert here, but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas here.\nThere are many introductions to flash fill too, e.g. this one.\nThe site Excel Exercises provides some decent exercises, but goes beyond the content of this lecture.\nThere is a staggering number of shortcuts in Excel, see e.g. here. It’s easy to get overwhelmed by shortcuts, so make sure you don’t try to learn too many at once though!"
   },
   {
     "objectID": "02-excelbasics-ii.html",
@@ -270,7 +270,7 @@
     "href": "10-typescript-i.html#curriculum",
     "title": "10  Typescript (i)",
     "section": "10.1 Curriculum",
-    "text": "10.1 Curriculum"
+    "text": "10.1 Curriculum\n\nPrimitive JavaScript values. A list can be found here.\n\nUndefined and Null.\nCore primitives: Boolean, Number, and String.\nSpecialized: BigInt and Symbol.\n\nArrays: Unnamed collection of objects.\nFunctions: Takes input vales and does something with them."
   },
   {
     "objectID": "10-typescript-i.html#exercises",
@@ -404,5 +404,12 @@
     "title": "14  TypeScript in Excel",
     "section": "14.4 Recommended resources",
     "text": "14.4 Recommended resources"
+  },
+  {
+    "objectID": "01-excelbasics-i.html#slides-and-sheets-used-in-the-lecture",
+    "href": "01-excelbasics-i.html#slides-and-sheets-used-in-the-lecture",
+    "title": "1  Excel basics (i): Introduction to formulas",
+    "section": "1.2 Slides and sheets used in the lecture",
+    "text": "1.2 Slides and sheets used in the lecture"
   }
 ]

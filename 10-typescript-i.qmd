@@ -5,6 +5,12 @@ This page is ***not finished***, but might contain notes from the course develop
 :::
 
 ## Curriculum
+* **Primitive JavaScript values.** A list can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
+	* `Undefined` and `Null`.
+	* Core primitives: `Boolean`, `Number`, and `String`.
+	* Specialized: `BigInt` and `Symbol`.
+* **Arrays:** Unnamed collection of objects.
+* **Functions:** Takes input vales and does something with them.
 
 ## Exercises
 
