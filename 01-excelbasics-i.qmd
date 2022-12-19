@@ -16,7 +16,7 @@ This page is not finished yet.
 
 -   Using the operators `+`,`-`,`/`, and `*`.
 
--   Four shortcuts shortcuts.
+-   A couple of keyboard shortcuts.
 
     -   Press F2 to edit a cell and see its dependencies.
 
@@ -32,11 +32,11 @@ This page is not finished yet.
     
     - Press F4 to taggle absolute references.
 
-- Boolean values and the boolean functions.
-
-- Simple use of the [Excel IF function](https://exceljet.net/functions/if-function), not including nested IFs.
+- Logical values; the functions `AND`, `OR`, `NOT`, and the operators `=`, `<`, `>`, `<=` and `>=`.
 
 - Overview of [error messages](https://exceljet.net/articles/excel-formula-errors).
+
+- Knowledge of the basic datatypes of Excel (number; text; logical; error; array), including how to use the [`TYPE`](https://exceljet.net/functions/type-function#:~:text=The%20Excel%20TYPE%20function%20returns,value%20in%20a%20particular%20cell) function.
 
 Basic functions using one range as argument.
 
@@ -49,17 +49,18 @@ Basic functions using one range as argument.
 | [`COUNT`](https://exceljet.net/functions/count-function)/[`COUNTA`](https://exceljet.net/functions/counta-function)/[`COUNTBLANK`](https://exceljet.net/functions/countblank-function)| Count the number of cells in a range that contain numbers (`COUNT`), are non-empty (`COUNTA`), or empty (`COUNTBLANK`).
 | [`ROWS`](https://exceljet.net/functions/rows-function) / [`COLS`](https://exceljet.net/functions/cols-function) | Counts the number of rows / columns in a reference.
 | [`AVERAGE`](https://exceljet.net/functions/average-function) | The average of the numbers in a range. Empty cells are ignored.
-| [`GEOMEAN`](https://exceljet.net/functions/geomean-function) | The geometric mean of the numbers in a range.
 | [`MEDIAN`](https://exceljet.net/functions/median-function)  | The median of the numbers in a range.
 | [`STDEV`](https://exceljet.net/functions/median-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
 
 ## Slides and sheets used in the lecture
-
-## Exercises
+::: {.warning}
 Remember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.
+:::
 
-### Exercises without solutions
-### Exercises with solutions
+The lecture slides are [here](https://rawcdn.githack.com/BI-DS/ELE-3915/8fb93ac2fc77767f01d2afc605c9c9907f3022e8/slides/lecture01.html). The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01-filled.xlsx).
+
+[Here](https://github.com/BI-DS/ELE-3915/blob/main/slides/exercises01.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/exercises01-solutions.xlsx).
+
 
 ## Recommended resources
 There are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert [here](https://www.youtube.com/watch?v=Jl0Qk63z2ZY&ab_channel=KevinStratvert), but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas [here](https://www.youtube.com/watch?v=y1126PQ5zRU&ab_channel=LeilaGharani).
