@@ -37,28 +37,28 @@
   {
     "objectID": "02-excelbasics-ii.html",
     "href": "02-excelbasics-ii.html",
-    "title": "2  Excel basics (ii): More formulas; conditional formatting",
+    "title": "2  Excel basics (ii)",
     "section": "",
     "text": "Important\n\n\n\nThis page is not finished, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change."
   },
   {
     "objectID": "02-excelbasics-ii.html#curriculum",
     "href": "02-excelbasics-ii.html#curriculum",
-    "title": "2  Excel basics (ii): More formulas; conditional formatting",
+    "title": "2  Excel basics (ii)",
     "section": "2.1 Curriculum",
-    "text": "2.1 Curriculum"
+    "text": "2.1 Curriculum\n\nData tables\nConditional formatting\nData validation\nConditional formulas\n\nIF function\nNested IF\nIFS function\n\nThe SUMIF/SUMIFS, COUNTIF/COUNTIFS functions.\nRanking and ordering: RANK/RANKEQ function, the SMALL and LARGE functions.\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nTRIM\nRemove extra spaces from text.\n\n\nEXACT\nCompare two text strings, taking case into account.\n\n\nSUBSTITUTE\nReplace text based on content.\n\n\nLOWER/UPPER\nTransform text to lower/upper case.\n\n\nPROPER\nCapitalize first letter of each word in text.\n\n\nCONCAT / TEXTJOIN\nJoin text values with(out) a delimiter.\n\n\nLEN\nGet the length of the text\n\n\nLEFT / MID / RIGHT\nExtract text from the left/middle/right of a string\n\n\nFIND\nGet location substring in a string.\n\n\n\nhttps://www.youtube.com/watch?v=thvE8Eg-Pqg&ab_channel=Chandoo"
   },
   {
     "objectID": "02-excelbasics-ii.html#exercises",
     "href": "02-excelbasics-ii.html#exercises",
-    "title": "2  Excel basics (ii): More formulas; conditional formatting",
+    "title": "2  Excel basics (ii)",
     "section": "2.2 Exercises",
     "text": "2.2 Exercises"
   },
   {
     "objectID": "02-excelbasics-ii.html#recommended-resources",
     "href": "02-excelbasics-ii.html#recommended-resources",
-    "title": "2  Excel basics (ii): More formulas; conditional formatting",
+    "title": "2  Excel basics (ii)",
     "section": "2.3 Recommended resources",
     "text": "2.3 Recommended resources"
   },

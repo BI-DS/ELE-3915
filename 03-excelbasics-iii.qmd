@@ -1,10 +1,22 @@
-# Excel basics (iii): Look-up functions and tables
+# Excel basics (iii)
 
 ::: callout-important
 This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
 :::
 
 ## Curriculum
+- Data tables.
+- Data validation.
+- Conditional formatting.
+- Rounding of numbers: `ROUND`; `FLOOR`; `CEILING`; etc.
+- Ranking and ordering: `RANK`/`RANKEQ` function, the `SMALL` and `LARGE` functions.
+- Functions of multiple ranges: `SUMPRODUCT`.
+- The `INDEX`, `ROWS`, and `COLUMNS` functions.
+- The `MATCH` function;
+- Using `INDEX` together with `MATCH`. 
+- The old school look up functions `VLOOKUP`, `HLOOKUP`, `LOOKUP`. 
+- The modern look up function: `XLOOKUP`.
+- The modern match function: `XMATCH`.
 
 ## Exercises
 

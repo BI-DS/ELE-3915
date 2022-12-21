@@ -1,10 +1,13 @@
-# Dynamic arrays
+# Lambdas and dynamic arrays
 
 ::: callout-important
 This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
 :::
 
 ## Curriculum
+
+- How to define your own functions using `LAMBDA` and why it is useful.
+
 
 ## Exercises
 
