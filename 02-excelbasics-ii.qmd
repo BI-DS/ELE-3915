@@ -25,6 +25,8 @@ This page is ***not finished***, but might contain notes from the course develop
 `WORDCOUNT`, counting the number of words in a text, does not exist. We will
 revisit text manipulation later on.
 - We will revisit text manipulation later on.
+- Some of the functions are oldskool. You might see them used, but modern alternatives are better.
+  - This is arguably the case for `LEFT`; `MID`, and `RIGHT`, `FIND` and `SEARCH`.
 
 | Name      | Description  |
 | --------- | ------------ |

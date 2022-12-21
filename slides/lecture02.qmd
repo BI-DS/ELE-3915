@@ -1,0 +1,22 @@
+---
+title: "ELE3915 Lecture 1: Excel basics (i)"
+author: "Jonas Moss"
+editor: visual
+format: 
+  revealjs:
+    self-contained: true
+    theme: morph
+    highlight-style: nord
+    slide-number: c/t
+    width: 1440
+    height: 810
+    margin: 0.20
+    min-scale: 0.2
+    max-scale: 2
+    echo: true
+    incremental: true   
+    auto-stretch: true
+---
+
+## First things first
+

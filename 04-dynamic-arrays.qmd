@@ -7,7 +7,16 @@ This page is ***not finished***, but might contain notes from the course develop
 ## Curriculum
 
 - How to define your own functions using `LAMBDA` and why it is useful.
+  1. It makes readers of your code understand your intention. Including yourself in the future!
+  2. Functions makes it easier to do hard things, as you can split up complicated formulas into multiple parts.
+- Short introduction to the [Advanced Formula Environment](https://www.microsoft.com/en-us/garage/profiles/advanced-formula-environment-a-microsoft-garage-project/) 
 
+- What a dynamic array is and what the `#SPILL!` error means. 
+- Some important functions:
+  - `FILTER`
+  - `SORT`, `SORTBY`
+  - `UNIQUE`
+  - `TEXTSPLIT`
 
 ## Exercises
 
