@@ -5,12 +5,16 @@ This page is ***not finished***, but might contain notes from the course develop
 :::
 
 ## Curriculum
+
+### Part 1
 - Data tables.
 - Data validation.
 - Conditional formatting.
 - Rounding of numbers: `ROUND`; `FLOOR`; `CEILING`; etc.
 - Ranking and ordering: `RANK`/`RANKEQ` function, the `SMALL` and `LARGE` functions.
 - Functions of multiple ranges: `SUMPRODUCT`.
+
+### Part 2
 - The `INDEX`, `ROWS`, and `COLUMNS` functions.
 - The `MATCH` function;
 - Using `INDEX` together with `MATCH`. 
