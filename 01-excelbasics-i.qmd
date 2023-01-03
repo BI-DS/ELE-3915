@@ -59,7 +59,7 @@ Remember to look at the solutions only after giving the exercises a serious atte
 
 The lecture slides are [here](https://rawcdn.githack.com/BI-DS/ELE-3915/8fb93ac2fc77767f01d2afc605c9c9907f3022e8/slides/lecture01.html). The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01-filled.xlsx).
 
-[Here](https://github.com/BI-DS/ELE-3915/blob/main/slides/exercises01.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/exercises01-solutions.xlsx).
+[Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01-solutions.xlsx).
 
 
 ## Recommended resources
