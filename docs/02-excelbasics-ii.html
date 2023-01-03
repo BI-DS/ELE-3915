@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 
 <body class="nav-sidebar floating">
 
-
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -111,12 +110,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-excelbasics-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Look-up functions and tables</span></a>
+  <a href="./03-excelbasics-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-dynamic-arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Dynamic arrays</span></a>
+  <a href="./04-dynamic-arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lambdas and dynamic arrays</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,7 +177,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">2.1</span>  Curriculum</a></li>
+  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">2.1</span>  Curriculum</a>
+  <ul class="collapse">
+  <li><a href="#absolute-and-relative-references." id="toc-absolute-and-relative-references." class="nav-link" data-scroll-target="#absolute-and-relative-references."><span class="toc-section-number">2.1.1</span>  Absolute and relative references.</a></li>
+  <li><a href="#conditionals-in-excel." id="toc-conditionals-in-excel." class="nav-link" data-scroll-target="#conditionals-in-excel."><span class="toc-section-number">2.1.2</span>  Conditionals in Excel.</a></li>
+  <li><a href="#working-with-text" id="toc-working-with-text" class="nav-link" data-scroll-target="#working-with-text"><span class="toc-section-number">2.1.3</span>  Working with text</a></li>
+  </ul></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">2.2</span>  Exercises</a></li>
   <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">2.3</span>  Recommended resources</a></li>
   </ul>
@@ -197,6 +201,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -218,18 +223,37 @@ Important
 </div>
 <section id="curriculum" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">2.1</span> Curriculum</h2>
+<section id="absolute-and-relative-references." class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="absolute-and-relative-references."><span class="header-section-number">2.1.1</span> Absolute and relative references.</h3>
 <ul>
-<li><p>Data tables</p></li>
-<li><p>Conditional formatting</p></li>
-<li><p>Data validation</p></li>
-<li><p>Conditional formulas</p>
+<li>Know the difference between absolute, mixed, and relative references and when to use which.</li>
+<li>Use F4 to cycle between the different kinds of references.</li>
+</ul>
+</section>
+<section id="conditionals-in-excel." class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="conditionals-in-excel."><span class="header-section-number">2.1.2</span> Conditionals in Excel.</h3>
 <ul>
-<li><p>IF function</p></li>
-<li><p>Nested IF</p></li>
-<li><p>IFS function</p></li>
+<li>Conditional formulas
+<ul>
+<li><code>IF</code> function</li>
+<li>Oldskool nested <code>IF</code></li>
+<li>The better <code>IFS</code> function</li>
 </ul></li>
-<li><p>The <code>SUMIF</code>/<code>SUMIFS</code>, <code>COUNTIF</code>/<code>COUNTIFS</code> functions.</p></li>
-<li><p>Ranking and ordering: <code>RANK</code>/<code>RANKEQ</code> function, the <code>SMALL</code> and <code>LARGE</code> functions.</p></li>
+<li>The <code>SUMIF</code>/<code>SUMIFS</code>; <code>COUNTIF</code>/<code>COUNTIFS</code>; <code>MINIFS</code>/<code>MAXIFS</code> functions.</li>
+</ul>
+</section>
+<section id="working-with-text" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="working-with-text"><span class="header-section-number">2.1.3</span> Working with text</h3>
+<ul>
+<li>Get an overview of the text manipulation functions in Excel and how to apply them.</li>
+<li>Be able to solve basic text manipulation tasks.</li>
+<li>Working with strings. Using <code>&amp;</code> for concatenation and F9 for replacing formulas with values.</li>
+<li>Not all useful text manipulation tools are built-in though. For instance, <code>WORDCOUNT</code>, counting the number of words in a text, does not exist. We will revisit text manipulation later on.</li>
+<li>We will revisit text manipulation later on.</li>
+<li>Some of the functions are oldskool. You might see them used, but modern alternatives are better.
+<ul>
+<li>This is arguably the case for <code>LEFT</code>; <code>MID</code>, and <code>RIGHT</code>, <code>FIND</code> and <code>SEARCH</code>.</li>
+</ul></li>
 </ul>
 <table class="table">
 <colgroup>
@@ -248,46 +272,55 @@ Important
 <td>Remove extra spaces from text.</td>
 </tr>
 <tr class="even">
+<td><code>TEXTBEFORE</code> / <code>TEXTAFTER</code></td>
+<td>Extract text before / after delimiter.</td>
+</tr>
+<tr class="odd">
 <td><code>EXACT</code></td>
 <td>Compare two text strings, taking case into account.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>SUBSTITUTE</code></td>
 <td>Replace text based on content.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>LOWER</code>/<code>UPPER</code></td>
 <td>Transform text to lower/upper case.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>PROPER</code></td>
 <td>Capitalize first letter of each word in text.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>CONCAT</code> / <code>TEXTJOIN</code></td>
 <td>Join text values with(out) a delimiter.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>LEN</code></td>
 <td>Get the length of the text</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>LEFT</code> / <code>MID</code> / <code>RIGHT</code></td>
 <td>Extract text from the left/middle/right of a string</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>FIND</code></td>
 <td>Get location substring in a string.</td>
 </tr>
+<tr class="odd">
+<td><code>REPLACE</code></td>
+<td>Replace text based on location.</td>
+</tr>
 </tbody>
 </table>
-<p>https://www.youtube.com/watch?v=thvE8Eg-Pqg&amp;ab_channel=Chandoo</p>
+</section>
 </section>
 <section id="exercises" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">2.2</span> Exercises</h2>
 </section>
 <section id="recommended-resources" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">2.3</span> Recommended resources</h2>
+<p>https://www.youtube.com/watch?v=thvE8Eg-Pqg&amp;ab_channel=Chandoo</p>
 
 
 </section>
@@ -334,7 +367,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -370,28 +420,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
-
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./01-excelbasics-i.html" class="pagination-link">
@@ -400,7 +467,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./03-excelbasics-iii.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Look-up functions and tables</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

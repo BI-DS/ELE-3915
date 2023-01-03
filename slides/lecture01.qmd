@@ -26,7 +26,11 @@ format:
 -   And TypeScript is only for Excel on the Web!
 -   I'll use the desktop version for now.
 -   Bring your computer to the lectures.
--   I use the Norwegian locale, where "0,0" is a decimal number. In the English locale, "0.0" is a decimal number.
+-   I use the Norwegian locale, where "0,0" is a decimal number. In the English locale, "0.0" is a decimal number. **This is important! It also affects formulas, as you must modify ':' to ','!**
+
+## But recall
+
+![](images/paste-420ACEF1.png)
 
 ## Getting started
 

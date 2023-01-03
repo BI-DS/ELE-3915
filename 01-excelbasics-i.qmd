@@ -1,8 +1,7 @@
 # Excel basics (i): Introduction to formulas
 
-::: callout-warning
-This page is not finished yet.
-:::
+*Last updated:* 03.01.2023
+
 
 ## Curriculum
 
@@ -50,7 +49,8 @@ Basic functions using one range as argument.
 | [`ROWS`](https://exceljet.net/functions/rows-function) / [`COLS`](https://exceljet.net/functions/cols-function) | Counts the number of rows / columns in a reference.
 | [`AVERAGE`](https://exceljet.net/functions/average-function) | The average of the numbers in a range. Empty cells are ignored.
 | [`MEDIAN`](https://exceljet.net/functions/median-function)  | The median of the numbers in a range.
-| [`STDEV`](https://exceljet.net/functions/median-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
+| [`STDEV`](https://exceljet.net/functions/stdev-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
+| [`COUNTIF`](https://exceljet.net/functions/countif-function) | Counts cells satisfying a criterion.
 
 ## Slides and sheets used in the lecture
 ::: {.warning}
