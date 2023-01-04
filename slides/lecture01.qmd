@@ -5,7 +5,7 @@ editor: visual
 format: 
   revealjs:
     self-contained: true
-    theme: morph
+    theme: serif
     highlight-style: nord
     slide-number: c/t
     width: 1440
@@ -20,49 +20,74 @@ format:
 
 ## First things first
 
--   Will will use both Excel on the Web and Excel 365 Desktop.
--   In this lecture I use the desktop version -- but you can use the online version too. For now.
--   But! Power query and the important name manager is only for desktop.
--   And TypeScript is only for Excel on the Web!
--   I'll use the desktop version for now.
--   Bring your computer to the lectures.
--   I use the Norwegian locale, where "0,0" is a decimal number. In the English locale, "0.0" is a decimal number. **This is important! It also affects formulas, as you must modify ':' to ','!**
+-   We will use both Excel on the Web and Excel 365 Desktop.
+-   In this lecture, I will use the desktop version, but you can use the online version too, for now.
+-   However, Power Query and the important Name Manager are only available on the desktop version.
+-   TypeScript is only available on Excel on the Web!
+-   I will use the desktop version.
+-   Please bring your computer to the lectures.
 
-## But recall
+## Locales
 
-![](images/paste-420ACEF1.png)
+-   I will be using the Norwegian locale, where "0,0" is a decimal number. In the English locale, "0.0" is a decimal number.
+-   This is important! It also affects formulas, as you must modify ';' to ','!
+-   Your computer may be using the English locale. That's completely fine! Just use ',' where I use ';' and '.' where I use ','.
+-   There are also Norwegian versions of Excel. Do not use them. They use different function names, e.g., GJENNOMSNITT instead of AVERAGE.
+-   You may encounter the Norwegian version of Excel in your future job, so it might be useful to familiarize yourself with some of the Norwegian functions at some point. You can refer to [this list](https://easy-excel.com/excel-in-other-languages/excel-in-norwegian/). However, it is not on the curriculum and you cannot use Norwegian functions on the exam.
 
-## Getting started
+## 
 
--   Cells, active cells, and blank cells
+![](images/average_familiarity_2x.png){fig-align="center"}
+
+# Getting started
+
+## Basic terminology
+
+-   Cells and active cells.
 -   Data entry
     -   Click on cell to modify
     -   Press ESC to ignore changes
 -   Data types and blank cells
 -   Formatting
 -   Themes
--   Flash fill
 -   Worksheets
+-   Flash fill
 
-## Arithmetic and logical formulas
+## Arithmetic formulas
 
--   You can add (`+`), subtract (`-`), multiply (`*`), and divide (`/`).
+-   You can perform addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
 -   To add two numbers `x` and `y`, use `=x+y`. To show the formula, prepend a `'`, i.e., `'=x+y`.
--   The operations can be combined, e.g., `=(1+2)/3`.
--   You can use references, e.g., `=A1+B1` instead of hard coded formulas.
+-   These operations can be combined, e.g. `=1+3*2`
 
-## Formuas
+## Logical formulas and comparison operators.
 
-### `SUM` function
+-   Comparison operators are used to compare numbers. They are:
+    -   Equality: `=` (not `==`!).
 
--   Use the `SUM` function to sum load of numbers at once.
+    -   Strict inequality: `>`, and `<`.
+
+    -   Inequalities: `>=`, and `<=`.
+-   Logical operators: `AND`, `OR`, and `NOT`.
+
+## References
+
+* An Excel *reference* is a pointer to a cell on the worksheet.
+* Arithmetic and logical formulas can be used both with hard coded numbers and references.
+* For instance, you may write `=A1+B1`, where `A1` and `B1` are references to cells.
+
+# Formuas
+
+## `SUM` function
+
+-   Use the `SUM` function to sum loads of numbers at once.
 -   Blank cells at cells with text are ignored.
 
-### Errors
+## Errors
 
--   If write a formula incorrectly, you will see errors.
+-   If you write a formula incorrectly, you will see errors.
 -   Hover over the warning sign to see an explanation of the errors.
--   Error messages are important, as they help you *debugging* your formulas!
+-   Error messages are important because they help you debug your formulas!
+-   Check out more error messages [ here](https://exceljet.net/articles/excel-formula-errors).
 
 ## Types
 
@@ -77,16 +102,16 @@ format:
 -   Dynamic arrays will be covered later.
 -   Two gotchas: Blank cells have the number type. Dates also have the number type!
 
-## Formulas
+## Basics of formulas
 
 -   Using `=` to create formulas.
 -   Use `TAB` for auto-complete.
 -   You can read a short description of what the function does in its tooltip.
 -   For examples and detailed explanation, Google the name of the function along with "ExcelJet".
 
-## Formulas
+## Functions
 
--   When writing the function name and a single parenthesis, you will see the arguments a function takes. This is called its *signature*.
+-   When writing a function name and a single parenthesis, you will see the arguments a function takes. This is called its *signature*.
 -   Optional arguments are enclosed in square brackets \[\].
 -   Ex: `=SUM(number1;[number2];...)` The `SUM` function has one mandatory `number1` argument and an arbitrary number of additional arguments `number2`, `number3`, etc.
 -   Ranges: "Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range."
