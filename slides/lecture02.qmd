@@ -18,5 +18,13 @@ format:
     auto-stretch: true
 ---
 
-## First things first
+## Absolute and relative references
+* When you copy a formula in Excel the references in the formula change automatically.
+* You can avoid this by dragging the formulas around.
+* But you can also use absolute references.
+* Absolute references have a `$` sign in front.
+* Use F4 to cycle between the different kinds of references.
 
+## Working with text
+* We will cover oldskool text manipulation in this lecture. There are better options we'll get tot soon.
+* You should expect to see oldskool text manipulation in Excel documents, but might not use it much yourself.
