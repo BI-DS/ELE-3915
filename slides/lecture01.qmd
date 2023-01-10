@@ -18,25 +18,22 @@ format:
     auto-stretch: true
 ---
 
-
 ## Organization
 
 -   I, Jonas Moss, am teaching the first half of the course.
 -   My colleague Adam Lee is teaching the second half.
--   Planning on two guest lectures (not currently in the plan), one from 
-    Microsoft and one from a seasoned professional. We'll add them to the plan
-    shortly. 
+-   Planning on two guest lectures (not currently in the plan), one from Microsoft and one from a seasoned professional. We'll add them to the plan shortly.
 -   We have two TAs right now, Stoyan and Zacky.
--   Remember this course is completely new! If something doesn't work, we'll have
-    to change it.
+-   Remember this course is completely new! If something doesn't work, we'll have to change it.
 -   I don't check It's learning often. Please send an e-mail if you need to get in contact with me.
+-   Tell me if something doesn't work, e.g., you don't see what I'm doing.
 
 ## Excel versions
 
 -   We will use both Excel on the Web and Excel 365 Desktop.
 -   In this lecture, I will use the desktop version, but you can use the online version too, for now.
 -   However, Power Query and the important Name Manager are only available on the desktop version.
--   TypeScript is only available on Excel on the Web!
+-   Some TypeScript functionality is only available on Excel on the Web! (Notably, recording macros.)
 -   I will use the desktop version.
 -   Please bring your computer to the lectures.
 
@@ -128,7 +125,3 @@ format:
 -   Optional arguments are enclosed in square brackets \[\].
 -   Ex: `=SUM(number1;[number2];...)` The `SUM` function has one mandatory `number1` argument and an arbitrary number of additional arguments `number2`, `number3`, etc.
 -   Ranges: "Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range."
-
-## Please fill out the survey!
-
-This survey contains three simple questions. Answering the survey helps us organize the course better. http://bitly.ws/xSZK
