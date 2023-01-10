@@ -2,7 +2,6 @@
 
 *Last updated:* 03.01.2023
 
-
 ## Curriculum
 
 -   Basics of Excel, including cells, active cells, and ranges. Worksheets, basic formatting, data types and blank cells.
@@ -22,47 +21,48 @@
     -   Press escape to exit editing a formula.
 
     -   Press tab to auto-complete a formula.
-    
-    - Press SHIFT to add contiguous cells to a selection.
-    
-    - Press CTRL+DOWN to go to the last non-blank cell in a contiguous column. And CTRL+UP to go to the first column-wise, CTRL+LEFT-ARROW to go to the first row-wise, and CTRL+RIGHT-ARROW to go to the last row-wise.
-    
-    - Hold CTRL to add cells to a selection.
-    
-    - Press F4 to taggle absolute references.
 
-- Logical values; the functions `AND`, `OR`, `NOT`, and the operators `=`, `<`, `>`, `<=` and `>=`.
+    -   Press SHIFT to add contiguous cells to a selection.
 
-- Overview of [error messages](https://exceljet.net/articles/excel-formula-errors).
+    -   Press CTRL+DOWN to go to the last non-blank cell in a contiguous column. And CTRL+UP to go to the first column-wise, CTRL+LEFT-ARROW to go to the first row-wise, and CTRL+RIGHT-ARROW to go to the last row-wise.
 
-- Knowledge of the basic datatypes of Excel (number; text; logical; error; array), including how to use the [`TYPE`](https://exceljet.net/functions/type-function#:~:text=The%20Excel%20TYPE%20function%20returns,value%20in%20a%20particular%20cell) function.
+    -   Hold CTRL to add cells to a selection.
+
+    -   Press F4 to taggle absolute references.
+
+-   Logical values; the functions `AND`, `OR`, `NOT`, and the operators `=`, `<`, `>`, `<=` and `>=`.
+
+-   Overview of [error messages](https://exceljet.net/articles/excel-formula-errors).
+
+-   Knowledge of the basic datatypes of Excel (number; text; logical; error; array), including how to use the [`TYPE`](https://exceljet.net/functions/type-function#:~:text=The%20Excel%20TYPE%20function%20returns,value%20in%20a%20particular%20cell) function.
 
 Basic functions using one range as argument.
 
-| Name      | Description  |
-| --------- | ------------ |
-| [`SUM`](https://exceljet.net/functions/sum-function)     | Sum all numbers in a range.
-| [`PRODUCT`](https://exceljet.net/functions/product-function) | The product of all numbers in a range.
-| [`MAX`](https://exceljet.net/functions/max-function)     | The maximum of numbers in a range.
-| [`MIN`](https://exceljet.net/functions/min-function)     | The minimum of numbers in a range.
-| [`COUNT`](https://exceljet.net/functions/count-function)/[`COUNTA`](https://exceljet.net/functions/counta-function)/[`COUNTBLANK`](https://exceljet.net/functions/countblank-function)| Count the number of cells in a range that contain numbers (`COUNT`), are non-empty (`COUNTA`), or empty (`COUNTBLANK`).
-| [`ROWS`](https://exceljet.net/functions/rows-function) / [`COLS`](https://exceljet.net/functions/cols-function) | Counts the number of rows / columns in a reference.
-| [`AVERAGE`](https://exceljet.net/functions/average-function) | The average of the numbers in a range. Empty cells are ignored.
-| [`MEDIAN`](https://exceljet.net/functions/median-function)  | The median of the numbers in a range.
-| [`STDEV`](https://exceljet.net/functions/stdev-function) | The standard deviation of the numbers in a range. Empty cells are ignored.
-| [`COUNTIF`](https://exceljet.net/functions/countif-function) | Counts cells satisfying a criterion.
+| Name                                                                                                                                                                                   | Description                                                                                                             |
+|-------------------------------|-----------------------------------------|
+| [`SUM`](https://exceljet.net/functions/sum-function)                                                                                                                                   | Sum all numbers in a range.                                                                                             |
+| [`PRODUCT`](https://exceljet.net/functions/product-function)                                                                                                                           | The product of all numbers in a range.                                                                                  |
+| [`MAX`](https://exceljet.net/functions/max-function)                                                                                                                                   | The maximum of numbers in a range.                                                                                      |
+| [`MIN`](https://exceljet.net/functions/min-function)                                                                                                                                   | The minimum of numbers in a range.                                                                                      |
+| [`COUNT`](https://exceljet.net/functions/count-function)/[`COUNTA`](https://exceljet.net/functions/counta-function)/[`COUNTBLANK`](https://exceljet.net/functions/countblank-function) | Count the number of cells in a range that contain numbers (`COUNT`), are non-empty (`COUNTA`), or empty (`COUNTBLANK`). |
+| [`ROWS`](https://exceljet.net/functions/rows-function) / [`COLS`](https://exceljet.net/functions/cols-function)                                                                        | Counts the number of rows / columns in a reference.                                                                     |
+| [`AVERAGE`](https://exceljet.net/functions/average-function)                                                                                                                           | The average of the numbers in a range. Empty cells are ignored.                                                         |
+| [`MEDIAN`](https://exceljet.net/functions/median-function)                                                                                                                             | The median of the numbers in a range.                                                                                   |
+| [`STDEV`](https://exceljet.net/functions/stdev-function)                                                                                                                               | The standard deviation of the numbers in a range. Empty cells are ignored.                                              |
+| [`COUNTIF`](https://exceljet.net/functions/countif-function)                                                                                                                           | Counts cells satisfying a criterion.                                                                                    |
 
 ## Slides and sheets used in the lecture
-::: {.warning}
+
+::: warning
 Remember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.
 :::
 
-The lecture slides are [here](https://rawcdn.githack.com/BI-DS/ELE-3915/8fb93ac2fc77767f01d2afc605c9c9907f3022e8/slides/lecture01.html). The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01-filled.xlsx).
+The lecture slides are [here](https://rawcdn.githack.com/BI-DS/ELE-3915/8fb93ac2fc77767f01d2afc605c9c9907f3022e8/slides/lecture01.html). The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture01_solutions.xlsx).
 
-[Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01-solutions.xlsx).
-
+[Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises01_solutions.xlsx).
 
 ## Recommended resources
+
 There are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert [here](https://www.youtube.com/watch?v=Jl0Qk63z2ZY&ab_channel=KevinStratvert), but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas [here](https://www.youtube.com/watch?v=y1126PQ5zRU&ab_channel=LeilaGharani).
 
 There are many introductions to flash fill too, e.g. [this one](https://www.youtube.com/watch?v=1KimYFzET1w&ab_channel=LeilaGharani).
