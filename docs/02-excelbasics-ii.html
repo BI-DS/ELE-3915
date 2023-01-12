@@ -181,9 +181,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#absolute-and-relative-references." id="toc-absolute-and-relative-references." class="nav-link" data-scroll-target="#absolute-and-relative-references."><span class="toc-section-number">2.1.1</span>  Absolute and relative references.</a></li>
   <li><a href="#conditionals-in-excel." id="toc-conditionals-in-excel." class="nav-link" data-scroll-target="#conditionals-in-excel."><span class="toc-section-number">2.1.2</span>  Conditionals in Excel.</a></li>
-  <li><a href="#working-with-text" id="toc-working-with-text" class="nav-link" data-scroll-target="#working-with-text"><span class="toc-section-number">2.1.3</span>  Working with text</a></li>
+  <li><a href="#additional-mathematical-functions" id="toc-additional-mathematical-functions" class="nav-link" data-scroll-target="#additional-mathematical-functions"><span class="toc-section-number">2.1.3</span>  Additional mathematical functions</a></li>
+  <li><a href="#working-with-text" id="toc-working-with-text" class="nav-link" data-scroll-target="#working-with-text"><span class="toc-section-number">2.1.4</span>  Working with text</a></li>
   </ul></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">2.2</span>  Exercises</a></li>
+  <li><a href="#lectures-and-exercises" id="toc-lectures-and-exercises" class="nav-link" data-scroll-target="#lectures-and-exercises"><span class="toc-section-number">2.2</span>  Lectures and exercises</a></li>
   <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">2.3</span>  Recommended resources</a></li>
   </ul>
 </nav>
@@ -207,57 +208,103 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
-</div>
-</div>
 <section id="curriculum" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">2.1</span> Curriculum</h2>
 <section id="absolute-and-relative-references." class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="absolute-and-relative-references."><span class="header-section-number">2.1.1</span> Absolute and relative references.</h3>
 <ul>
-<li>Know the difference between absolute, mixed, and relative references and when to use which.</li>
+<li>Understand the difference between absolute, mixed, and relative references and when to use each.</li>
 <li>Use F4 to cycle between the different kinds of references.</li>
 </ul>
 </section>
 <section id="conditionals-in-excel." class="level3" data-number="2.1.2">
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="conditionals-in-excel."><span class="header-section-number">2.1.2</span> Conditionals in Excel.</h3>
 <ul>
-<li>Conditional formulas
-<ul>
-<li><code>IF</code> function</li>
-<li>Oldskool nested <code>IF</code></li>
-<li>The better <code>IFS</code> function</li>
-</ul></li>
-<li>The <code>SUMIF</code>/<code>SUMIFS</code>; <code>COUNTIF</code>/<code>COUNTIFS</code>; <code>MINIFS</code>/<code>MAXIFS</code> functions.</li>
+<li>Understand conditional formulas and their uses, such as the <code>IF</code> function, nested <code>IF</code>s, and the <code>IFS</code> function.</li>
+<li>Learn the conditional aggregation functions such as <code>SUMIF</code>/<code>SUMIFS</code>, <code>COUNTIF</code>/<code>COUNTIFS</code>, and <code>MINIFS</code>/<code>MAXIFS</code> functions.</li>
 </ul>
 </section>
-<section id="working-with-text" class="level3" data-number="2.1.3">
-<h3 data-number="2.1.3" class="anchored" data-anchor-id="working-with-text"><span class="header-section-number">2.1.3</span> Working with text</h3>
+<section id="additional-mathematical-functions" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="additional-mathematical-functions"><span class="header-section-number">2.1.3</span> Additional mathematical functions</h3>
 <ul>
-<li>Get an overview of the text manipulation functions in Excel and how to apply them.</li>
-<li>Be able to solve basic text manipulation tasks.</li>
-<li>Working with strings. Using <code>&amp;</code> for concatenation and F9 for replacing formulas with values.</li>
-<li>Not all useful text manipulation tools are built-in though. For instance, <code>WORDCOUNT</code>, counting the number of words in a text, does not exist. We will revisit text manipulation later on.</li>
-<li>We will revisit text manipulation later on.</li>
-<li>Some of the functions are oldskool. You might see them used, but modern alternatives are better.
-<ul>
-<li>This is arguably the case for <code>LEFT</code>; <code>MID</code>, and <code>RIGHT</code>, <code>FIND</code> and <code>SEARCH</code>.</li>
-</ul></li>
+<li>Most of the math functions are relevant to us. We won’t cover all of them in detail. Here is a list of particularly important functions.</li>
 </ul>
 <table class="table">
 <colgroup>
-<col style="width: 34%">
-<col style="width: 65%">
+<col style="width: 22%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ABS</code></td>
+<td>Find the absolute value of a number.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>EXP</code></td>
+<td>Find the value of e raised to the power of a number.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>LOG</code></td>
+<td>Get the logarithm of a number.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>FLOOR.MATH</code></td>
+<td>Round number down to nearest multiple.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>CEILING.MATH</code></td>
+<td>Round a number up to nearest multiple.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>ROUND</code></td>
+<td>Round a number to a given number of digits.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>COMBIN</code></td>
+<td>Get number of combinations without repetitions.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>MOD</code> / <code>QUOTIENT</code></td>
+<td>Get the remainder from division / Returns the quotient without a remainder.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>POWER</code> / <code>^</code> operator / <code>SQRT</code></td>
+<td>Raise a number to a power or calculate the square root.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Learn about how and when to use the <code>SUMPRODUCT</code> function.</li>
+</ul>
+</section>
+<section id="working-with-text" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="working-with-text"><span class="header-section-number">2.1.4</span> Working with text</h3>
+<ul>
+<li>Understand the use of the <code>&amp;</code> operator for concatenation.</li>
+<li>Learn to solve basic text manipulation tasks.</li>
+<li>Get an overview of the text manipulation functions in Excel and how to apply them.</li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -312,14 +359,19 @@ Important
 </tr>
 </tbody>
 </table>
+<ul>
+<li>Note that not all useful text manipulation tools are built-in and some tasks, such as counting the number of words in a text, may require creating custom functions.</li>
+<li>Some of the functions are outdated. You will see them used, but modern alternatives are better. This is arguably the case for <code>LEFT</code>; <code>MID</code>, and <code>RIGHT</code>, <code>FIND</code> and <code>SEARCH</code>. The modern variants will be covered in later lectures.</li>
+</ul>
 </section>
 </section>
-<section id="exercises" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">2.2</span> Exercises</h2>
+<section id="lectures-and-exercises" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="lectures-and-exercises"><span class="header-section-number">2.2</span> Lectures and exercises</h2>
+<p>The Excel sheets used in the lecture, before being filled in, <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture02.xlsx">here</a>. The lecture notes after being filled in are <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture02_solutions.xlsx">here</a>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises02.xlsx">Here</a> are the exercises; the solutions can be found <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises02_solutions.xlsx">here</a>.</p>
 </section>
 <section id="recommended-resources" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">2.3</span> Recommended resources</h2>
-<p>https://www.youtube.com/watch?v=thvE8Eg-Pqg&amp;ab_channel=Chandoo</p>
+<p>The YouTuber <a href="https://www.youtube.com/watch?v=thvE8Eg-Pqg&amp;ab_channel=Chandoo">Chandoo</a> discusses the text manipulation functions at length, so does the YouTuber Leila Gharani <a href="https://www.youtube.com/@LeilaGharani">Leila Gharani</a>. There are many good videos about these topics, and I strongly encourage you to explore them.</p>
 
 
 </section>

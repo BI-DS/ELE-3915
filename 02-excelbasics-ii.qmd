@@ -1,36 +1,43 @@
 # Excel basics (ii)
 
-::: callout-important
-This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
-:::
-
 ## Curriculum
 
 ### Absolute and relative references.
 
--   Know the difference between absolute, mixed, and relative references and when to use which.
+-   Understand the difference between absolute, mixed, and relative references and when to use each.
 -   Use F4 to cycle between the different kinds of references.
 
 ### Conditionals in Excel.
 
--   Conditional formulas
-    -   `IF` function
-    -   Oldskool nested `IF`
-    -   The better `IFS` function
--   The `SUMIF`/`SUMIFS`; `COUNTIF`/`COUNTIFS`; `MINIFS`/`MAXIFS` functions.
+-   Understand conditional formulas and their uses, such as the `IF` function, nested `IF`s, and the `IFS` function.
+-   Learn the conditional aggregation functions such as `SUMIF`/`SUMIFS`, `COUNTIF`/`COUNTIFS`, and `MINIFS`/`MAXIFS` functions.
+
+### Additional mathematical functions
+
+-   Most of the math functions are relevant to us. We won't cover all of them in detail. Here is a list of particularly important functions.
+
+| Name                            | Description                                                                 |
+|-------------------|---------------------------|
+| `ABS`                           | Find the absolute value of a number.                                        |
+| `EXP`                           | Find the value of e raised to the power of a number.                        |
+| `LOG`                           | Get the logarithm of a number.                                              |
+| `FLOOR.MATH`                    | Round number down to nearest multiple.                                      |
+| `CEILING.MATH`                  | Round a number up to nearest multiple.                                      |
+| `ROUND`                         | Round a number to a given number of digits.                                 |
+| `COMBIN`                        | Get number of combinations without repetitions.                             |
+| `MOD` / `QUOTIENT`              | Get the remainder from division / Returns the quotient without a remainder. |
+| `POWER` / `^` operator / `SQRT` | Raise a number to a power or calculate the square root.                     |
+
+-   Learn about how and when to use the `SUMPRODUCT` function.
 
 ### Working with text
 
+-   Understand the use of the `&` operator for concatenation.
+-   Learn to solve basic text manipulation tasks.
 -   Get an overview of the text manipulation functions in Excel and how to apply them.
--   Be able to solve basic text manipulation tasks.
--   Working with strings. Using `&` for concatenation and F9 for replacing formulas with values.
--   Not all useful text manipulation tools are built-in though. For instance, `WORDCOUNT`, counting the number of words in a text, does not exist. We will revisit text manipulation later on.
--   We will revisit text manipulation later on.
--   Some of the functions are oldskool. You might see them used, but modern alternatives are better.
-    -   This is arguably the case for `LEFT`; `MID`, and `RIGHT`, `FIND` and `SEARCH`.
 
 | Name                       | Description                                         |
-|----------------------------|-----------------------------------------------------|
+|--------------------------|----------------------------------------------|
 | `TRIM`                     | Remove extra spaces from text.                      |
 | `TEXTBEFORE` / `TEXTAFTER` | Extract text before / after delimiter.              |
 | `EXACT`                    | Compare two text strings, taking case into account. |
@@ -43,8 +50,13 @@ This page is ***not finished***, but might contain notes from the course develop
 | `FIND`                     | Get location substring in a string.                 |
 | `REPLACE`                  | Replace text based on location.                     |
 
-## Exercises
+-   Note that not all useful text manipulation tools are built-in and some tasks, such as counting the number of words in a text, may require creating custom functions.
+-   Some of the functions are outdated. You will see them used, but modern alternatives are better. This is arguably the case for `LEFT`; `MID`, and `RIGHT`, `FIND` and `SEARCH`. The modern variants will be covered in later lectures.
+
+## Lectures and exercises
+
+The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture02.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture02_solutions.xlsx). [Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises02.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises02_solutions.xlsx).
 
 ## Recommended resources
 
-https://www.youtube.com/watch?v=thvE8Eg-Pqg&ab_channel=Chandoo
+The YouTuber [Chandoo](https://www.youtube.com/watch?v=thvE8Eg-Pqg&ab_channel=Chandoo) discusses the text manipulation functions at length, so does the YouTuber Leila Gharani [Leila Gharani](https://www.youtube.com/@LeilaGharani). There are many good videos about these topics, and I strongly encourage you to explore them.

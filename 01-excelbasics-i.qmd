@@ -51,7 +51,7 @@ Basic functions using one range as argument.
 | [`STDEV`](https://exceljet.net/functions/stdev-function)                                                                                                                               | The standard deviation of the numbers in a range. Empty cells are ignored.                                              |
 | [`COUNTIF`](https://exceljet.net/functions/countif-function)                                                                                                                           | Counts cells satisfying a criterion.                                                                                    |
 
-## Slides and sheets used in the lecture
+## Lectures and exercises
 
 ::: warning
 Remember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.
