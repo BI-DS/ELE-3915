@@ -6,6 +6,7 @@
 
 -   Understand the difference between absolute, mixed, and relative references and when to use each.
 -   Use F4 to cycle between the different kinds of references.
+-   `LARGE` and `SMALL` functions.
 
 ### Conditionals in Excel.
 
@@ -17,7 +18,7 @@
 -   Most of the math functions are relevant to us. We won't cover all of them in detail. Here is a list of particularly important functions.
 
 | Name                            | Description                                                                 |
-|-------------------|---------------------------|
+|------------------------------|------------------------------------------|
 | `ABS`                           | Find the absolute value of a number.                                        |
 | `EXP`                           | Find the value of e raised to the power of a number.                        |
 | `LOG`                           | Get the logarithm of a number.                                              |
@@ -37,7 +38,7 @@
 -   Get an overview of the text manipulation functions in Excel and how to apply them.
 
 | Name                       | Description                                         |
-|--------------------------|----------------------------------------------|
+|--------------------------|---------------------------------------------|
 | `TRIM`                     | Remove extra spaces from text.                      |
 | `TEXTBEFORE` / `TEXTAFTER` | Extract text before / after delimiter.              |
 | `EXACT`                    | Compare two text strings, taking case into account. |
