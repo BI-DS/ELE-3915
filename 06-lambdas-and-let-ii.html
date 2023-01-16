@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Excel Programming and Automation - 7&nbsp; Power query (i)</title>
+<title>Excel Programming and Automation - 6&nbsp; Programming in Excel (iii): Applications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./08-power-query-ii.html" rel="next">
-<link href="./06-lambdas-and-let-ii.html" rel="prev">
+<link href="./09-power-pivot-and-dax.html" rel="next">
+<link href="./05-lambdas-let.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power query (i)</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Programming in Excel (iii): Applications</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-excelbasics-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Excel basics (ii)</span></a>
+  <a href="./02-excelbasics-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Excel basics (ii): Text manipulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -115,57 +115,47 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-dynamic-arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lambdas and dynamic arrays</span></a>
+  <a href="./04-dynamic-arrays.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Programming in Excel (i): Introduction to <code>LAMBDA</code></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-lambdas-let.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-made functions with <code>LAMBDA</code></span></a>
+  <a href="./05-lambdas-let.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-lambdas-and-let-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><code>LET</code>, <code>LAMBDA</code>, and dynamic arrays</span></a>
+  <a href="./06-lambdas-and-let-ii.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Programming in Excel (iii): Applications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-power-query-i.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power query (i)</span></a>
+  <a href="./09-power-pivot-and-dax.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-power-query-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Power query (ii)</span></a>
+  <a href="./10-typescript-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Typescript (i)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-power-pivot-and-dax.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></a>
+  <a href="./11-typescript-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-typescript-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (i)</span></a>
+  <a href="./12-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-typescript-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></a>
+  <a href="./13-typescript-iv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./12-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./13-typescript-iv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./14-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
+  <a href="./14-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
   </div>
 </li>
     </ul>
@@ -177,9 +167,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">7.1</span>  Curriculum</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">7.2</span>  Exercises</a></li>
-  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">7.3</span>  Recommended resources</a></li>
+  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">6.1</span>  Curriculum</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">6.2</span>  Exercises</a>
+  <ul class="collapse">
+  <li><a href="#utility-functions" id="toc-utility-functions" class="nav-link" data-scroll-target="#utility-functions"><span class="toc-section-number">6.2.1</span>  Utility functions</a></li>
+  </ul></li>
+  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">6.3</span>  Recommended resources</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power query (i)</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Programming in Excel (iii): Applications</span></h1>
 </div>
 
 
@@ -216,14 +209,28 @@ Important
 <p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
 </div>
 </div>
-<section id="curriculum" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">7.1</span> Curriculum</h2>
+<section id="curriculum" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">6.1</span> Curriculum</h2>
+<p>Excel is equipped with many functions for handling dynamic arrays and <code>LAMBDA</code> functions. The most important are <code>FILTER</code>, <code>MAP</code> (and its cousins <code>BYCOL</code>, <code>BYROW</code>, and <code>MAKEARRAY</code>), and <code>REDUCE</code>.</p>
+<p>To use <code>FILTER</code>, <code>MAP</code>, and <code>reduce</code>, we will need convenience functions such as</p>
 </section>
-<section id="exercises" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">7.2</span> Exercises</h2>
+<section id="exercises" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">6.2</span> Exercises</h2>
+<section id="utility-functions" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="utility-functions"><span class="header-section-number">6.2.1</span> Utility functions</h3>
+<p>We have discussed</p>
+<p>Recall that <code>FILTER</code> does not take the same sort of arguments as e.g.&nbsp;<code>MAP</code>. Its second argument is an array of truth values, not a <code>LAMBDA</code> function. That is OK, but it’s inconsistent with most ofther functions of dynamic arrays. Make a function</p>
+<ul>
+<li><code>FILTER_(array; lambda)</code> Returns the array consisting of elements from <code>array</code> where <code>lambda(x)</code> is <code>TRUE</code>.</li>
+<li><code>TAKEWHILE(array; lambda)</code> Takes elements from <code>array</code> until the <code>LAMBDA</code> function <code>lambda</code> returns false.</li>
+<li><code>MAPWHILE(array;mapper;predicate)</code> Maps <code>mapper</code> onto array untile the <code>predicate</code> function returns <code>FALSE</code>.</li>
+<li><code>FILTERBY(out;filter_array;lambda)</code> Returns the array consisting of elements from <code>out</code> where <code>lambda(x)</code> evaluates to <code>TRUE</code>.</li>
+<li><code>ENUMERATE(array)</code> Takes a one-dimensional array (a column) merges it with <code>SEQUENCE(R)</code>, yielding a two-dimensional array.</li>
+</ul>
 </section>
-<section id="recommended-resources" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">7.3</span> Recommended resources</h2>
+</section>
+<section id="recommended-resources" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">6.3</span> Recommended resources</h2>
 
 
 </section>
@@ -364,13 +371,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./06-lambdas-and-let-ii.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><code>LET</code>, <code>LAMBDA</code>, and dynamic arrays</span></span>
+      <a href="./05-lambdas-let.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./08-power-query-ii.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Power query (ii)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./09-power-pivot-and-dax.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

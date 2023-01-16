@@ -14,8 +14,6 @@ book:
     - 04-dynamic-arrays.qmd
     - 05-lambdas-let.qmd
     - 06-lambdas-and-let-ii.qmd
-    - 07-power-query-i.qmd
-    - 08-power-query-ii.qmd
     - 09-power-pivot-and-dax.qmd
     - 10-typescript-i.qmd
     - 11-typescript-ii.qmd

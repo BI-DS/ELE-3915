@@ -1,10 +1,13 @@
-# User-made functions with `LAMBDA` 
+# Programming in Excel (ii): Array functions 
+
 ::: callout-important
 This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
 :::
+
 ## Curriculum
 
 Here is an example of a complex function.
+
 ``` scala
 =LET(
     tab; FILTER(vgsales; (vgsales[Genre] = genre) * (vgsales[Platform] = platform));
