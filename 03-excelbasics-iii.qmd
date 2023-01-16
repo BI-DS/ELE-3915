@@ -1,27 +1,28 @@
-# Excel basics (iii)
-
-::: callout-important
-This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
-:::
+# Excel basics (iii): Lookups and aggregation
 
 ## Curriculum
 
-### Part 1
+### Lookup, aggregation, and filtering.
+-   Knowledge of the `INDEX` functions, `XMATCH` function, and how they work together.
+-   Understanding the modern look up function `XLOOKUP`.
+-   Some uses of the important functions `UNIQUE` and `FILTER`.
+-   Using `FILTER` in data aggregation tasks.
+-   Gain an understanding of how to use the lookup functions, `FILTER`, and `UNIQUE` to perform tasks of intermediate complexity.
 
--   Data tables.
--   Data validation.
--   Conditional formatting.
--   Ranking and ordering: `RANK`/`RANKEQ`.
+### Miscellaneous
+-   Introduction to [data tables](https://exceljet.net/articles/excel-tables). This article contains more information than I went through in the lecture, and you should read it.
+-   We have a cursory look at conditional formatting and very basic charts. 
+-   In addition, we consider basic use of data validation, i.e., making drop down lists.
+-   Ranking and ordering using `RANK.EQ`, `RANK.AVG`, `SORT`, and `SORTBY`. Knowledge of sorting using Excel buttons.
 
-### Part 2
+## Lectures and exercises
 
--   The `INDEX`, `ROWS`, and `COLUMNS` functions.
--   The `MATCH` function;
--   Using `INDEX` together with `MATCH`.
--   The old school look up functions `VLOOKUP`, `HLOOKUP`, `LOOKUP`.
--   The modern look up function: `XLOOKUP`.
--   The modern match function: `XMATCH`.
-
-## Exercises
+The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03_solutions.xlsx). [Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises03.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises03_solutions.xlsx).
 
 ## Recommended resources
+
+The [Wise Owl Training](https://www.wiseowl.co.uk/excel/exercises/standard/lookup-functions/) site has several exercises on lookup functions. They also have exercises covering other Excel topics. 
+
+You will be exposed to the function `VLOOKUP` outside of this course. It's worth it to spend some minutes understanding the difference between `XLOOKUP` and `VLOOKUP`, see e.g. [this video](https://www.youtube.com/watch?v=HXU7lsd0ftA).
+
+Data validation and conditional formatting are bigger topics that it would seem from our coverage. You can read more about them on ExcelJet or elsewhere.

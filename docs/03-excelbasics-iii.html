@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Excel Programming and Automation - 3&nbsp; Excel basics (iii)</title>
+<title>Excel Programming and Automation - 3&nbsp; Excel basics (iii): Lookups and aggregation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii)</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Lookups and aggregation</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-excelbasics-iii.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii)</span></a>
+  <a href="./03-excelbasics-iii.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Lookups and aggregation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -179,10 +179,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">3.1</span>  Curriculum</a>
   <ul class="collapse">
-  <li><a href="#part-1" id="toc-part-1" class="nav-link" data-scroll-target="#part-1"><span class="toc-section-number">3.1.1</span>  Part 1</a></li>
-  <li><a href="#part-2" id="toc-part-2" class="nav-link" data-scroll-target="#part-2"><span class="toc-section-number">3.1.2</span>  Part 2</a></li>
+  <li><a href="#lookup-aggregation-and-filtering." id="toc-lookup-aggregation-and-filtering." class="nav-link" data-scroll-target="#lookup-aggregation-and-filtering."><span class="toc-section-number">3.1.1</span>  Lookup, aggregation, and filtering.</a></li>
+  <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous"><span class="toc-section-number">3.1.2</span>  Miscellaneous</a></li>
   </ul></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">3.2</span>  Exercises</a></li>
+  <li><a href="#lectures-and-exercises" id="toc-lectures-and-exercises" class="nav-link" data-scroll-target="#lectures-and-exercises"><span class="toc-section-number">3.2</span>  Lectures and exercises</a></li>
   <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">3.3</span>  Recommended resources</a></li>
   </ul>
 </nav>
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii)</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Excel basics (iii): Lookups and aggregation</span></h1>
 </div>
 
 
@@ -200,55 +200,44 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
 
 </header>
 
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
-</div>
-</div>
 <section id="curriculum" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">3.1</span> Curriculum</h2>
-<section id="part-1" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="part-1"><span class="header-section-number">3.1.1</span> Part 1</h3>
+<section id="lookup-aggregation-and-filtering." class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="lookup-aggregation-and-filtering."><span class="header-section-number">3.1.1</span> Lookup, aggregation, and filtering.</h3>
 <ul>
-<li>Data tables.</li>
-<li>Data validation.</li>
-<li>Conditional formatting.</li>
-<li>Rounding of numbers: <code>ROUND</code>; <code>FLOOR</code>; <code>CEILING</code>; etc.</li>
-<li>Ranking and ordering: <code>RANK</code>/<code>RANKEQ</code> function, the <code>SMALL</code> and <code>LARGE</code> functions.</li>
-<li>Functions of multiple ranges: <code>SUMPRODUCT</code>.</li>
+<li>Knowledge of the <code>INDEX</code> functions, <code>XMATCH</code> function, and how they work together.</li>
+<li>Understanding the modern look up function <code>XLOOKUP</code>.</li>
+<li>Some uses of the important functions <code>UNIQUE</code> and <code>FILTER</code>.</li>
+<li>Using <code>FILTER</code> in data aggregation tasks.</li>
+<li>Gain an understanding of how to use the lookup functions, <code>FILTER</code>, and <code>UNIQUE</code> to perform tasks of intermediate complexity.</li>
 </ul>
 </section>
-<section id="part-2" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="part-2"><span class="header-section-number">3.1.2</span> Part 2</h3>
+<section id="miscellaneous" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="miscellaneous"><span class="header-section-number">3.1.2</span> Miscellaneous</h3>
 <ul>
-<li>The <code>INDEX</code>, <code>ROWS</code>, and <code>COLUMNS</code> functions.</li>
-<li>The <code>MATCH</code> function;</li>
-<li>Using <code>INDEX</code> together with <code>MATCH</code>.</li>
-<li>The old school look up functions <code>VLOOKUP</code>, <code>HLOOKUP</code>, <code>LOOKUP</code>.</li>
-<li>The modern look up function: <code>XLOOKUP</code>.</li>
-<li>The modern match function: <code>XMATCH</code>.</li>
+<li>Introduction to <a href="https://exceljet.net/articles/excel-tables">data tables</a>. This article contains more information than I went through in the lecture, and you should read it.</li>
+<li>We have a cursory look at conditional formatting and very basic charts.</li>
+<li>In addition, we consider basic use of data validation, i.e., making drop down lists.</li>
+<li>Ranking and ordering using <code>RANK.EQ</code>, <code>RANK.AVG</code>, <code>SORT</code>, and <code>SORTBY</code>. Knowledge of sorting using Excel buttons.</li>
 </ul>
 </section>
 </section>
-<section id="exercises" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">3.2</span> Exercises</h2>
+<section id="lectures-and-exercises" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="lectures-and-exercises"><span class="header-section-number">3.2</span> Lectures and exercises</h2>
+<p>The Excel sheets used in the lecture, before being filled in, <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03.xlsx">here</a>. The lecture notes after being filled in are <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03_solutions.xlsx">here</a>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises03.xlsx">Here</a> are the exercises; the solutions can be found <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises03_solutions.xlsx">here</a>.</p>
 </section>
 <section id="recommended-resources" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">3.3</span> Recommended resources</h2>
+<p>The <a href="https://www.wiseowl.co.uk/excel/exercises/standard/lookup-functions/">Wise Owl Training</a> site has several exercises on lookup functions. They also have exercises covering other Excel topics.</p>
+<p>You will be exposed to the function <code>VLOOKUP</code> outside of this course. It’s worth it to spend some minutes understanding the difference between <code>XLOOKUP</code> and <code>VLOOKUP</code>, see e.g.&nbsp;<a href="https://www.youtube.com/watch?v=HXU7lsd0ftA">this video</a>.</p>
+<p>Data validation and conditional formatting are bigger topics that it would seem from our coverage. You can read more about them on ExcelJet or elsewhere.</p>
 
 
 </section>
@@ -295,7 +284,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -331,24 +337,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

@@ -39,7 +39,7 @@
 Basic functions using one range as argument.
 
 | Name                                                                                                                                                                                   | Description                                                                                                             |
-|-------------------------------|-----------------------------------------|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | [`SUM`](https://exceljet.net/functions/sum-function)                                                                                                                                   | Sum all numbers in a range.                                                                                             |
 | [`PRODUCT`](https://exceljet.net/functions/product-function)                                                                                                                           | The product of all numbers in a range.                                                                                  |
 | [`MAX`](https://exceljet.net/functions/max-function)                                                                                                                                   | The maximum of numbers in a range.                                                                                      |
