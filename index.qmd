@@ -22,16 +22,16 @@ The course is split into into four parts.
 
 ## A note on difficulty
 
-Most of the course is about programming. Students often find programming hard. **Don't expect to be able solve every exercise in 5 minutes!** Solving programming exercises often take a long time, and you need to persevere. 
+Most of the course is about programming. Students often find programming hard. **Don't expect to be able solve every exercise in 5 minutes!** Solving programming exercises often take a long time, and you need to persevere.
 
 Be aware that the difficulty of this course is uneven. For instance, lectures on `LAMBDA` and `LET` are harder than the first three lectures, and the lectures on power query are likely to be easier. Do not think this course will be a walk in the park.
 
-To become a decent programmer it's a good idea to 
+To become a decent programmer it's a good idea to
 
-1. Do a lot of exercises. 
-2. Spend at least 20 minutes on each exercise before you give up. You need [to think really hard](https://www.benkuhn.net/thinkrealhard/). Don't expect to be able to solve the problem without making an effort.
-3. Do the exercise yourself after you have looked at the solution! Close the window and do it from memory. It's also a good idea to revisit the same exercise later on, e.g. the next day, to make sure you're able to do it.
-4. Tinker around, either modifying exercises yourself, or with your own ideas. If your tinkering leads to something cool, tell me! Use [Kaggle](https://www.kaggle.com/) to download data sets to tinker with and [Mockaroo](https://mockaroo.com/) to generate fake but plausible-looking data sets.
+1.  Do a lot of exercises.
+2.  Spend at least 20 minutes on each exercise before you give up. You need [to think really hard](https://www.benkuhn.net/thinkrealhard/). Don't expect to be able to solve the problem without making an effort.
+3.  Do the exercise yourself after you have looked at the solution! Close the window and do it from memory. It's also a good idea to revisit the same exercise later on, e.g. the next day, to make sure you're able to do it.
+4.  Tinker around, either modifying exercises yourself, or with your own ideas. If your tinkering leads to something cool, tell me! Use [Kaggle](https://www.kaggle.com/) to download data sets to tinker with and [Mockaroo](https://mockaroo.com/) to generate fake but plausible-looking data sets.
 
 Do not to spend an inordinate amount of time on an exercise before you check the solution. If you have spent 1 hour on an exercise and haven't gotten anywhere, it might be smart save yourself some time and look at the solution.
 

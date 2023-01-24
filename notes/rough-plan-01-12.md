@@ -264,12 +264,6 @@ But some of these lectures are too boring and basic.
 13. TypeScript programming (iv)
 14. TypeScript in Excel  
 
-## Plan
-1. Ha forelesning klar 2 uker før.
-2. Konkret plan for Excel for basics.
-
-
-
 ## Lecture notes
 ### TypeScript programming (i)
 * **Primitive JavaScript values.** A list can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
