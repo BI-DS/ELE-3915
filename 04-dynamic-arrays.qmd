@@ -1,9 +1,5 @@
 # Programming in Excel (i): Introduction to `LAMBDA`
 
-::: callout-important
-This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
-:::
-
 ## Curriculum
 
 -   How to define your own functions using `LAMBDA` and why it is useful.
@@ -14,12 +10,16 @@ This page is ***not finished***, but might contain notes from the course develop
 
 -   Construction of custom arrays with `{}`.
 
--   What a dynamic array is and what the `#SPILL!` error means.
+-   What a [dynamic arrays](https://exceljet.net/articles/dynamic-array-formulas-in-excel), what the `#SPILL!` error means, and how to use dynamic arrays are ranges.
 
--   How to use `LET` to define variables.
+-   Extending the basic Excel functions with `MAP`, `BYROW`, `BYCOLUMN`.
 
--   Extending the basic Excel functions with `MAP`, `BYROW`, `BYCOLUMN`, and `REDUCE`.
+-   Exercise in making custom functions using the tools we have learned until now.
 
-## Exercises
+-   Making random numbers using the function `RANDARRAY`.
+
+## Lectures and exercises
+
+The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture04.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03_solutions.xlsx). [Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04_solutions.xlsx).
 
 ## Recommended resources
