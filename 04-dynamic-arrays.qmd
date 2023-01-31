@@ -20,6 +20,6 @@
 
 ## Lectures and exercises
 
-The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture04.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture03_solutions.xlsx). [Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04_solutions.xlsx).
+The Excel sheets used in the lecture, before being filled in, [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture04.xlsx). The lecture notes after being filled in are [here](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture04_solutions.xlsx). [Here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04.xlsx) are the exercises; the solutions can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises04_solutions.xlsx).
 
 ## Recommended resources
