@@ -107,9 +107,9 @@
   {
     "objectID": "05-lambdas-let.html#curriculum",
     "href": "05-lambdas-let.html#curriculum",
-    "title": "5  Programming in Excel (ii): Array functions",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
     "section": "5.1 Curriculum",
-    "text": "5.1 Curriculum\nHere is an example of a complex function.\n=LET(\n    tab; FILTER(vgsales; (vgsales[Genre] = genre) * (vgsales[Platform] = platform));\n    rows; {7; 8; 9; 10};\n    regions; {\"NA\"; \"EU\"; \"JP\"; \"Other\"};\n    VSTACK(\n        HSTACK(\"\"; TRANSPOSE(Years));\n        HSTACK(\n            regions;\n            MAKEARRAY(\n                ROWS(rows);\n                ROWS(Years);\n                LAMBDA(row_index; year_index; \n                LET(\n                    row;index(rows;row_index);\n                    year;index(Years;year_index);\n                    IFERROR(SUM(FILTER(CHOOSECOLS(tab; row); CHOOSECOLS(tab; 4) = year)); 0))\n                )\n            )\n        )\n    )\n)"
+    "text": "5.1 Curriculum\n\nMake array constants using {...} Array constants are custom made arrays. They be rows, columns, or two-dimensional. Links: Lecture notes, exercises, and video.\nKeep or remove rows/columns with TAKE and DROP. Links: Lecture notes, exercises, and video.\nSelect rows or columns using numerical indexing with CHOOSEROWS and CHOOSECOLS. Links: Lecture notes, exercises, and video.\nManipulate array dimensions with TOROW and TOCOL. TOROW transforms an array to a row and TOCOLS transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as FILTER do not always work as intended when applied to two-dimensional arrays. Links: Lecture notes, exercises, and video.\nConstruct arrays with HSTACK and VSTACK. HSTACK stacks arrays horizontally and VSTACK stacks arrays vertically. These functions are especially handy when making functions. Links: Lecture notes, exercises, and video.\nMake arrays more presentable with WRAPCOLS and WRAPROWS. Links: Lecture notes, exercises, and video.\nMake formulas shorter with LET. The LET lets us define local variables, helping us reduce repetition in formulas. Links: Lecture notes, exercises, and video.\nMake complex functions with LET. The LET function is especially useful when making functions. We’ll have a look at several examples. Links: Lecture notes, exercises, and video.\nUse the INDIRECT function to turn text into references. Links: Lecture notes, exercises, and video.\nApplication: We define our own variant of the net present value function, called NPV in Excel. Links: Lecture notes, exercises, and video.\nApplication: Summarizing tables with drop-down lists. Links: Lecture notes, exercises, and video."
   },
   {
     "objectID": "05-lambdas-let.html#exercises",
@@ -333,7 +333,7 @@
     "href": "05-lambdas-let.html#functionality",
     "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
     "section": "5.1 Functionality",
-    "text": "5.1 Functionality\n\n5.1.1 Make array constants using {...}\nArray constants are custom made arrays. They be rows, columns, or two-dimensional.\n\n5.1.1.1 Resources\nhttps://exceljet.net/glossary/array-constant\n\n\n\n5.1.2 Keep or remove rows/columns with TAKE and DROP\n\n5.1.2.1 Resources\nhttps://exceljet.net/functions/take-function https://exceljet.net/functions/drop-function\n\n\n\n5.1.3 Select rows/columns CHOOSEROWS and CHOOSECOLS\nCHOOSEROWS and CHOOSECOLS lets you subset an array using numerical indexing.\n\n5.1.3.1 Resources\nhttps://exceljet.net/functions/chooserows-function https://exceljet.net/functions/choosecols-function\n\n\n\n5.1.4 Manipulate array dimensions with TOROW and TOCOL\nTOROW transforms an array to a row and TOCOLS transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as FILTER do not always work as intended when applied to two-dimensional arrays.\n\n5.1.4.1 Resources\nhttps://exceljet.net/functions/tocol-function https://exceljet.net/functions/torow-function\n\n\n\n5.1.5 Construct arrays with HSTACK and VSTACK\nHSTACK stacks arrays horizontally and VSTACK stacks arrays vertically. These functions are especially handy when making functions.\n\n5.1.5.1 Resources\nhttps://exceljet.net/functions/hstack-function https://exceljet.net/functions/vstack-function\n\n\n\n5.1.6 Make formulas shorter with LET\n\n5.1.6.1 Resources\nhttps://exceljet.net/functions/let-function\n\n\n\n5.1.7 Make complex functions with LET\n\n\n5.1.8 The INDIRECT function\nhttps://exceljet.net/functions/indirect-function"
+    "text": "5.1 Functionality\n\nMake array constants using {...} Array constants are custom made arrays. They be rows, columns, or two-dimensional.\n\n\n5.1.1 Keep or remove rows/columns with TAKE and DROP\n\n5.1.1.1 Resources\nhttps://exceljet.net/functions/take-function https://exceljet.net/functions/drop-function\n\n\n\n5.1.2 Select rows/columns CHOOSEROWS and CHOOSECOLS\nCHOOSEROWS and CHOOSECOLS lets you subset an array using numerical indexing.\n\n5.1.2.1 Resources\nhttps://exceljet.net/functions/chooserows-function https://exceljet.net/functions/choosecols-function\n\n\n\n5.1.3 Manipulate array dimensions with TOROW and TOCOL\nTOROW transforms an array to a row and TOCOLS transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as FILTER do not always work as intended when applied to two-dimensional arrays.\n\n5.1.3.1 Resources\nhttps://exceljet.net/functions/tocol-function https://exceljet.net/functions/torow-function\n\n\n\n5.1.4 Construct arrays with HSTACK and VSTACK\nHSTACK stacks arrays horizontally and VSTACK stacks arrays vertically. These functions are especially handy when making functions.\n\n5.1.4.1 Resources\nhttps://exceljet.net/functions/hstack-function https://exceljet.net/functions/vstack-function\n\n\n\n5.1.5 Make formulas shorter with LET\n\n5.1.5.1 Resources\nhttps://exceljet.net/functions/let-function\n\n\n\n5.1.6 Make complex functions with LET\n\n\n5.1.7 The INDIRECT function\nhttps://exceljet.net/functions/indirect-function"
   },
   {
     "objectID": "05-lambdas-let.html#applications",
@@ -474,5 +474,19 @@
     "title": "12  TypeScript in Excel",
     "section": "12.4 Recommended resources",
     "text": "12.4 Recommended resources"
+  },
+  {
+    "objectID": "04-dynamic-arrays.html#curriculum",
+    "href": "04-dynamic-arrays.html#curriculum",
+    "title": "4  Programming in Excel (i): Introduction to LAMBDA",
+    "section": "4.1 Curriculum",
+    "text": "4.1 Curriculum\n\nHow to define your own functions using LAMBDA and why it is useful.\nUsing the name manager.\nIntroduction to the Advanced Formula Environment, with emphasis on how to write documented and reusable code using the module functionality.\nConstruction of custom arrays with {}.\nWhat a dynamic arrays, what the #SPILL! error means, and how to use dynamic arrays are ranges.\nExtending the basic Excel functions with MAP, BYROW, BYCOLUMN.\nExercise in making custom functions using the tools we have learned until now.\nMaking random numbers using the function RANDARRAY."
+  },
+  {
+    "objectID": "05-lambdas-let.html#lectures-and-exercises",
+    "href": "05-lambdas-let.html#lectures-and-exercises",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
+    "section": "5.2 Lectures and exercises",
+    "text": "5.2 Lectures and exercises\nThe lecture notes and videos for each curriculum point can be found above. Some simple exercises associated with the videos are also found above. Additional exercises are here, with solutions)."
   }
 ]
