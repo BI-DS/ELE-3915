@@ -327,5 +327,152 @@
     "title": "12  TypeScript in Excel",
     "section": "12.4 Recommended resources",
     "text": "12.4 Recommended resources"
+  },
+  {
+    "objectID": "05-lambdas-let.html#functionality",
+    "href": "05-lambdas-let.html#functionality",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
+    "section": "5.1 Functionality",
+    "text": "5.1 Functionality\n\n5.1.1 Make array constants using {...}\nArray constants are custom made arrays. They be rows, columns, or two-dimensional.\n\n5.1.1.1 Resources\nhttps://exceljet.net/glossary/array-constant\n\n\n\n5.1.2 Keep or remove rows/columns with TAKE and DROP\n\n5.1.2.1 Resources\nhttps://exceljet.net/functions/take-function https://exceljet.net/functions/drop-function\n\n\n\n5.1.3 Select rows/columns CHOOSEROWS and CHOOSECOLS\nCHOOSEROWS and CHOOSECOLS lets you subset an array using numerical indexing.\n\n5.1.3.1 Resources\nhttps://exceljet.net/functions/chooserows-function https://exceljet.net/functions/choosecols-function\n\n\n\n5.1.4 Manipulate array dimensions with TOROW and TOCOL\nTOROW transforms an array to a row and TOCOLS transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as FILTER do not always work as intended when applied to two-dimensional arrays.\n\n5.1.4.1 Resources\nhttps://exceljet.net/functions/tocol-function https://exceljet.net/functions/torow-function\n\n\n\n5.1.5 Construct arrays with HSTACK and VSTACK\nHSTACK stacks arrays horizontally and VSTACK stacks arrays vertically. These functions are especially handy when making functions.\n\n5.1.5.1 Resources\nhttps://exceljet.net/functions/hstack-function https://exceljet.net/functions/vstack-function\n\n\n\n5.1.6 Make formulas shorter with LET\n\n5.1.6.1 Resources\nhttps://exceljet.net/functions/let-function\n\n\n\n5.1.7 Make complex functions with LET\n\n\n5.1.8 The INDIRECT function\nhttps://exceljet.net/functions/indirect-function"
+  },
+  {
+    "objectID": "05-lambdas-let.html#applications",
+    "href": "05-lambdas-let.html#applications",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications\n\n5.2.1 Your own NPV function\n\n\n5.2.2 Summarizing tables with drop-down lists"
+  },
+  {
+    "objectID": "07-pivot-tables.html#curriculum",
+    "href": "07-pivot-tables.html#curriculum",
+    "title": "7  Power pivot and DAX",
+    "section": "7.1 Curriculum",
+    "text": "7.1 Curriculum"
+  },
+  {
+    "objectID": "07-pivot-tables.html#exercises",
+    "href": "07-pivot-tables.html#exercises",
+    "title": "7  Power pivot and DAX",
+    "section": "7.2 Exercises",
+    "text": "7.2 Exercises"
+  },
+  {
+    "objectID": "07-pivot-tables.html#recommended-resources",
+    "href": "07-pivot-tables.html#recommended-resources",
+    "title": "7  Power pivot and DAX",
+    "section": "7.3 Recommended resources",
+    "text": "7.3 Recommended resources"
+  },
+  {
+    "objectID": "08-typescript-i.html#curriculum",
+    "href": "08-typescript-i.html#curriculum",
+    "title": "8  Typescript (i)",
+    "section": "8.1 Curriculum",
+    "text": "8.1 Curriculum\n\nPrimitive JavaScript values. A list can be found here.\n\nUndefined and Null.\nCore primitives: Boolean, Number, and String.\nSpecialized: BigInt and Symbol.\n\nArrays: Unnamed collection of objects.\nFunctions: Takes input vales and does something with them."
+  },
+  {
+    "objectID": "08-typescript-i.html#exercises",
+    "href": "08-typescript-i.html#exercises",
+    "title": "8  Typescript (i)",
+    "section": "8.2 Exercises",
+    "text": "8.2 Exercises"
+  },
+  {
+    "objectID": "08-typescript-i.html#recommended-resources",
+    "href": "08-typescript-i.html#recommended-resources",
+    "title": "8  Typescript (i)",
+    "section": "8.3 Recommended resources",
+    "text": "8.3 Recommended resources"
+  },
+  {
+    "objectID": "09-typescript-ii.html#curriculum",
+    "href": "09-typescript-ii.html#curriculum",
+    "title": "9  Typescript (ii)",
+    "section": "9.1 Curriculum",
+    "text": "9.1 Curriculum"
+  },
+  {
+    "objectID": "09-typescript-ii.html#exercises",
+    "href": "09-typescript-ii.html#exercises",
+    "title": "9  Typescript (ii)",
+    "section": "9.2 Exercises",
+    "text": "9.2 Exercises"
+  },
+  {
+    "objectID": "09-typescript-ii.html#recommended-resources",
+    "href": "09-typescript-ii.html#recommended-resources",
+    "title": "9  Typescript (ii)",
+    "section": "9.3 Recommended resources",
+    "text": "9.3 Recommended resources"
+  },
+  {
+    "objectID": "10-typescript-iii.html#curriculum",
+    "href": "10-typescript-iii.html#curriculum",
+    "title": "10  Typescript (iii)",
+    "section": "10.1 Curriculum",
+    "text": "10.1 Curriculum"
+  },
+  {
+    "objectID": "10-typescript-iii.html#exercises",
+    "href": "10-typescript-iii.html#exercises",
+    "title": "10  Typescript (iii)",
+    "section": "10.2 Exercises",
+    "text": "10.2 Exercises"
+  },
+  {
+    "objectID": "10-typescript-iii.html#recommended-resources",
+    "href": "10-typescript-iii.html#recommended-resources",
+    "title": "10  Typescript (iii)",
+    "section": "10.3 Recommended resources",
+    "text": "10.3 Recommended resources"
+  },
+  {
+    "objectID": "11-typescript-iv.html#curriculum",
+    "href": "11-typescript-iv.html#curriculum",
+    "title": "11  Typescript (iv)",
+    "section": "11.1 Curriculum",
+    "text": "11.1 Curriculum"
+  },
+  {
+    "objectID": "11-typescript-iv.html#exercises",
+    "href": "11-typescript-iv.html#exercises",
+    "title": "11  Typescript (iv)",
+    "section": "11.2 Exercises",
+    "text": "11.2 Exercises"
+  },
+  {
+    "objectID": "11-typescript-iv.html#recommended-resources",
+    "href": "11-typescript-iv.html#recommended-resources",
+    "title": "11  Typescript (iv)",
+    "section": "11.3 Recommended resources",
+    "text": "11.3 Recommended resources"
+  },
+  {
+    "objectID": "12-typescript-excel.html#curriculum",
+    "href": "12-typescript-excel.html#curriculum",
+    "title": "12  TypeScript in Excel",
+    "section": "12.1 Curriculum",
+    "text": "12.1 Curriculum"
+  },
+  {
+    "objectID": "12-typescript-excel.html#exercises",
+    "href": "12-typescript-excel.html#exercises",
+    "title": "12  TypeScript in Excel",
+    "section": "12.2 Exercises",
+    "text": "12.2 Exercises"
+  },
+  {
+    "objectID": "12-typescript-excel.html#solutions-to-exercises",
+    "href": "12-typescript-excel.html#solutions-to-exercises",
+    "title": "12  TypeScript in Excel",
+    "section": "12.3 Solutions to exercises",
+    "text": "12.3 Solutions to exercises"
+  },
+  {
+    "objectID": "12-typescript-excel.html#recommended-resources",
+    "href": "12-typescript-excel.html#recommended-resources",
+    "title": "12  TypeScript in Excel",
+    "section": "12.4 Recommended resources",
+    "text": "12.4 Recommended resources"
   }
 ]

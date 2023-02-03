@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Excel Programming and Automation - 5&nbsp; Programming in Excel (ii): Array functions, LET, and INDIRECT.</title>
+<title>Excel Programming and Automation - 12&nbsp; TypeScript in Excel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./06-lambdas-and-let-ii.html" rel="next">
-<link href="./04-dynamic-arrays.html" rel="prev">
+<link href="./11-typescript-iv.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions, <code>LET</code>, and <code>INDIRECT</code>.</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -121,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-lambdas-let.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions, <code>LET</code>, and <code>INDIRECT</code>.</span></a>
+  <a href="./05-lambdas-let.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions, <code>LET</code>, and <code>INDIRECT</code>.</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -156,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./12-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
+  <a href="./12-typescript-excel.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
   </div>
 </li>
     </ul>
@@ -168,22 +167,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#functionality" id="toc-functionality" class="nav-link active" data-scroll-target="#functionality"><span class="toc-section-number">5.1</span>  Functionality</a>
-  <ul class="collapse">
-  <li><a href="#make-array-constants-using-..." id="toc-make-array-constants-using-..." class="nav-link" data-scroll-target="#make-array-constants-using-..."><span class="toc-section-number">5.1.1</span>  Make array constants using <code>{...}</code></a></li>
-  <li><a href="#keep-or-remove-rowscolumns-with-take-and-drop" id="toc-keep-or-remove-rowscolumns-with-take-and-drop" class="nav-link" data-scroll-target="#keep-or-remove-rowscolumns-with-take-and-drop"><span class="toc-section-number">5.1.2</span>  Keep or remove rows/columns with <code>TAKE</code> and <code>DROP</code></a></li>
-  <li><a href="#select-rowscolumns-chooserows-and-choosecols" id="toc-select-rowscolumns-chooserows-and-choosecols" class="nav-link" data-scroll-target="#select-rowscolumns-chooserows-and-choosecols"><span class="toc-section-number">5.1.3</span>  Select rows/columns <code>CHOOSEROWS</code> and <code>CHOOSECOLS</code></a></li>
-  <li><a href="#manipulate-array-dimensions-with-torow-and-tocol" id="toc-manipulate-array-dimensions-with-torow-and-tocol" class="nav-link" data-scroll-target="#manipulate-array-dimensions-with-torow-and-tocol"><span class="toc-section-number">5.1.4</span>  Manipulate array dimensions with <code>TOROW</code> and <code>TOCOL</code></a></li>
-  <li><a href="#construct-arrays-with-hstack-and-vstack" id="toc-construct-arrays-with-hstack-and-vstack" class="nav-link" data-scroll-target="#construct-arrays-with-hstack-and-vstack"><span class="toc-section-number">5.1.5</span>  Construct arrays with <code>HSTACK</code> and <code>VSTACK</code></a></li>
-  <li><a href="#make-formulas-shorter-with-let" id="toc-make-formulas-shorter-with-let" class="nav-link" data-scroll-target="#make-formulas-shorter-with-let"><span class="toc-section-number">5.1.6</span>  Make formulas shorter with <code>LET</code></a></li>
-  <li><a href="#make-complex-functions-with-let" id="toc-make-complex-functions-with-let" class="nav-link" data-scroll-target="#make-complex-functions-with-let"><span class="toc-section-number">5.1.7</span>  Make complex functions with <code>LET</code></a></li>
-  <li><a href="#the-indirect-function" id="toc-the-indirect-function" class="nav-link" data-scroll-target="#the-indirect-function"><span class="toc-section-number">5.1.8</span>  The <code>INDIRECT</code> function</a></li>
-  </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="toc-section-number">5.2</span>  Applications</a>
-  <ul class="collapse">
-  <li><a href="#your-own-npv-function" id="toc-your-own-npv-function" class="nav-link" data-scroll-target="#your-own-npv-function"><span class="toc-section-number">5.2.1</span>  Your own <code>NPV</code> function</a></li>
-  <li><a href="#summarizing-tables-with-drop-down-lists" id="toc-summarizing-tables-with-drop-down-lists" class="nav-link" data-scroll-target="#summarizing-tables-with-drop-down-lists"><span class="toc-section-number">5.2.2</span>  Summarizing tables with drop-down lists</a></li>
-  </ul></li>
+  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">12.1</span>  Curriculum</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">12.2</span>  Exercises</a></li>
+  <li><a href="#solutions-to-exercises" id="toc-solutions-to-exercises" class="nav-link" data-scroll-target="#solutions-to-exercises"><span class="toc-section-number">12.3</span>  Solutions to exercises</a></li>
+  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">12.4</span>  Recommended resources</a></li>
   </ul>
 </nav>
     </div>
@@ -192,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programming in Excel (ii): Array functions, <code>LET</code>, and <code>INDIRECT</code>.</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></h1>
 </div>
 
 
@@ -220,72 +207,19 @@ Important
 <p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
 </div>
 </div>
-<section id="functionality" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="functionality"><span class="header-section-number">5.1</span> Functionality</h2>
-<section id="make-array-constants-using-..." class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="make-array-constants-using-..."><span class="header-section-number">5.1.1</span> Make array constants using <code>{...}</code></h3>
-<p>Array constants are custom made arrays. They be rows, columns, or two-dimensional.</p>
-<section id="resources" class="level4" data-number="5.1.1.1">
-<h4 data-number="5.1.1.1" class="anchored" data-anchor-id="resources"><span class="header-section-number">5.1.1.1</span> Resources</h4>
-<p>https://exceljet.net/glossary/array-constant</p>
+<section id="curriculum" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">12.1</span> Curriculum</h2>
 </section>
+<section id="exercises" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">12.2</span> Exercises</h2>
 </section>
-<section id="keep-or-remove-rowscolumns-with-take-and-drop" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="keep-or-remove-rowscolumns-with-take-and-drop"><span class="header-section-number">5.1.2</span> Keep or remove rows/columns with <code>TAKE</code> and <code>DROP</code></h3>
-<section id="resources-1" class="level4" data-number="5.1.2.1">
-<h4 data-number="5.1.2.1" class="anchored" data-anchor-id="resources-1"><span class="header-section-number">5.1.2.1</span> Resources</h4>
-<p>https://exceljet.net/functions/take-function https://exceljet.net/functions/drop-function</p>
+<section id="solutions-to-exercises" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="solutions-to-exercises"><span class="header-section-number">12.3</span> Solutions to exercises</h2>
 </section>
-</section>
-<section id="select-rowscolumns-chooserows-and-choosecols" class="level3" data-number="5.1.3">
-<h3 data-number="5.1.3" class="anchored" data-anchor-id="select-rowscolumns-chooserows-and-choosecols"><span class="header-section-number">5.1.3</span> Select rows/columns <code>CHOOSEROWS</code> and <code>CHOOSECOLS</code></h3>
-<p><code>CHOOSEROWS</code> and <code>CHOOSECOLS</code> lets you subset an array using numerical indexing.</p>
-<section id="resources-2" class="level4" data-number="5.1.3.1">
-<h4 data-number="5.1.3.1" class="anchored" data-anchor-id="resources-2"><span class="header-section-number">5.1.3.1</span> Resources</h4>
-<p>https://exceljet.net/functions/chooserows-function https://exceljet.net/functions/choosecols-function</p>
-</section>
-</section>
-<section id="manipulate-array-dimensions-with-torow-and-tocol" class="level3" data-number="5.1.4">
-<h3 data-number="5.1.4" class="anchored" data-anchor-id="manipulate-array-dimensions-with-torow-and-tocol"><span class="header-section-number">5.1.4</span> Manipulate array dimensions with <code>TOROW</code> and <code>TOCOL</code></h3>
-<p><code>TOROW</code> transforms an array to a row and <code>TOCOLS</code> transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as <code>FILTER</code> do not always work as intended when applied to two-dimensional arrays.</p>
-<section id="resources-3" class="level4" data-number="5.1.4.1">
-<h4 data-number="5.1.4.1" class="anchored" data-anchor-id="resources-3"><span class="header-section-number">5.1.4.1</span> Resources</h4>
-<p>https://exceljet.net/functions/tocol-function https://exceljet.net/functions/torow-function</p>
-</section>
-</section>
-<section id="construct-arrays-with-hstack-and-vstack" class="level3" data-number="5.1.5">
-<h3 data-number="5.1.5" class="anchored" data-anchor-id="construct-arrays-with-hstack-and-vstack"><span class="header-section-number">5.1.5</span> Construct arrays with <code>HSTACK</code> and <code>VSTACK</code></h3>
-<p><code>HSTACK</code> stacks arrays horizontally and <code>VSTACK</code> stacks arrays vertically. These functions are especially handy when making functions.</p>
-<section id="resources-4" class="level4" data-number="5.1.5.1">
-<h4 data-number="5.1.5.1" class="anchored" data-anchor-id="resources-4"><span class="header-section-number">5.1.5.1</span> Resources</h4>
-<p>https://exceljet.net/functions/hstack-function https://exceljet.net/functions/vstack-function</p>
-</section>
-</section>
-<section id="make-formulas-shorter-with-let" class="level3" data-number="5.1.6">
-<h3 data-number="5.1.6" class="anchored" data-anchor-id="make-formulas-shorter-with-let"><span class="header-section-number">5.1.6</span> Make formulas shorter with <code>LET</code></h3>
-<section id="resources-5" class="level4" data-number="5.1.6.1">
-<h4 data-number="5.1.6.1" class="anchored" data-anchor-id="resources-5"><span class="header-section-number">5.1.6.1</span> Resources</h4>
-<p>https://exceljet.net/functions/let-function</p>
-</section>
-</section>
-<section id="make-complex-functions-with-let" class="level3" data-number="5.1.7">
-<h3 data-number="5.1.7" class="anchored" data-anchor-id="make-complex-functions-with-let"><span class="header-section-number">5.1.7</span> Make complex functions with <code>LET</code></h3>
-</section>
-<section id="the-indirect-function" class="level3" data-number="5.1.8">
-<h3 data-number="5.1.8" class="anchored" data-anchor-id="the-indirect-function"><span class="header-section-number">5.1.8</span> The <code>INDIRECT</code> function</h3>
-<p>https://exceljet.net/functions/indirect-function</p>
-</section>
-</section>
-<section id="applications" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
-<section id="your-own-npv-function" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="your-own-npv-function"><span class="header-section-number">5.2.1</span> Your own <code>NPV</code> function</h3>
-</section>
-<section id="summarizing-tables-with-drop-down-lists" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="summarizing-tables-with-drop-down-lists"><span class="header-section-number">5.2.2</span> Summarizing tables with drop-down lists</h3>
+<section id="recommended-resources" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">12.4</span> Recommended resources</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -424,14 +358,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04-dynamic-arrays.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Programming in Excel (i): Introduction to <code>LAMBDA</code></span></span>
+      <a href="./11-typescript-iv.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06-lambdas-and-let-ii.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Programming in Excel (iii): Applications</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

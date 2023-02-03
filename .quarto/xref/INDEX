@@ -55,5 +55,23 @@
   },
   "14-typescript-excel.qmd": {
     "14-typescript-excel.html": "9769a735"
+  },
+  "07-pivot-tables.qmd": {
+    "07-pivot-tables.html": "d8005389"
+  },
+  "08-typescript-i.qmd": {
+    "08-typescript-i.html": "d59cc26a"
+  },
+  "09-typescript-ii.qmd": {
+    "09-typescript-ii.html": "18453881"
+  },
+  "10-typescript-iii.qmd": {
+    "10-typescript-iii.html": "ec155899"
+  },
+  "11-typescript-iv.qmd": {
+    "11-typescript-iv.html": "cd801cbf"
+  },
+  "12-typescript-excel.qmd": {
+    "12-typescript-excel.html": "47ab5f5b"
   }
 }

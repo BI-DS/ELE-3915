@@ -1,37 +1,62 @@
-# Programming in Excel (ii): Array functions
+# Programming in Excel (ii): Array functions, `LET`, and `INDIRECT`.
 
 ::: callout-important
 This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
 :::
 
-## Curriculum
+## Functionality
 
-Here is an example of a complex function.
+### Make array constants using `{...}`
+Array constants are custom made arrays. They be rows, columns, or two-dimensional.
 
-``` scala
-=LET(
-    tab; FILTER(vgsales; (vgsales[Genre] = genre) * (vgsales[Platform] = platform));
-    rows; {7; 8; 9; 10};
-    regions; {"NA"; "EU"; "JP"; "Other"};
-    VSTACK(
-        HSTACK(""; TRANSPOSE(Years));
-        HSTACK(
-            regions;
-            MAKEARRAY(
-                ROWS(rows);
-                ROWS(Years);
-                LAMBDA(row_index; year_index; 
-                LET(
-                    row;index(rows;row_index);
-                    year;index(Years;year_index);
-                    IFERROR(SUM(FILTER(CHOOSECOLS(tab; row); CHOOSECOLS(tab; 4) = year)); 0))
-                )
-            )
-        )
-    )
-)
-```
+#### Resources
+https://exceljet.net/glossary/array-constant
 
-## Exercises
+### Keep or remove rows/columns with `TAKE` and `DROP`
 
-## Recommended resources
+#### Resources
+
+https://exceljet.net/functions/take-function
+https://exceljet.net/functions/drop-function
+
+### Select rows/columns `CHOOSEROWS` and `CHOOSECOLS`
+`CHOOSEROWS` and `CHOOSECOLS` lets you subset an array using numerical indexing.  
+
+#### Resources
+
+https://exceljet.net/functions/chooserows-function
+https://exceljet.net/functions/choosecols-function
+
+### Manipulate array dimensions with `TOROW` and `TOCOL`
+
+`TOROW` transforms an array to a row and `TOCOLS` transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as `FILTER` do not always work as intended when applied to two-dimensional arrays.
+
+#### Resources
+https://exceljet.net/functions/tocol-function
+https://exceljet.net/functions/torow-function
+
+### Construct arrays with `HSTACK` and `VSTACK`
+`HSTACK` stacks arrays horizontally and `VSTACK` stacks arrays vertically. These functions are especially handy when making functions.
+
+#### Resources
+
+https://exceljet.net/functions/hstack-function
+https://exceljet.net/functions/vstack-function
+
+### Make formulas shorter with `LET`
+
+
+#### Resources
+https://exceljet.net/functions/let-function
+
+### Make complex functions with `LET`
+
+
+### The `INDIRECT` function
+https://exceljet.net/functions/indirect-function
+
+## Applications
+
+### Your own `NPV` function
+
+### Summarizing tables with drop-down lists
