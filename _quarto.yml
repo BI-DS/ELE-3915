@@ -14,12 +14,12 @@ book:
     - 04-dynamic-arrays.qmd
     - 05-lambdas-let.qmd
     - 06-lambdas-and-let-ii.qmd
-    - 09-power-pivot-and-dax.qmd
-    - 10-typescript-i.qmd
-    - 11-typescript-ii.qmd
-    - 12-typescript-iii.qmd
-    - 13-typescript-iv.qmd
-    - 14-typescript-excel.qmd
+    - 07-pivot-tables.qmd
+    - 08-typescript-i.qmd
+    - 09-typescript-ii.qmd
+    - 10-typescript-iii.qmd
+    - 11-typescript-iv.qmd
+    - 12-typescript-excel.qmd
 
 format:
   html:

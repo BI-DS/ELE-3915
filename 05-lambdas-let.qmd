@@ -29,4 +29,4 @@ This page is ***not finished***, but might contain notes from the course develop
 11. **Application:** Summarizing tables with drop-down lists. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/summarizing_tables.xlsx), [exercises](https://github.com/BI-DS/ELE-3915/blob/main/exercises/lecture05/summarizing_tables.xlsx), and video. 
 
 ## Lectures and exercises
-The lecture notes and videos for each curriculum point can be found above. Some simple exercises associated with the videos are also found above. Additional exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx), with [solutions](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05_solutions.xlsx)).
+The lecture notes and videos for each curriculum point can be found above. Some simple exercises associated with the videos are also found above. Additional exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx), with [solutions](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05_solutions.xlsx).
