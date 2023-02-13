@@ -9,8 +9,6 @@
 ### Make array constants using `{...}`
 Array constants are custom made arrays. They be rows, columns, or two-dimensional.
 
-
-
 #### Resources
 https://exceljet.net/glossary/array-constant
 
