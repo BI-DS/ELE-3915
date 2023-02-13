@@ -15,6 +15,16 @@ https://www.reddit.com/r/excel/comments/10zocml/countifs_with_months_and_data_va
 * https://www.reddit.com/r/excel/comments/10zwews/excel_advanced_cells_formatting_for_highest/
 * Also uses conditional formatting though - is that compatible?
 
+
+### Make initials from name
+* https://www.reddit.com/r/excel/comments/lzhy8a/is_there_a_function_that_will_reduce_full_names/
+
+### Splitting up cash flows evenly
+* https://www.reddit.com/r/excel/comments/1113edt/a_formula_to_split_yearly_cashflows_evenly_into/
+
+### Fetch names
+* https://www.reddit.com/r/excel/comments/1112dib/fetch_names_by_matching_numbers_in_a_table_to/
+
 ## Improving course.
 
 * Keeping roughly the same content, but maybe with reordering!
