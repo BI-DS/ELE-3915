@@ -169,11 +169,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">6.1</span>  Curriculum</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">6.2</span>  Exercises</a>
-  <ul class="collapse">
-  <li><a href="#utility-functions" id="toc-utility-functions" class="nav-link" data-scroll-target="#utility-functions"><span class="toc-section-number">6.2.1</span>  Utility functions</a></li>
-  </ul></li>
-  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">6.3</span>  Recommended resources</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">6.2</span>  Exercises</a></li>
   </ul>
 </nav>
     </div>
@@ -197,62 +193,37 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
-</div>
-</div>
 <section id="curriculum" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">6.1</span> Curriculum</h2>
 <p>Excel is equipped with many functions for handling dynamic arrays and <code>LAMBDA</code> functions. The most important are <code>FILTER</code>, <code>MAP</code> (and its cousins <code>BYCOL</code>, <code>BYROW</code>, and <code>MAKEARRAY</code>), and the pair <code>REDUCE</code> and <code>SCAN</code>.</p>
-<p>Most data analysis tasks can be done using a combination of <code>FILTER</code>, <code>MAP</code>, and <code>REDUCE/SCAN</code>, where array manipulation (e.g.&nbsp;<code>CHOOSEROWS</code> and <code>HSTACK</code>) and local variable (<code>LET</code>) are used as needed.</p>
 <p>The <code>REDUCE</code> and <code>SCAN</code> functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.</p>
 <p>We cover four functions in this lecture.</p>
-<ol type="1">
-<li><code>ISOMITTED</code> is used for optional arguments in <code>LAMBDA</code> functions.</li>
-<li><code>OFFSET</code>
-<ol type="1">
-<li><p>Compared to INDEX</p></li>
-<li><p>Compared to CHOOSEROWS.</p></li>
-<li><p>Is oldschool and does not work with dynamic arrays.</p></li>
-</ol></li>
-<li><code>REDUCE</code>
+<ul>
+<li><code>OFFSET</code>, an function used to reference ranges. In most cases it’s possible to use INDEX instead. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/01_offset.xlsx">Lecture notes.</a></li>
+<li><code>ISOMITTED</code> is used for optional arguments in <code>LAMBDA</code> functions. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/02_optional_arguments.xlsx">Lecture notes.</a></li>
+<li><code>REDUCE</code> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx">Lecture notes.</a>
 <ol type="1">
 <li><p><a href="https://www.youtube.com/watch?v=Gt7_BtFYfBw&amp;ab_channel=LearnGoogleSheets%26ExcelSpreadsheets">Excel REDUCE Function - LAMBDA Array Formulas in Excel &amp; Google Sheets</a></p></li>
 <li><p>Reduces an array into a single output.</p></li>
 <li><p>Generalizes <code>SUM</code> and <code>PRODUCT</code>.</p></li>
 </ol></li>
-<li><code>SCAN</code>.
+<li><code>SCAN</code>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx">Lecture notes.</a>
 <ol type="1">
 <li><p>Reduces an array, but keeps the output for all consecutive subarrays.</p></li>
 <li><p>Generalizes the cumulative <code>SUM</code>.</p></li>
 </ol></li>
+</ul>
+<p>We will also discuss four applications of the methods covered so far:</p>
+<ol type="1">
+<li>The FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of <code>FILTER</code>, <code>MAP</code>, and <code>REDUCE/SCAN</code>, where array manipulation (e.g.&nbsp;<code>CHOOSEROWS</code> and <code>HSTACK</code>) and local variable (<code>LET</code>) are used as needed. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx">Lecture notes.</a></li>
+<li><code>TAKEWHILE</code>: A function that takes rows from an array until a predicate vector is <code>FALSE</code>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/06_application_1_takewhile.xlsx">Lecture notes.</a></li>
+<li><code>GROUPBY</code>: A pattern used to group and aggregate data. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/07_application_2_groupby.xlsx">Lecture notes.</a></li>
+<li>Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/08_application_3_dynamic_dropdowns.xlsx">Lecture notes.</a></li>
 </ol>
 </section>
 <section id="exercises" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">6.2</span> Exercises</h2>
-<section id="utility-functions" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="utility-functions"><span class="header-section-number">6.2.1</span> Utility functions</h3>
-<p>Recall that <code>FILTER</code> does not take the same sort of arguments as e.g.&nbsp;<code>MAP</code>. Its second argument is an array of truth values, not a <code>LAMBDA</code> function. That is OK, but it’s inconsistent with most ofther functions of dynamic arrays. Make a function</p>
-<ul>
-<li><code>FILTER_(array; lambda)</code> Returns the array consisting of elements from <code>array</code> where <code>lambda(x)</code> is <code>TRUE</code>.</li>
-<li><code>TAKEWHILE(array; lambda)</code> Takes elements from <code>array</code> until the <code>LAMBDA</code> function <code>lambda</code> returns false.</li>
-<li><code>MAPWHILE(array;mapper;predicate)</code> Maps <code>mapper</code> onto array until the <code>predicate</code> function returns <code>FALSE</code>.</li>
-<li><code>FILTERBY(out;filter_array;lambda)</code> Returns the array consisting of elements from <code>out</code> where <code>lambda(x)</code> evaluates to <code>TRUE</code>.</li>
-<li><code>ENUMERATE(array)</code> Takes a one-dimensional array (a column) merges it with <code>SEQUENCE(R)</code>, yielding a two-dimensional array.</li>
-</ul>
-</section>
-</section>
-<section id="recommended-resources" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">6.3</span> Recommended resources</h2>
+<p>Most of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises06.xlsx">here</a>, with solution proposals included. <strong>This exercise sheet is NOT completely finished yet; I haven’t written solutions to all the exercises, and sometimes the solution is inside the main sheet! (14/2)</strong>.</p>
 
 
 </section>

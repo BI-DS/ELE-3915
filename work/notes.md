@@ -25,6 +25,14 @@ https://www.reddit.com/r/excel/comments/10zocml/countifs_with_months_and_data_va
 ### Fetch names
 * https://www.reddit.com/r/excel/comments/1112dib/fetch_names_by_matching_numbers_in_a_table_to/
 
+### XLOOKUP with search_mode.
+* https://www.reddit.com/r/excel/comments/111uhav/is_it_possible_to_add_a_formula_to_show_me_if_the/
+
+
+### min and max
+https://www.reddit.com/r/excel/comments/111hu3w/formula_to_return_min_max_or_actual/
+
+
 ## Improving course.
 
 * Keeping roughly the same content, but maybe with reordering!
@@ -35,6 +43,18 @@ https://www.reddit.com/r/excel/comments/10zocml/countifs_with_months_and_data_va
 ## For programming
 
 * https://www.reddit.com/r/excel/comments/10zzd18/split_out_artist_name_and_album/
+
+
+## More exercise ideas
+FILTER_(array; lambda) Returns the array consisting of elements from array where lambda(x) is TRUE.
+
+TAKEWHILE(array; lambda) Takes elements from array until the LAMBDA function lambda returns false.
+
+MAPWHILE(array;mapper;predicate) Maps mapper onto array until the predicate function returns FALSE.
+
+FILTERBY(out;filter_array;lambda) Returns the array consisting of elements from out where lambda(x) evaluates to TRUE.
+
+ENUMERATE(array) Takes a one-dimensional array (a column) merges it with SEQUENCE(R), yielding a two-dimensional array.
 
 
 
