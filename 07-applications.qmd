@@ -2,8 +2,8 @@
 
 This is a short lecture covering three applications of Excel programming.
 
-1.  `TAKEWHILE`: A function that takes rows from an array until a predicate vector is `FALSE`. [Lecture notes.](../slides/lecture07/01_application_1_takewhile.xlsx)
-2.  `GROUPBY`: A pattern used to group and aggregate data. [Lecture notes.](../slides/lecture07/02_application_2_groupby.xlsx)
-3.  Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. [Lecture notes.](../slides/lecture07/03_application_3_dynamic_dropdowns.xlsx)
+1.  `TAKEWHILE`: A function that takes rows from an array until a predicate vector is `FALSE`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture07/01_application_1_takewhile.xlsx)
+2.  `GROUPBY`: A pattern used to group and aggregate data. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture07/02_application_2_groupby.xlsx)
+3.  Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture07/03_application_3_dynamic_dropdowns.xlsx)
 
-Exercises can be found [here](../exercises/exercises07.xlsx)
+Exercises can be found [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises07.xlsx)
