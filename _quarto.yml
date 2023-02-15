@@ -5,7 +5,9 @@ project:
 book:
   title: "Excel Programming and Automation"
   author: "Jonas Moss"
-  date: "12.12.2022"
+  date: "15.02.2022"
+  search: false
+  repo-url: https://github.com/bi-ds/EBA-3500/
   chapters:
     - index.qmd
     - 01-excelbasics-i.qmd
@@ -23,7 +25,8 @@ book:
 
 format:
   html:
-    theme: simplex
+    theme: zephyr
+    highlight-style: nord
 
 editor: visual
 

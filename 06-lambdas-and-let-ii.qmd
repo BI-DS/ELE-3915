@@ -8,18 +8,18 @@ The `REDUCE` and `SCAN` functions are somewhat harder to understand than most of
 
 We cover four functions in this lecture.
 
-*   `OFFSET`, an function used to reference ranges. In most cases it's possible to use INDEX instead. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/01_offset.xlsx)
-*  `ISOMITTED` is used for optional arguments in `LAMBDA` functions. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/02_optional_arguments.xlsx)
-*  `REDUCE`. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes `SUM` and `PRODUCT`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx)
-*  `SCAN`.  Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative `SUM`.[Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx)
+-   `OFFSET`, an function used to reference ranges. In most cases it's possible to use INDEX instead. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/01_offset.xlsx)
+-   `ISOMITTED` is used for optional arguments in `LAMBDA` functions. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/02_optional_arguments.xlsx)
+-   `REDUCE`. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes `SUM` and `PRODUCT`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx)
+-   `SCAN`. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative `SUM`.[Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx)
 
 We will also discuss four applications of the methods covered so far:
 
-1. The FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of `FILTER`, `MAP`, and `REDUCE/SCAN`, where array manipulation (e.g. `CHOOSEROWS` and `HSTACK`) and local variable (`LET`) are used as needed. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx)
-2. `TAKEWHILE`: A function that takes rows from an array until a predicate vector is `FALSE`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/06_application_1_takewhile.xlsx)
-3. `GROUPBY`: A pattern used to group and aggregate data. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/07_application_2_groupby.xlsx)
+1.  The FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of `FILTER`, `MAP`, and `REDUCE/SCAN`, where array manipulation (e.g. `CHOOSEROWS` and `HSTACK`) and local variable (`LET`) are used as needed. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx)
+2.  `TAKEWHILE`: A function that takes rows from an array until a predicate vector is `FALSE`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/06_application_1_takewhile.xlsx)
+3.  `GROUPBY`: A pattern used to group and aggregate data. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/07_application_2_groupby.xlsx)
 4.  Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/08_application_3_dynamic_dropdowns.xlsx)
 
-
 ## Exercises
-Most of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises06.xlsx), with solution proposals included. **This exercise sheet is NOT completely finished yet; I haven't written solutions to all the exercises, and sometimes the solution is inside the main sheet! (14/2)**.
+
+Most of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises06.xlsx), with solution proposals included. 
