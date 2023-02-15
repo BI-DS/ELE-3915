@@ -7,7 +7,7 @@ book:
   author: "Jonas Moss"
   date: "15.02.2022"
   search: false
-  repo-url: https://github.com/bi-ds/EBA-3500/
+  repo-url: https://github.com/bi-ds/ELE-3915/
   chapters:
     - index.qmd
     - 01-excelbasics-i.qmd
