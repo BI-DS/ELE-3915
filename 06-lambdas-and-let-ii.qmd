@@ -10,16 +10,8 @@ We cover four functions in this lecture.
 
 *   `OFFSET`, an function used to reference ranges. In most cases it's possible to use INDEX instead. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/01_offset.xlsx)
 *  `ISOMITTED` is used for optional arguments in `LAMBDA` functions. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/02_optional_arguments.xlsx)
-*  `REDUCE` [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx)
-    1.  [Excel REDUCE Function - LAMBDA Array Formulas in Excel & Google Sheets](https://www.youtube.com/watch?v=Gt7_BtFYfBw&ab_channel=LearnGoogleSheets%26ExcelSpreadsheets)
-
-    2.  Reduces an array into a single output.
-
-    3.  Generalizes `SUM` and `PRODUCT`.
-*  `SCAN`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx)
-    1.  Reduces an array, but keeps the output for all consecutive subarrays.
-
-    2.  Generalizes the cumulative `SUM`.
+*  `REDUCE`. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes `SUM` and `PRODUCT`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx)
+*  `SCAN`.  Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative `SUM`.[Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx)
 
 We will also discuss four applications of the methods covered so far:
 

@@ -24,8 +24,6 @@ book:
 format:
   html:
     theme: simplex
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
 
