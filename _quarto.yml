@@ -5,7 +5,7 @@ project:
 book:
   title: "Excel Programming and Automation"
   author: "Jonas Moss"
-  date: "15.02.2022"
+  date: "02.15.2022"
   search: false
   repo-url: https://github.com/bi-ds/ELE-3915/
   chapters:
