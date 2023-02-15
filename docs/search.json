@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Excel Programming and Automation",
+    "section": "",
+    "text": "Introduction\nWelcome to the course ELE 3915 Excel Programming and Automation. You’re about to get your hands dirty! This course is about being able to do cool things Excel and TypeScript. It should give you the confidence to assert that you can program in Excel. And it gives you an introduction to TypeScript, a popular general-purpose programming language used in Microsoft Office on the web. The slides can be found on Github, in the slides directory.\nIf you need to get in contact with me, please send an e-mail to jonas.moss@bi.no. I do not check It’s learning often."
+  },
+  {
+    "objectID": "index.html#rough-structure",
+    "href": "index.html#rough-structure",
+    "title": "Excel Programming and Automation",
+    "section": "Rough structure",
+    "text": "Rough structure\nThe course is split into into four parts.\n\nLecture 1–3. Basic Excel usage, including formulas such as SUM ,COUNTIFS, INDEX, and MATCH. We focus on general mathematical formulas and data manipulation, in addition to simple formatting. Roughly speaking, these lectures cover the sort of Excel you should expect to see in lecacy Excel sheets. Most of the curriculum is covered on the excellent webpage ExcelJet.\nLecture 4–6. These lectures covers modern Excel formulas using dynamic arrays, LAMBDA and LET. Many of these features are just a couple of years old (as of 2023). I would not expect most employers to know about them. These features can do quite a bit of what Visual Basic for Applications (VBA) did in legacy worksheets. Programming using LAMBDA and LET is difficult, so make sure you take the exercises seriously. Again, most of the curriculum is covered on ExcelJet.\nLecture 7–9. Covers power query, power pivot, and DAX. These are modern tools for data visualization, data cleaning, and data manipulation. These tools are likely to form the core of your automation in Excel. They are widely regarded as the most important tools in the Excel analysts toolbox.\nLecture 10–14. These lectures contain an introduction to TypeScript and its application in Excel. Take note that we assume no previous exposure to programming in this course. TypeScript is a typed modification of JavaScript, the dominant language in web development, and has application far beyond Excel. The lectures will focus on programming in TypeScript in general, and the emphasis is on exercises."
+  },
+  {
+    "objectID": "index.html#a-note-on-difficulty",
+    "href": "index.html#a-note-on-difficulty",
+    "title": "Excel Programming and Automation",
+    "section": "A note on difficulty",
+    "text": "A note on difficulty\nMost of the course is about programming. Students often find programming hard. Don’t expect to be able solve every exercise in 5 minutes! Solving programming exercises often take a long time, and you need to persevere.\nBe aware that the difficulty of this course is uneven. For instance, lectures on LAMBDA and LET are harder than the first three lectures, and the lectures on power query are likely to be easier. Do not think this course will be a walk in the park.\nTo become a decent programmer it’s a good idea to\n\nDo a lot of exercises.\nSpend at least 20 minutes on each exercise before you give up. You need to think really hard. Don’t expect to be able to solve the problem without making an effort.\nDo the exercise yourself after you have looked at the solution! Close the window and do it from memory. It’s also a good idea to revisit the same exercise later on, e.g. the next day, to make sure you’re able to do it.\nTinker around, either modifying exercises yourself, or with your own ideas. If your tinkering leads to something cool, tell me! Use Kaggle to download data sets to tinker with and Mockaroo to generate fake but plausible-looking data sets.\n\nDo not to spend an inordinate amount of time on an exercise before you check the solution. If you have spent 1 hour on an exercise and haven’t gotten anywhere, it might be smart save yourself some time and look at the solution.\nMoreover, be aware that programming is often extremely frustrating. It’s like talking to someone who just simply refuses to understand what you’re saying, no matter how many times you repeat yourself. It’s normal and expected to feel frustrated!\nThere are many tips online about learning to program, e.g., this collection of tips. But it mostly boils down to spending a lot of time solving problems."
+  },
+  {
+    "objectID": "index.html#about-this-site",
+    "href": "index.html#about-this-site",
+    "title": "Excel Programming and Automation",
+    "section": "About this site",
+    "text": "About this site\nCurious how this site was made? It is written using Quarto books."
+  },
+  {
+    "objectID": "01-excelbasics-i.html#curriculum",
+    "href": "01-excelbasics-i.html#curriculum",
+    "title": "1  Excel basics (i): Introduction to formulas",
+    "section": "1.1 Curriculum",
+    "text": "1.1 Curriculum\n\nBasics of Excel, including cells, active cells, and ranges. Worksheets, basic formatting, data types and blank cells.\nUnderstanding what formulas and functions are, including copying of formulas using relative references.\nReading the signature and short documentation of functions inside Excel.\nUsing flash fill.\nUsing the operators +,-,/, and *.\nA couple of keyboard shortcuts.\n\nPress F2 to edit a cell and see its dependencies.\nPress escape to exit editing a formula.\nPress tab to auto-complete a formula.\nPress SHIFT to add contiguous cells to a selection.\nPress CTRL+DOWN to go to the last non-blank cell in a contiguous column. And CTRL+UP to go to the first column-wise, CTRL+LEFT-ARROW to go to the first row-wise, and CTRL+RIGHT-ARROW to go to the last row-wise.\nHold CTRL to add cells to a selection.\nPress F4 to taggle absolute references.\n\nLogical values; the functions AND, OR, NOT, and the operators =, <, >, <= and >=.\nOverview of error messages.\nKnowledge of the basic datatypes of Excel (number; text; logical; error; array), including how to use the TYPE function.\n\nBasic functions using one range as argument.\n\n\n\nName\nDescription\n\n\n\n\nSUM\nSum all numbers in a range.\n\n\nPRODUCT\nThe product of all numbers in a range.\n\n\nMAX\nThe maximum of numbers in a range.\n\n\nMIN\nThe minimum of numbers in a range.\n\n\nCOUNT/COUNTA/COUNTBLANK\nCount the number of cells in a range that contain numbers (COUNT), are non-empty (COUNTA), or empty (COUNTBLANK).\n\n\nROWS / COLS\nCounts the number of rows / columns in a reference.\n\n\nAVERAGE\nThe average of the numbers in a range. Empty cells are ignored.\n\n\nMEDIAN\nThe median of the numbers in a range.\n\n\nSTDEV\nThe standard deviation of the numbers in a range. Empty cells are ignored.\n\n\nCOUNTIF\nCounts cells satisfying a criterion."
+  },
+  {
+    "objectID": "01-excelbasics-i.html#lectures-and-exercises",
+    "href": "01-excelbasics-i.html#lectures-and-exercises",
+    "title": "1  Excel basics (i): Introduction to formulas",
+    "section": "1.2 Lectures and exercises",
+    "text": "1.2 Lectures and exercises\n\nRemember to look at the solutions only after giving the exercises a serious attempt. Solve the exercises yourself after looking at the solution.\n\nThe lecture slides are here. The Excel sheets used in the lecture, before being filled in, here. The lecture notes after being filled in are here.\nHere are the exercises; the solutions can be found here."
+  },
+  {
+    "objectID": "01-excelbasics-i.html#recommended-resources",
+    "href": "01-excelbasics-i.html#recommended-resources",
+    "title": "1  Excel basics (i): Introduction to formulas",
+    "section": "1.3 Recommended resources",
+    "text": "1.3 Recommended resources\nThere are many excellent video resources for Excel online. The content of this lecture is pretty standard stuff, and there are probably 100s of Youtube videoes covering essentially the same content. For instance, the formulas covered in this lecture are also covered by Kevin Stratvert here, but he goes a little further, covering harder formulas too. Leila Gharani introduces formulas here.\nThere are many introductions to flash fill too, e.g. this one.\nThere is a staggering number of shortcuts in Excel, see e.g. here. It’s easy to get overwhelmed by shortcuts, so make sure you don’t try to learn too many at once though!"
+  },
+  {
+    "objectID": "02-excelbasics-ii.html#curriculum",
+    "href": "02-excelbasics-ii.html#curriculum",
+    "title": "2  Excel basics (ii)",
+    "section": "2.1 Curriculum",
+    "text": "2.1 Curriculum\n\n2.1.1 Absolute and relative references.\n\nUnderstand the difference between absolute, mixed, and relative references and when to use each.\nUse F4 to cycle between the different kinds of references.\nLARGE and SMALL functions.\n\n\n\n2.1.2 Conditionals in Excel.\n\nUnderstand conditional formulas and their uses, such as the IF function, nested IFs, and the IFS function.\nLearn the conditional aggregation functions such as SUMIF/SUMIFS, COUNTIF/COUNTIFS, and MINIFS/MAXIFS functions.\n\n\n\n2.1.3 Additional mathematical functions\n\nMost of the math functions are relevant to us. We won’t cover all of them in detail. Here is a list of particularly important functions.\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nABS\nFind the absolute value of a number.\n\n\nEXP\nFind the value of e raised to the power of a number.\n\n\nLOG\nGet the logarithm of a number.\n\n\nFLOOR.MATH\nRound number down to nearest multiple.\n\n\nCEILING.MATH\nRound a number up to nearest multiple.\n\n\nROUND\nRound a number to a given number of digits.\n\n\nCOMBIN\nGet number of combinations without repetitions.\n\n\nMOD / QUOTIENT\nGet the remainder from division / Returns the quotient without a remainder.\n\n\nPOWER / ^ operator / SQRT\nRaise a number to a power or calculate the square root.\n\n\n\n\nLearn about how and when to use the SUMPRODUCT function.\n\n\n\n2.1.4 Working with text\n\nUnderstand the use of the & operator for concatenation.\nLearn to solve basic text manipulation tasks.\nGet an overview of the text manipulation functions in Excel and how to apply them.\n\n\n\n\n\n\n\n\nName\nDescription\n\n\n\n\nTRIM\nRemove extra spaces from text.\n\n\nTEXTBEFORE / TEXTAFTER\nExtract text before / after delimiter.\n\n\nEXACT\nCompare two text strings, taking case into account.\n\n\nSUBSTITUTE\nReplace text based on content.\n\n\nLOWER/UPPER\nTransform text to lower/upper case.\n\n\nPROPER\nCapitalize first letter of each word in text.\n\n\nCONCAT / TEXTJOIN\nJoin text values with(out) a delimiter.\n\n\nLEN\nGet the length of the text\n\n\nLEFT / MID / RIGHT\nExtract text from the left/middle/right of a string\n\n\nFIND\nGet location substring in a string.\n\n\nREPLACE\nReplace text based on location.\n\n\n\n\nNote that not all useful text manipulation tools are built-in and some tasks, such as counting the number of words in a text, may require creating custom functions.\nSome of the functions are outdated. You will see them used, but modern alternatives are better. This is arguably the case for LEFT; MID, and RIGHT, FIND and SEARCH. The modern variants will be covered in later lectures."
+  },
+  {
+    "objectID": "02-excelbasics-ii.html#lectures-and-exercises",
+    "href": "02-excelbasics-ii.html#lectures-and-exercises",
+    "title": "2  Excel basics (ii)",
+    "section": "2.2 Lectures and exercises",
+    "text": "2.2 Lectures and exercises\nThe Excel sheets used in the lecture, before being filled in, here. The lecture notes after being filled in are here. Here are the exercises; the solutions can be found here."
+  },
+  {
+    "objectID": "02-excelbasics-ii.html#recommended-resources",
+    "href": "02-excelbasics-ii.html#recommended-resources",
+    "title": "2  Excel basics (ii)",
+    "section": "2.3 Recommended resources",
+    "text": "2.3 Recommended resources\nThe YouTuber Chandoo discusses the text manipulation functions at length, so does the YouTuber Leila Gharani Leila Gharani. There are many good videos about these topics, and I strongly encourage you to explore them."
+  },
+  {
+    "objectID": "03-excelbasics-iii.html#curriculum",
+    "href": "03-excelbasics-iii.html#curriculum",
+    "title": "3  Excel basics (iii): Lookups and aggregation",
+    "section": "3.1 Curriculum",
+    "text": "3.1 Curriculum\n\n3.1.1 Lookup, aggregation, and filtering.\n\nKnowledge of the INDEX functions, XMATCH function, and how they work together.\nUnderstanding the modern look up function XLOOKUP.\nSome uses of the important functions UNIQUE and FILTER.\nUsing FILTER in data aggregation tasks.\nGain an understanding of how to use the lookup functions, FILTER, and UNIQUE to perform tasks of intermediate complexity.\n\n\n\n3.1.2 Miscellaneous\n\nIntroduction to data tables. This article contains more information than I went through in the lecture, and you should read it.\nWe have a cursory look at conditional formatting and very basic charts.\nIn addition, we consider basic use of data validation, i.e., making drop down lists.\nRanking and ordering using RANK.EQ, RANK.AVG, SORT, and SORTBY. Knowledge of sorting using Excel buttons."
+  },
+  {
+    "objectID": "03-excelbasics-iii.html#lectures-and-exercises",
+    "href": "03-excelbasics-iii.html#lectures-and-exercises",
+    "title": "3  Excel basics (iii): Lookups and aggregation",
+    "section": "3.2 Lectures and exercises",
+    "text": "3.2 Lectures and exercises\nThe Excel sheets used in the lecture, before being filled in, here. The lecture notes after being filled in are here. Here are the exercises; the solutions can be found here."
+  },
+  {
+    "objectID": "03-excelbasics-iii.html#recommended-resources",
+    "href": "03-excelbasics-iii.html#recommended-resources",
+    "title": "3  Excel basics (iii): Lookups and aggregation",
+    "section": "3.3 Recommended resources",
+    "text": "3.3 Recommended resources\nThe Wise Owl Training site has several exercises on lookup functions. They also have exercises covering other Excel topics.\nYou will be exposed to the function VLOOKUP outside of this course. It’s worth it to spend some minutes understanding the difference between XLOOKUP and VLOOKUP, see e.g. this video.\nData validation and conditional formatting are bigger topics that it would seem from our coverage. You can read more about them on ExcelJet or elsewhere."
+  },
+  {
+    "objectID": "04-dynamic-arrays.html#curriculum",
+    "href": "04-dynamic-arrays.html#curriculum",
+    "title": "4  Programming in Excel (i): Introduction to LAMBDA",
+    "section": "4.1 Curriculum",
+    "text": "4.1 Curriculum\n\nHow to define your own functions using LAMBDA and why it is useful.\nUsing the name manager.\nIntroduction to the Advanced Formula Environment, with emphasis on how to write documented and reusable code using the module functionality.\nConstruction of custom arrays with {}.\nWhat a dynamic arrays, what the #SPILL! error means, and how to use dynamic arrays are ranges.\nExtending the basic Excel functions with MAP, BYROW, BYCOLUMN.\nExercise in making custom functions using the tools we have learned until now.\nMaking random numbers using the function RANDARRAY."
+  },
+  {
+    "objectID": "04-dynamic-arrays.html#lectures-and-exercises",
+    "href": "04-dynamic-arrays.html#lectures-and-exercises",
+    "title": "4  Programming in Excel (i): Introduction to LAMBDA",
+    "section": "4.2 Lectures and exercises",
+    "text": "4.2 Lectures and exercises\nThe Excel sheets used in the lecture, before being filled in, here. The lecture notes after being filled in are here. Here are the exercises; the solutions can be found here."
+  },
+  {
+    "objectID": "04-dynamic-arrays.html#recommended-resources",
+    "href": "04-dynamic-arrays.html#recommended-resources",
+    "title": "4  Programming in Excel (i): Introduction to LAMBDA",
+    "section": "4.3 Recommended resources",
+    "text": "4.3 Recommended resources"
+  },
+  {
+    "objectID": "05-lambdas-let.html#curriculum",
+    "href": "05-lambdas-let.html#curriculum",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
+    "section": "5.1 Curriculum",
+    "text": "5.1 Curriculum\nSome of the lectures below contain exercises. These are designed to be done immediately after watching the video.\n\nMake array constants using {...} Array constants are custom made arrays. They can be rows, columns, or two-dimensional. Links: Lecture notes and video.\nSelect rows or columns using numerical indexing with CHOOSEROWS and CHOOSECOLS. Links: Lecture notes and video.\nKeep or remove rows/columns with TAKE and DROP. Links: Lecture notes and video.\nManipulate array dimensions with TOROW and TOCOL. TOROW transforms an array into a row and TOCOLS transforms an array into a column. These are useful for presenting data and important when creating functions, as some functions such as FILTER do not always work as intended when applied to two-dimensional arrays. Links: Lecture notes and video.\nConstruct arrays with HSTACK and VSTACK. HSTACK stacks arrays horizontally and VSTACK stacks arrays vertically. These functions are especially handy when making functions. Links: Lecture notes and video.\nMake arrays more presentable with WRAPCOLS and WRAPROWS. Links: Lecture notes and video.\nMake formulas shorter with LET. The LET lets us define local variables, helping us reduce repetition in formulas. Links: Lecture notes and video.\nMake complex functions with LET. The LET function is especially useful when making functions. We’ll have a look at several examples. Links: Lecture notes and video.\nUse the INDIRECT function to turn text into references. This function is function is widely used, but has largely been supplanted by modern array functions. Links: Lecture notes and video.\nApplication: We define our own variant of the net present value function, called NPV in Excel. Links: Lecture notes and video.\nApplication: Summarizing tables with drop-down lists. Links: Lecture notes and video."
+  },
+  {
+    "objectID": "05-lambdas-let.html#lectures-and-exercises",
+    "href": "05-lambdas-let.html#lectures-and-exercises",
+    "title": "5  Programming in Excel (ii): Array functions, LET, and INDIRECT.",
+    "section": "5.2 Lectures and exercises",
+    "text": "5.2 Lectures and exercises\nThe lecture notes and videos for each curriculum point can be found above. The main exercises are here, with solution proposals included."
+  },
+  {
+    "objectID": "06-lambdas-and-let-ii.html#curriculum",
+    "href": "06-lambdas-and-let-ii.html#curriculum",
+    "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
+    "section": "6.1 Curriculum",
+    "text": "6.1 Curriculum\nExcel is equipped with many functions for handling dynamic arrays and LAMBDA functions. The most important are FILTER, MAP (and its cousins BYCOL, BYROW, and MAKEARRAY), and the pair REDUCE and SCAN.\nThe REDUCE and SCAN functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.\nWe cover four functions in this lecture.\n\nOFFSET, an function used to reference ranges. In most cases it’s possible to use INDEX instead. Lecture notes.\nISOMITTED is used for optional arguments in LAMBDA functions. Lecture notes.\nREDUCE. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes SUM and PRODUCT. Lecture notes.\nSCAN. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative SUM.Lecture notes.\n\nIn addition, we cover the FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of FILTER, MAP, and REDUCE/SCAN, where array manipulation (e.g. CHOOSEROWS and HSTACK) and local variable (LET) are used as needed. Lecture notes."
+  },
+  {
+    "objectID": "06-lambdas-and-let-ii.html#exercises",
+    "href": "06-lambdas-and-let-ii.html#exercises",
+    "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
+    "section": "6.2 Exercises",
+    "text": "6.2 Exercises\nMost of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are here, with solution proposals included."
+  },
+  {
+    "objectID": "07-applications.html",
+    "href": "07-applications.html",
+    "title": "7  Programming in Excel (iv): Applications of Excel programming",
+    "section": "",
+    "text": "This is a short lecture covering three applications of Excel programming.\n\nTAKEWHILE: A function that takes rows from an array until a predicate vector is FALSE. Lecture notes.\nGROUPBY: A pattern used to group and aggregate data. Lecture notes.\nDynamic dropdows: How to make multiple dropdown lists where one depends on the other. Lecture notes.\n\nExercises can be found here"
+  },
+  {
+    "objectID": "07-pivot-tables.html#curriculum",
+    "href": "07-pivot-tables.html#curriculum",
+    "title": "8  Power pivot and DAX",
+    "section": "8.1 Curriculum",
+    "text": "8.1 Curriculum"
+  },
+  {
+    "objectID": "07-pivot-tables.html#exercises",
+    "href": "07-pivot-tables.html#exercises",
+    "title": "8  Power pivot and DAX",
+    "section": "8.2 Exercises",
+    "text": "8.2 Exercises"
+  },
+  {
+    "objectID": "07-pivot-tables.html#recommended-resources",
+    "href": "07-pivot-tables.html#recommended-resources",
+    "title": "8  Power pivot and DAX",
+    "section": "8.3 Recommended resources",
+    "text": "8.3 Recommended resources"
+  },
+  {
+    "objectID": "08-typescript-i.html#curriculum",
+    "href": "08-typescript-i.html#curriculum",
+    "title": "9  Typescript (i)",
+    "section": "9.1 Curriculum",
+    "text": "9.1 Curriculum\n\nPrimitive JavaScript values. A list can be found here.\n\nUndefined and Null.\nCore primitives: Boolean, Number, and String.\nSpecialized: BigInt and Symbol.\n\nArrays: Unnamed collection of objects.\nFunctions: Takes input vales and does something with them."
+  },
+  {
+    "objectID": "08-typescript-i.html#exercises",
+    "href": "08-typescript-i.html#exercises",
+    "title": "9  Typescript (i)",
+    "section": "9.2 Exercises",
+    "text": "9.2 Exercises"
+  },
+  {
+    "objectID": "08-typescript-i.html#recommended-resources",
+    "href": "08-typescript-i.html#recommended-resources",
+    "title": "9  Typescript (i)",
+    "section": "9.3 Recommended resources",
+    "text": "9.3 Recommended resources"
+  },
+  {
+    "objectID": "09-typescript-ii.html#curriculum",
+    "href": "09-typescript-ii.html#curriculum",
+    "title": "10  Typescript (ii)",
+    "section": "10.1 Curriculum",
+    "text": "10.1 Curriculum"
+  },
+  {
+    "objectID": "09-typescript-ii.html#exercises",
+    "href": "09-typescript-ii.html#exercises",
+    "title": "10  Typescript (ii)",
+    "section": "10.2 Exercises",
+    "text": "10.2 Exercises"
+  },
+  {
+    "objectID": "09-typescript-ii.html#recommended-resources",
+    "href": "09-typescript-ii.html#recommended-resources",
+    "title": "10  Typescript (ii)",
+    "section": "10.3 Recommended resources",
+    "text": "10.3 Recommended resources"
+  },
+  {
+    "objectID": "10-typescript-iii.html#curriculum",
+    "href": "10-typescript-iii.html#curriculum",
+    "title": "11  Typescript (iii)",
+    "section": "11.1 Curriculum",
+    "text": "11.1 Curriculum"
+  },
+  {
+    "objectID": "10-typescript-iii.html#exercises",
+    "href": "10-typescript-iii.html#exercises",
+    "title": "11  Typescript (iii)",
+    "section": "11.2 Exercises",
+    "text": "11.2 Exercises"
+  },
+  {
+    "objectID": "10-typescript-iii.html#recommended-resources",
+    "href": "10-typescript-iii.html#recommended-resources",
+    "title": "11  Typescript (iii)",
+    "section": "11.3 Recommended resources",
+    "text": "11.3 Recommended resources"
+  },
+  {
+    "objectID": "11-typescript-iv.html#curriculum",
+    "href": "11-typescript-iv.html#curriculum",
+    "title": "12  Typescript (iv)",
+    "section": "12.1 Curriculum",
+    "text": "12.1 Curriculum"
+  },
+  {
+    "objectID": "11-typescript-iv.html#exercises",
+    "href": "11-typescript-iv.html#exercises",
+    "title": "12  Typescript (iv)",
+    "section": "12.2 Exercises",
+    "text": "12.2 Exercises"
+  },
+  {
+    "objectID": "11-typescript-iv.html#recommended-resources",
+    "href": "11-typescript-iv.html#recommended-resources",
+    "title": "12  Typescript (iv)",
+    "section": "12.3 Recommended resources",
+    "text": "12.3 Recommended resources"
+  },
+  {
+    "objectID": "12-typescript-excel.html#curriculum",
+    "href": "12-typescript-excel.html#curriculum",
+    "title": "13  TypeScript in Excel",
+    "section": "13.1 Curriculum",
+    "text": "13.1 Curriculum"
+  },
+  {
+    "objectID": "12-typescript-excel.html#exercises",
+    "href": "12-typescript-excel.html#exercises",
+    "title": "13  TypeScript in Excel",
+    "section": "13.2 Exercises",
+    "text": "13.2 Exercises"
+  },
+  {
+    "objectID": "12-typescript-excel.html#solutions-to-exercises",
+    "href": "12-typescript-excel.html#solutions-to-exercises",
+    "title": "13  TypeScript in Excel",
+    "section": "13.3 Solutions to exercises",
+    "text": "13.3 Solutions to exercises"
+  },
+  {
+    "objectID": "12-typescript-excel.html#recommended-resources",
+    "href": "12-typescript-excel.html#recommended-resources",
+    "title": "13  TypeScript in Excel",
+    "section": "13.4 Recommended resources",
+    "text": "13.4 Recommended resources"
+  }
+]
