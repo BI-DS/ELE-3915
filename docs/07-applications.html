@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Excel Programming and Automation - 11&nbsp; Typescript (iii)</title>
+<title>Excel Programming and Automation - 7&nbsp; Programming in Excel (iv): Applications of Excel programming</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,8 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./11-typescript-iv.html" rel="next">
-<link href="./09-typescript-ii.html" rel="prev">
+<link href="./07-pivot-tables.html" rel="next">
+<link href="./06-lambdas-and-let-ii.html" rel="prev">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></a>
+  <a href="./07-applications.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-typescript-iii.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
+  <a href="./10-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,22 +157,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#curriculum" id="toc-curriculum" class="nav-link active" data-scroll-target="#curriculum"><span class="toc-section-number">11.1</span>  Curriculum</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="toc-section-number">11.2</span>  Exercises</a></li>
-  <li><a href="#recommended-resources" id="toc-recommended-resources" class="nav-link" data-scroll-target="#recommended-resources"><span class="toc-section-number">11.3</span>  Recommended resources</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></h1>
 </div>
 
 
@@ -187,30 +179,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is <strong><em>not finished</em></strong>, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.</p>
-</div>
-</div>
-<section id="curriculum" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">11.1</span> Curriculum</h2>
-</section>
-<section id="exercises" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">11.2</span> Exercises</h2>
-</section>
-<section id="recommended-resources" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="recommended-resources"><span class="header-section-number">11.3</span> Recommended resources</h2>
+<p>This is a short lecture covering three applications of Excel programming.</p>
+<ol type="1">
+<li><code>TAKEWHILE</code>: A function that takes rows from an array until a predicate vector is <code>FALSE</code>. <a href="../slides/lecture07/01_application_1_takewhile.xlsx">Lecture notes.</a></li>
+<li><code>GROUPBY</code>: A pattern used to group and aggregate data. <a href="../slides/lecture07/02_application_2_groupby.xlsx">Lecture notes.</a></li>
+<li>Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. <a href="../slides/lecture07/03_application_3_dynamic_dropdowns.xlsx">Lecture notes.</a></li>
+</ol>
+<p>Exercises can be found <a href="../exercises/exercises07.xlsx">here</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -346,15 +323,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./09-typescript-ii.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></span>
+      <a href="./06-lambdas-and-let-ii.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Programming in Excel (iii): <code>REDUCE</code>, <code>SCAN</code>, and applications</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./11-typescript-iv.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07-pivot-tables.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

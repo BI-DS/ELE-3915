@@ -130,7 +130,7 @@
     "href": "06-lambdas-and-let-ii.html#curriculum",
     "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
     "section": "6.1 Curriculum",
-    "text": "6.1 Curriculum\nExcel is equipped with many functions for handling dynamic arrays and LAMBDA functions. The most important are FILTER, MAP (and its cousins BYCOL, BYROW, and MAKEARRAY), and the pair REDUCE and SCAN.\nThe REDUCE and SCAN functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.\nWe cover four functions in this lecture.\n\nOFFSET, an function used to reference ranges. In most cases it’s possible to use INDEX instead. Lecture notes.\nISOMITTED is used for optional arguments in LAMBDA functions. Lecture notes.\nREDUCE. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes SUM and PRODUCT. Lecture notes.\nSCAN. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative SUM.Lecture notes.\n\nWe will also discuss four applications of the methods covered so far:\n\nThe FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of FILTER, MAP, and REDUCE/SCAN, where array manipulation (e.g. CHOOSEROWS and HSTACK) and local variable (LET) are used as needed. Lecture notes.\nTAKEWHILE: A function that takes rows from an array until a predicate vector is FALSE. Lecture notes.\nGROUPBY: A pattern used to group and aggregate data. Lecture notes.\nDynamic dropdows: How to make multiple dropdown lists where one depends on the other. Lecture notes."
+    "text": "6.1 Curriculum\nExcel is equipped with many functions for handling dynamic arrays and LAMBDA functions. The most important are FILTER, MAP (and its cousins BYCOL, BYROW, and MAKEARRAY), and the pair REDUCE and SCAN.\nThe REDUCE and SCAN functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.\nWe cover four functions in this lecture.\n\nOFFSET, an function used to reference ranges. In most cases it’s possible to use INDEX instead. Lecture notes.\nISOMITTED is used for optional arguments in LAMBDA functions. Lecture notes.\nREDUCE. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes SUM and PRODUCT. Lecture notes.\nSCAN. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative SUM.Lecture notes.\n\nIn addition, we cover the FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of FILTER, MAP, and REDUCE/SCAN, where array manipulation (e.g. CHOOSEROWS and HSTACK) and local variable (LET) are used as needed. Lecture notes."
   },
   {
     "objectID": "06-lambdas-and-let-ii.html#exercises",
@@ -140,136 +140,143 @@
     "text": "6.2 Exercises\nMost of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are here, with solution proposals included."
   },
   {
+    "objectID": "07-applications.html",
+    "href": "07-applications.html",
+    "title": "7  Programming in Excel (iv): Applications of Excel programming",
+    "section": "",
+    "text": "This is a short lecture covering three applications of Excel programming.\n\nTAKEWHILE: A function that takes rows from an array until a predicate vector is FALSE. Lecture notes.\nGROUPBY: A pattern used to group and aggregate data. Lecture notes.\nDynamic dropdows: How to make multiple dropdown lists where one depends on the other. Lecture notes.\n\nExercises can be found here"
+  },
+  {
     "objectID": "07-pivot-tables.html#curriculum",
     "href": "07-pivot-tables.html#curriculum",
-    "title": "7  Power pivot and DAX",
-    "section": "7.1 Curriculum",
-    "text": "7.1 Curriculum"
+    "title": "8  Power pivot and DAX",
+    "section": "8.1 Curriculum",
+    "text": "8.1 Curriculum"
   },
   {
     "objectID": "07-pivot-tables.html#exercises",
     "href": "07-pivot-tables.html#exercises",
-    "title": "7  Power pivot and DAX",
-    "section": "7.2 Exercises",
-    "text": "7.2 Exercises"
-  },
-  {
-    "objectID": "07-pivot-tables.html#recommended-resources",
-    "href": "07-pivot-tables.html#recommended-resources",
-    "title": "7  Power pivot and DAX",
-    "section": "7.3 Recommended resources",
-    "text": "7.3 Recommended resources"
-  },
-  {
-    "objectID": "08-typescript-i.html#curriculum",
-    "href": "08-typescript-i.html#curriculum",
-    "title": "8  Typescript (i)",
-    "section": "8.1 Curriculum",
-    "text": "8.1 Curriculum\n\nPrimitive JavaScript values. A list can be found here.\n\nUndefined and Null.\nCore primitives: Boolean, Number, and String.\nSpecialized: BigInt and Symbol.\n\nArrays: Unnamed collection of objects.\nFunctions: Takes input vales and does something with them."
-  },
-  {
-    "objectID": "08-typescript-i.html#exercises",
-    "href": "08-typescript-i.html#exercises",
-    "title": "8  Typescript (i)",
+    "title": "8  Power pivot and DAX",
     "section": "8.2 Exercises",
     "text": "8.2 Exercises"
   },
   {
-    "objectID": "08-typescript-i.html#recommended-resources",
-    "href": "08-typescript-i.html#recommended-resources",
-    "title": "8  Typescript (i)",
+    "objectID": "07-pivot-tables.html#recommended-resources",
+    "href": "07-pivot-tables.html#recommended-resources",
+    "title": "8  Power pivot and DAX",
     "section": "8.3 Recommended resources",
     "text": "8.3 Recommended resources"
   },
   {
-    "objectID": "09-typescript-ii.html#curriculum",
-    "href": "09-typescript-ii.html#curriculum",
-    "title": "9  Typescript (ii)",
+    "objectID": "08-typescript-i.html#curriculum",
+    "href": "08-typescript-i.html#curriculum",
+    "title": "9  Typescript (i)",
     "section": "9.1 Curriculum",
-    "text": "9.1 Curriculum"
+    "text": "9.1 Curriculum\n\nPrimitive JavaScript values. A list can be found here.\n\nUndefined and Null.\nCore primitives: Boolean, Number, and String.\nSpecialized: BigInt and Symbol.\n\nArrays: Unnamed collection of objects.\nFunctions: Takes input vales and does something with them."
   },
   {
-    "objectID": "09-typescript-ii.html#exercises",
-    "href": "09-typescript-ii.html#exercises",
-    "title": "9  Typescript (ii)",
+    "objectID": "08-typescript-i.html#exercises",
+    "href": "08-typescript-i.html#exercises",
+    "title": "9  Typescript (i)",
     "section": "9.2 Exercises",
     "text": "9.2 Exercises"
   },
   {
-    "objectID": "09-typescript-ii.html#recommended-resources",
-    "href": "09-typescript-ii.html#recommended-resources",
-    "title": "9  Typescript (ii)",
+    "objectID": "08-typescript-i.html#recommended-resources",
+    "href": "08-typescript-i.html#recommended-resources",
+    "title": "9  Typescript (i)",
     "section": "9.3 Recommended resources",
     "text": "9.3 Recommended resources"
   },
   {
-    "objectID": "10-typescript-iii.html#curriculum",
-    "href": "10-typescript-iii.html#curriculum",
-    "title": "10  Typescript (iii)",
+    "objectID": "09-typescript-ii.html#curriculum",
+    "href": "09-typescript-ii.html#curriculum",
+    "title": "10  Typescript (ii)",
     "section": "10.1 Curriculum",
     "text": "10.1 Curriculum"
   },
   {
-    "objectID": "10-typescript-iii.html#exercises",
-    "href": "10-typescript-iii.html#exercises",
-    "title": "10  Typescript (iii)",
+    "objectID": "09-typescript-ii.html#exercises",
+    "href": "09-typescript-ii.html#exercises",
+    "title": "10  Typescript (ii)",
     "section": "10.2 Exercises",
     "text": "10.2 Exercises"
   },
   {
-    "objectID": "10-typescript-iii.html#recommended-resources",
-    "href": "10-typescript-iii.html#recommended-resources",
-    "title": "10  Typescript (iii)",
+    "objectID": "09-typescript-ii.html#recommended-resources",
+    "href": "09-typescript-ii.html#recommended-resources",
+    "title": "10  Typescript (ii)",
     "section": "10.3 Recommended resources",
     "text": "10.3 Recommended resources"
   },
   {
-    "objectID": "11-typescript-iv.html#curriculum",
-    "href": "11-typescript-iv.html#curriculum",
-    "title": "11  Typescript (iv)",
+    "objectID": "10-typescript-iii.html#curriculum",
+    "href": "10-typescript-iii.html#curriculum",
+    "title": "11  Typescript (iii)",
     "section": "11.1 Curriculum",
     "text": "11.1 Curriculum"
   },
   {
-    "objectID": "11-typescript-iv.html#exercises",
-    "href": "11-typescript-iv.html#exercises",
-    "title": "11  Typescript (iv)",
+    "objectID": "10-typescript-iii.html#exercises",
+    "href": "10-typescript-iii.html#exercises",
+    "title": "11  Typescript (iii)",
     "section": "11.2 Exercises",
     "text": "11.2 Exercises"
   },
   {
-    "objectID": "11-typescript-iv.html#recommended-resources",
-    "href": "11-typescript-iv.html#recommended-resources",
-    "title": "11  Typescript (iv)",
+    "objectID": "10-typescript-iii.html#recommended-resources",
+    "href": "10-typescript-iii.html#recommended-resources",
+    "title": "11  Typescript (iii)",
     "section": "11.3 Recommended resources",
     "text": "11.3 Recommended resources"
   },
   {
-    "objectID": "12-typescript-excel.html#curriculum",
-    "href": "12-typescript-excel.html#curriculum",
-    "title": "12  TypeScript in Excel",
+    "objectID": "11-typescript-iv.html#curriculum",
+    "href": "11-typescript-iv.html#curriculum",
+    "title": "12  Typescript (iv)",
     "section": "12.1 Curriculum",
     "text": "12.1 Curriculum"
   },
   {
-    "objectID": "12-typescript-excel.html#exercises",
-    "href": "12-typescript-excel.html#exercises",
-    "title": "12  TypeScript in Excel",
+    "objectID": "11-typescript-iv.html#exercises",
+    "href": "11-typescript-iv.html#exercises",
+    "title": "12  Typescript (iv)",
     "section": "12.2 Exercises",
     "text": "12.2 Exercises"
   },
   {
+    "objectID": "11-typescript-iv.html#recommended-resources",
+    "href": "11-typescript-iv.html#recommended-resources",
+    "title": "12  Typescript (iv)",
+    "section": "12.3 Recommended resources",
+    "text": "12.3 Recommended resources"
+  },
+  {
+    "objectID": "12-typescript-excel.html#curriculum",
+    "href": "12-typescript-excel.html#curriculum",
+    "title": "13  TypeScript in Excel",
+    "section": "13.1 Curriculum",
+    "text": "13.1 Curriculum"
+  },
+  {
+    "objectID": "12-typescript-excel.html#exercises",
+    "href": "12-typescript-excel.html#exercises",
+    "title": "13  TypeScript in Excel",
+    "section": "13.2 Exercises",
+    "text": "13.2 Exercises"
+  },
+  {
     "objectID": "12-typescript-excel.html#solutions-to-exercises",
     "href": "12-typescript-excel.html#solutions-to-exercises",
-    "title": "12  TypeScript in Excel",
-    "section": "12.3 Solutions to exercises",
-    "text": "12.3 Solutions to exercises"
+    "title": "13  TypeScript in Excel",
+    "section": "13.3 Solutions to exercises",
+    "text": "13.3 Solutions to exercises"
   },
   {
     "objectID": "12-typescript-excel.html#recommended-resources",
     "href": "12-typescript-excel.html#recommended-resources",
-    "title": "12  TypeScript in Excel",
-    "section": "12.4 Recommended resources",
-    "text": "12.4 Recommended resources"
+    "title": "13  TypeScript in Excel",
+    "section": "13.4 Recommended resources",
+    "text": "13.4 Recommended resources"
   }
 ]

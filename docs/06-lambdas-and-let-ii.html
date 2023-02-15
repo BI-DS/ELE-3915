@@ -25,7 +25,7 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./07-pivot-tables.html" rel="next">
+<link href="./07-applications.html" rel="next">
 <link href="./05-lambdas-let.html" rel="prev">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -119,32 +119,37 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-pivot-tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></a>
+  <a href="./07-applications.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-typescript-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Typescript (i)</span></a>
+  <a href="./07-pivot-tables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-typescript-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></a>
+  <a href="./08-typescript-i.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Typescript (i)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
+  <a href="./09-typescript-ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Typescript (ii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-typescript-iv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></a>
+  <a href="./10-typescript-iii.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Typescript (iii)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./12-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
+  <a href="./11-typescript-iv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Typescript (iv)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-typescript-excel.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">TypeScript in Excel</span></a>
   </div>
 </li>
     </ul>
@@ -192,13 +197,7 @@ ul.task-list li input[type="checkbox"] {
 <li><code>REDUCE</code>. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes <code>SUM</code> and <code>PRODUCT</code>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx">Lecture notes.</a></li>
 <li><code>SCAN</code>. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative <code>SUM</code>.<a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx">Lecture notes.</a></li>
 </ul>
-<p>We will also discuss four applications of the methods covered so far:</p>
-<ol type="1">
-<li>The FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of <code>FILTER</code>, <code>MAP</code>, and <code>REDUCE/SCAN</code>, where array manipulation (e.g.&nbsp;<code>CHOOSEROWS</code> and <code>HSTACK</code>) and local variable (<code>LET</code>) are used as needed. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx">Lecture notes.</a></li>
-<li><code>TAKEWHILE</code>: A function that takes rows from an array until a predicate vector is <code>FALSE</code>. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/06_application_1_takewhile.xlsx">Lecture notes.</a></li>
-<li><code>GROUPBY</code>: A pattern used to group and aggregate data. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/07_application_2_groupby.xlsx">Lecture notes.</a></li>
-<li>Dynamic dropdows: How to make multiple dropdown lists where one depends on the other. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/08_application_3_dynamic_dropdowns.xlsx">Lecture notes.</a></li>
-</ol>
+<p>In addition, we cover the FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of <code>FILTER</code>, <code>MAP</code>, and <code>REDUCE/SCAN</code>, where array manipulation (e.g.&nbsp;<code>CHOOSEROWS</code> and <code>HSTACK</code>) and local variable (<code>LET</code>) are used as needed. <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx">Lecture notes.</a></p>
 </section>
 <section id="exercises" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="exercises"><span class="header-section-number">6.2</span> Exercises</h2>
@@ -341,7 +340,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./05-lambdas-let.html" class="pagination-link">
@@ -349,8 +347,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./07-pivot-tables.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Power pivot and DAX</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07-applications.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programming in Excel (iv): Applications of Excel programming</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

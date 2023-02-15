@@ -16,6 +16,7 @@ book:
     - 04-dynamic-arrays.qmd
     - 05-lambdas-let.qmd
     - 06-lambdas-and-let-ii.qmd
+    - 07-applications.qmd
     - 07-pivot-tables.qmd
     - 08-typescript-i.qmd
     - 09-typescript-ii.qmd
