@@ -1,6 +1,68 @@
 https://www.reddit.com/r/educationalgifs/comments/3nc4fc/how_to_improve_excel_tables_with_minimalism_xpost/
 
 
+
+## Mock exam for pure Excel
+
+The final exam will be divided into two parts. The first part concerns pure Excel, the second part TypeScript. We have not decided how to conduct the TypeScript part yet. The pure Excel part will be divided into two: 
+
+1. **Writing functions.** You will be asked to solve several programming problems focussed on LAMBDA functions. Each exercise will ask you to write a function, and you get three tests to use it on. The scoring of the exercises will be fully automatic, as you will deliver only a text file containing the function definitions. We have seven tests in addition to the three you have. Each exercises is scored x/10% percent, where x is the number of tests you have passed. We have opted for this method as it is fully transparent and automatic, so there is no potential for bias in the evaluation.
+2. **Doing data analysis.** 
+
+I'm currently in the process of writing a mock exam for the Excel part of the course. It should be ready next week.
+
+
+### Functions
+
+#### Very easy
+##### Positive sum 
+Make a function that takes a dynamic array and calculates the sum of the positive elements in the array.
+
+`POSSUM = LAMBDA(arr, SUM(arr * (--(ARR>0))));`
+
+##### Make negative
+Make a function that takes a dynamic array as input. Each number in the array should be made negative, i.e., 1 should be transformed to -1 but -5 should stay the same. Elements that aren't numbers should be left alone.
+
+
+
+##### Repeat text n times.
+Make a funtion REPEAT(text, n) that takes a text and repeats it n times.
+
+##### Count of positives and sum of negatives
+Make a function POSCOUNTNEGSUM(array) that returns a column vector whose first element is the number of positive elements in the array and second element is the sum of negative elements.
+
+#### Easy
+
+##### Count number of vowels
+The COUNTVOWEL(text) counts the numbers of vowels in a text.
+
+##### Shortest words
+Make a function SHORTESTWORDS that takes a text and returns a column containing all the shortest words, as separated by spaces. You can ignore punctuation.
+
+##### Reverse a column
+Make a function that reverses the elements of a column.
+
+##### Reverse the words in a text
+
+##### Remove the minimum element from an array
+
+##### Check if an array is ordered
+
+##### Largest pairsum
+
+#### Medium
+
+##### Windows function
+
+##### Maximimal pair
+
+##### Maximal adjacent three elements
+
+### Practical problems
+
+
+
+
 ## Exercise ideas
 
 * Using FILTER and UNIQUE. https://www.reddit.com/r/excel/comments/10zfjg8/a_hard_formula_for_you_guys_that_would_spare_my/
