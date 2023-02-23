@@ -1,35 +1,35 @@
 # Programming in Excel (ii): Array functions, `LET`, and `INDIRECT`.
 
-::: callout-warning
-(7/2 2023) The lecture notes, exercises, and curricula are finished, but not all the videos.
+::: callout-important
+This page is ***not finished yet***.
 :::
 
 ## Curriculum
 
 Some of the lectures below contain exercises. These are designed to be done immediately after watching the video.
 
-1.  Make [array constants](https://exceljet.net/glossary/array-constant) using `{...}` Array constants are custom made arrays. They can be rows, columns, or two-dimensional. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/array_constants.xlsx) and video.
+1. Make [array constants](https://exceljet.net/glossary/array-constant) using `{...}` Array constants are custom made arrays. They be rows, columns, or two-dimensional. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/array_constants.xlsx) and video. 
 
-2.  Select rows or columns using numerical indexing with [`CHOOSEROWS`](https://exceljet.net/functions/chooserows-function) and [`CHOOSECOLS`](https://exceljet.net/functions/choosecols-function). *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/choosecols_chooserows.xlsx) and video.
+2. Select rows or columns using numerical indexing with [`CHOOSEROWS`](https://exceljet.net/functions/chooserows-function) and [`CHOOSECOLS`](https://exceljet.net/functions/choosecols-function).  *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/choosecols_chooserows.xlsx)  and video. 
 
-3.  Keep or remove rows/columns with [`TAKE`](https://exceljet.net/functions/take-function) and [`DROP`](https://exceljet.net/functions/drop-function). *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/take_drop.xlsx) and video.
+3. Keep or remove rows/columns with [`TAKE`](https://exceljet.net/functions/take-function) and [`DROP`](https://exceljet.net/functions/drop-function). *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/take_drop.xlsx) and video. 
 
-4.  Manipulate array dimensions with [`TOROW`](https://exceljet.net/functions/torow-function) and [`TOCOL`](https://exceljet.net/functions/tocol-function). `TOROW` transforms an array into a row and `TOCOLS` transforms an array into a column. These are useful for presenting data and important when creating functions, as some functions such as `FILTER` do not always work as intended when applied to two-dimensional arrays. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/torow_tocol.xlsx) and video.
+4. Manipulate array dimensions with [`TOROW`](https://exceljet.net/functions/torow-function) and [`TOCOL`](https://exceljet.net/functions/tocol-function). `TOROW` transforms an array to a row and `TOCOLS` transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as `FILTER` do not always work as intended when applied to two-dimensional arrays.  *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/torow_tocol.xlsx) and video. 
 
-5.  Construct arrays with [`HSTACK`](https://exceljet.net/functions/hstack-function) and [`VSTACK`](https://exceljet.net/functions/vstack-function). `HSTACK` stacks arrays horizontally and `VSTACK` stacks arrays vertically. These functions are especially handy when making functions. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/hstack_vstack.xlsx) and video.
+5. Construct arrays with [`HSTACK`](https://exceljet.net/functions/hstack-function) and [`VSTACK`](https://exceljet.net/functions/vstack-function).
+`HSTACK` stacks arrays horizontally and `VSTACK` stacks arrays vertically. These functions are especially handy when making functions. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/hstack_vstack.xlsx) and video. 
 
-6.  Make arrays more presentable with [`WRAPCOLS`](https://exceljet.net/functions/wrapcols-function) and [`WRAPROWS`](https://exceljet.net/functions/wraprows-function). *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/wrapcols_wraprows.xlsx) and video.
+6. Make arrays more presentable with [`WRAPCOLS`](https://exceljet.net/functions/wrapcols-function) and [`WRAPROWS`](https://exceljet.net/functions/wraprows-function). *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/wrapcols_wraprows.xlsx) and video. 
 
-7.  Make formulas shorter with [`LET`](https://exceljet.net/functions/let-function). The `LET` lets us define *local variables*, helping us reduce repetition in formulas. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_simple_formulas.xlsx) and video.
+7. Make formulas shorter with [`LET`](https://exceljet.net/functions/let-function). The `LET` lets us define *local variables*, helping us reduce repetition in formulas. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_simple_formulas.xlsx) and video. 
 
-8.  Make complex functions with `LET`. The `LET` function is especially useful when making functions. We'll have a look at several examples. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_complex_functions.xlsx) and video.
+8. Make complex functions with `LET`. The `LET` function is especially useful when making functions. We'll have a look at several examples. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_complex_functions.xlsx) and video. 
 
-9.  Use the [`INDIRECT`](https://exceljet.net/functions/indirect-function) function to turn text into references. This function is function is widely used, but has largely been supplanted by modern array functions. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/indirect_function.xlsx) and video.
+9. Use the [`INDIRECT`](https://exceljet.net/functions/indirect-function) function to turn text into references. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/indirect_function.xlsx) and video. 
 
-10. **Application:** We define our own variant of the net present value function, called `NPV` in Excel. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/your_own_npv.xlsx) and video.
+10. **Application:** We define our own variant of the net present value function, called `NPV` in Excel. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/your_own_npv.xlsx) and video. 
 
-11. **Application:** Summarizing tables with drop-down lists. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/summarizing_tables.xlsx) and video.
+11. **Application:** Summarizing tables with drop-down lists. *Links:* [Lecture notes](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/summarizing_tables.xlsx) and video. 
 
 ## Lectures and exercises
-
-The lecture notes and videos for each curriculum point can be found above. The main exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx), with solution proposals included.
+The lecture notes and videos for each curriculum point can be found above. Some simple exercises associated with the videos are also found above. The main exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx), with solution proposals included.

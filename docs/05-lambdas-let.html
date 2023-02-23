@@ -186,39 +186,39 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Warning
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>(7/2 2023) The lecture notes, exercises, and curricula are finished, but not all the videos.</p>
+<p>This page is <strong><em>not finished yet</em></strong>.</p>
 </div>
 </div>
 <section id="curriculum" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">5.1</span> Curriculum</h2>
 <p>Some of the lectures below contain exercises. These are designed to be done immediately after watching the video.</p>
 <ol type="1">
-<li><p>Make <a href="https://exceljet.net/glossary/array-constant">array constants</a> using <code>{...}</code> Array constants are custom made arrays. They can be rows, columns, or two-dimensional. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/array_constants.xlsx">Lecture notes</a> and video.</p></li>
+<li><p>Make <a href="https://exceljet.net/glossary/array-constant">array constants</a> using <code>{...}</code> Array constants are custom made arrays. They be rows, columns, or two-dimensional. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/array_constants.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Select rows or columns using numerical indexing with <a href="https://exceljet.net/functions/chooserows-function"><code>CHOOSEROWS</code></a> and <a href="https://exceljet.net/functions/choosecols-function"><code>CHOOSECOLS</code></a>. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/choosecols_chooserows.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Keep or remove rows/columns with <a href="https://exceljet.net/functions/take-function"><code>TAKE</code></a> and <a href="https://exceljet.net/functions/drop-function"><code>DROP</code></a>. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/take_drop.xlsx">Lecture notes</a> and video.</p></li>
-<li><p>Manipulate array dimensions with <a href="https://exceljet.net/functions/torow-function"><code>TOROW</code></a> and <a href="https://exceljet.net/functions/tocol-function"><code>TOCOL</code></a>. <code>TOROW</code> transforms an array into a row and <code>TOCOLS</code> transforms an array into a column. These are useful for presenting data and important when creating functions, as some functions such as <code>FILTER</code> do not always work as intended when applied to two-dimensional arrays. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/torow_tocol.xlsx">Lecture notes</a> and video.</p></li>
+<li><p>Manipulate array dimensions with <a href="https://exceljet.net/functions/torow-function"><code>TOROW</code></a> and <a href="https://exceljet.net/functions/tocol-function"><code>TOCOL</code></a>. <code>TOROW</code> transforms an array to a row and <code>TOCOLS</code> transforms an array to a column. These are useful for presenting data. They are important when creating functions, as some functions such as <code>FILTER</code> do not always work as intended when applied to two-dimensional arrays. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/torow_tocol.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Construct arrays with <a href="https://exceljet.net/functions/hstack-function"><code>HSTACK</code></a> and <a href="https://exceljet.net/functions/vstack-function"><code>VSTACK</code></a>. <code>HSTACK</code> stacks arrays horizontally and <code>VSTACK</code> stacks arrays vertically. These functions are especially handy when making functions. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/hstack_vstack.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Make arrays more presentable with <a href="https://exceljet.net/functions/wrapcols-function"><code>WRAPCOLS</code></a> and <a href="https://exceljet.net/functions/wraprows-function"><code>WRAPROWS</code></a>. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/wrapcols_wraprows.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Make formulas shorter with <a href="https://exceljet.net/functions/let-function"><code>LET</code></a>. The <code>LET</code> lets us define <em>local variables</em>, helping us reduce repetition in formulas. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_simple_formulas.xlsx">Lecture notes</a> and video.</p></li>
 <li><p>Make complex functions with <code>LET</code>. The <code>LET</code> function is especially useful when making functions. We’ll have a look at several examples. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/let_complex_functions.xlsx">Lecture notes</a> and video.</p></li>
-<li><p>Use the <a href="https://exceljet.net/functions/indirect-function"><code>INDIRECT</code></a> function to turn text into references. This function is function is widely used, but has largely been supplanted by modern array functions. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/indirect_function.xlsx">Lecture notes</a> and video.</p></li>
+<li><p>Use the <a href="https://exceljet.net/functions/indirect-function"><code>INDIRECT</code></a> function to turn text into references. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/indirect_function.xlsx">Lecture notes</a> and video.</p></li>
 <li><p><strong>Application:</strong> We define our own variant of the net present value function, called <code>NPV</code> in Excel. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/your_own_npv.xlsx">Lecture notes</a> and video.</p></li>
 <li><p><strong>Application:</strong> Summarizing tables with drop-down lists. <em>Links:</em> <a href="https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture05/summarizing_tables.xlsx">Lecture notes</a> and video.</p></li>
 </ol>
 </section>
 <section id="lectures-and-exercises" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="lectures-and-exercises"><span class="header-section-number">5.2</span> Lectures and exercises</h2>
-<p>The lecture notes and videos for each curriculum point can be found above. The main exercises are <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx">here</a>, with solution proposals included.</p>
+<p>The lecture notes and videos for each curriculum point can be found above. Some simple exercises associated with the videos are also found above. The main exercises are <a href="https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises05.xlsx">here</a>, with solution proposals included.</p>
 
 
 </section>
