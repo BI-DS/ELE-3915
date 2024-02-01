@@ -130,21 +130,14 @@
     "href": "06-lambdas-and-let-ii.html#curriculum",
     "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
     "section": "6.1 Curriculum",
-    "text": "6.1 Curriculum\nExcel is equipped with many functions for handling dynamic arrays and LAMBDA functions. The most important are FILTER, MAP (and its cousins BYCOL, BYROW, and MAKEARRAY), and the pair REDUCE and SCAN.\nMost data analysis tasks can be done using a combination of FILTER, MAP, and REDUCE/SCAN, where array manipulation (e.g. CHOOSEROWS and HSTACK) and local variable (LET) are used as needed.\nThe REDUCE and SCAN functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.\nWe cover four functions in this lecture.\n\nISOMITTED is used for optional arguments in LAMBDA functions.\nOFFSET\n\nCompared to INDEX\nCompared to CHOOSEROWS.\nIs oldschool and does not work with dynamic arrays.\n\nREDUCE\n\nExcel REDUCE Function - LAMBDA Array Formulas in Excel & Google Sheets\nReduces an array into a single output.\nGeneralizes SUM and PRODUCT.\n\nSCAN.\n\nReduces an array, but keeps the output for all consecutive subarrays.\nGeneralizes the cumulative SUM."
+    "text": "6.1 Curriculum\nExcel is equipped with many functions for handling dynamic arrays and LAMBDA functions. The most important are FILTER, MAP (and its cousins BYCOL, BYROW, and MAKEARRAY), and the pair REDUCE and SCAN.\nThe REDUCE and SCAN functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.\nWe cover four functions in this lecture.\n\nOFFSET, an function used to reference ranges. In most cases it’s possible to use INDEX instead. Lecture notes.\nISOMITTED is used for optional arguments in LAMBDA functions. Lecture notes.\nREDUCE. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes SUM and PRODUCT. Lecture notes.\nSCAN. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative SUM.Lecture notes.\n\nIn addition, we cover the FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of FILTER, MAP, and REDUCE/SCAN, where array manipulation (e.g. CHOOSEROWS and HSTACK) and local variable (LET) are used as needed. Lecture notes."
   },
   {
     "objectID": "06-lambdas-and-let-ii.html#exercises",
     "href": "06-lambdas-and-let-ii.html#exercises",
     "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
     "section": "6.2 Exercises",
-    "text": "6.2 Exercises\n\n6.2.1 Utility functions\nRecall that FILTER does not take the same sort of arguments as e.g. MAP. Its second argument is an array of truth values, not a LAMBDA function. That is OK, but it’s inconsistent with most ofther functions of dynamic arrays. Make a function\n\nFILTER_(array; lambda) Returns the array consisting of elements from array where lambda(x) is TRUE.\nTAKEWHILE(array; lambda) Takes elements from array until the LAMBDA function lambda returns false.\nMAPWHILE(array;mapper;predicate) Maps mapper onto array until the predicate function returns FALSE.\nFILTERBY(out;filter_array;lambda) Returns the array consisting of elements from out where lambda(x) evaluates to TRUE.\nENUMERATE(array) Takes a one-dimensional array (a column) merges it with SEQUENCE(R), yielding a two-dimensional array."
-  },
-  {
-    "objectID": "06-lambdas-and-let-ii.html#recommended-resources",
-    "href": "06-lambdas-and-let-ii.html#recommended-resources",
-    "title": "6  Programming in Excel (iii): REDUCE, SCAN, and applications",
-    "section": "6.3 Recommended resources",
-    "text": "6.3 Recommended resources"
+    "text": "6.2 Exercises\nMost of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are here, with solution proposals included."
   },
   {
     "objectID": "07-applications.html",

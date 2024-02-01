@@ -1,0 +1,72 @@
+---
+title: "Lecture 2. Excel basics (ii)"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+
+## Curriculum
+
+### Absolute and relative references
+
+-   Understand the difference between absolute, mixed, and relative references and when to use each.
+-   Use F4 to cycle between the different kinds of references.
+-   [`LARGE`](https://exceljet.net/functions/large-function) and [`SMALL`](https://exceljet.net/functions/small-function) functions.
+
+### Conditionals and conditional aggregation
+
+-   Understand conditional formulas and their uses, such as the [`IF`](https://exceljet.net/functions/if-function) function, nested `IF`s, and the [`IFS`](https://exceljet.net/functions/ifs-function) function.
+-   Learn the conditional aggregation functions such as [`SUMIF`](https://exceljet.net/functions/sumif-function)/[`SUMIFS`](https://exceljet.net/functions/sumifs-function), [`COUNTIF`](https://exceljet.net/functions/countif-function)/[`COUNTIFS`](https://exceljet.net/functions/countifs-function), and [`MINIFS`](https://exceljet.net/functions/minifs-function)/[`MAXIFS`](https://exceljet.net/functions/maxifs-function) functions.
+
+### Additional mathematical functions
+
+-   Most of the math functions are relevant to us. We won't cover all of them in detail. Here is a list of particularly important functions. See ExcelJet for documentation.
+
+| Name                            | Description                                                                 |
+|----------------------|--------------------------------------------------|
+| [`ABS`](https://exceljet.net/functions/abs-function)                           | Find the absolute value of a number.                                        |
+| [`EXP`](https://exceljet.net/functions/exp-function)                           | Find the value of e raised to the power of a number.                        |
+| [`LOG`](https://exceljet.net/functions/log-function)                           | Get the logarithm of a number.                                              |
+| [`FLOOR.MATH`](https://exceljet.net/functions/floor.math-function)                    | Round number down to nearest multiple.                                      |
+| [`CEILING.MATH`](https://exceljet.net/functions/ceiling.math-function)                  | Round a number up to nearest multiple.                                      |
+| [`ROUND`](https://exceljet.net/functions/round-function)                         | Round a number to a given number of digits.                                 |
+| [`COMBIN`](https://exceljet.net/functions/combin-function)                        | Get number of combinations without repetitions.                             |
+| [`MOD`](https://exceljet.net/functions/mod-function) / [`QUOTIENT`](https://exceljet.net/functions/quotient-function)              | Get the remainder from division / Returns the quotient without a remainder. |
+| [`POWER`](https://exceljet.net/functions/power-function) / `^` operator / [`SQRT`](https://exceljet.net/functions/sqrt-function) | Raise a number to a power or calculate the square root.                     |
+
+-   Learn about how and when to use the [`SUMPRODUCT`](https://exceljet.net/functions/sumproduct-function) function.
+
+### Working with text
+
+-   Understand the use of the `&` operator for concatenation.
+-   Learn to solve basic text manipulation tasks.
+-   Get an overview of the text manipulation functions in Excel and how to apply them.
+
+| Name                       | Description                                         |
+|-------------------------|-----------------------------------------------|
+| [`CONCAT`](https://exceljet.net/functions/concat-function) / [`TEXTJOIN`](https://exceljet.net/functions/textjoin-function)      | Join text values with(out) a delimiter.             |
+| [`LOWER`](https://exceljet.net/functions/lower-function) / [`UPPER`](https://exceljet.net/functions/upper-function)            | Transform text to lower/upper case.                 |
+| [`PROPER`](https://exceljet.net/functions/proper-function)                   | Capitalize first letter of each word in text.       |
+| [`TRIM`](https://exceljet.net/functions/trim-function)                     | Remove extra spaces from text.                      |
+| [`TEXTBEFORE`](https://exceljet.net/functions/textbefore-function) / [`TEXTAFTER`](https://exceljet.net/functions/textafter-function) | Extract text before / after delimiter.              |
+| [`SUBSTITUTE`](https://exceljet.net/functions/substitute-function)               | Replace text based on content.                      |
+| [`LEN`](https://exceljet.net/functions/len-function)                      | Get the length of the text                          |
+| [`TEXTSPLIT`](https://exceljet.net/functions/textsplit-function)                | Split a text into parts.                            |
+
+Note that not all useful text manipulation tools are built-in and some tasks, such as counting the number of words in a text, may require creating custom functions.
+
+Some of the most widely used text manipulation functions are outdated. You will see them used at work, on YouTube, and on Reddit, but the modern alternatives are better. These outdated functions not are not nearly as important as the functions above, but you should be aware of them.
+
+| Name                       | Description    
+|-------------------------|-----------------------------------------------|
+| [`EXACT`](https://exceljet.net/functions/exact-function)                    | Compare two text strings, taking case into account. |
+| [`LEFT`](https://exceljet.net/functions/left-function) / [`MID`](https://exceljet.net/functions/mid-function) / [`RIGHT`](https://exceljet.net/functions/right-function)   | Extract text from the left/middle/right of a string |
+| [`FIND`](https://exceljet.net/functions/find-function) / [`SEARCH`](https://exceljet.net/functions/search-function)          | Get location substring in a string.                 |
+| [`REPLACE`](https://exceljet.net/functions/replace-function)                  | Replace text based on location.                     |
+
+## Recommended resources
+
+The YouTuber [Chandoo](https://www.youtube.com/watch?v=thvE8Eg-Pqg&ab_channel=Chandoo) discusses the text manipulation functions at length, so does the YouTuber Leila Gharani [Leila Gharani](https://www.youtube.com/@LeilaGharani). There are many good videos about these topics, and I strongly encourage you to explore them.
+

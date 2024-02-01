@@ -1,47 +1,21 @@
 # Programming in Excel (iii): `REDUCE`, `SCAN`, and applications
 
-::: callout-important
-This page is ***not finished***, but might contain notes from the course developers. The curriculum, exercises, and recommended resources listed on this page is subject to change.
-:::
-
 ## Curriculum
 
 Excel is equipped with many functions for handling dynamic arrays and `LAMBDA` functions. The most important are `FILTER`, `MAP` (and its cousins `BYCOL`, `BYROW`, and `MAKEARRAY`), and the pair `REDUCE` and `SCAN`.
-
-Most data analysis tasks can be done using a combination of `FILTER`, `MAP`, and `REDUCE/SCAN`, where array manipulation (e.g. `CHOOSEROWS` and `HSTACK`) and local variable (`LET`) are used as needed.
 
 The `REDUCE` and `SCAN` functions are somewhat harder to understand than most of the functions covered until now, and we will spend some time explaining them.
 
 We cover four functions in this lecture.
 
-1.  `ISOMITTED` is used for optional arguments in `LAMBDA` functions.
-2.  `OFFSET`
-    1.  Compared to INDEX
+-   `OFFSET`, an function used to reference ranges. In most cases it's possible to use INDEX instead. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/01_offset.xlsx)
+-   `ISOMITTED` is used for optional arguments in `LAMBDA` functions. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/02_optional_arguments.xlsx)
+-   `REDUCE`. This is a difficult but exceedingly important function. Reduces an array into a single output. Generalizes `SUM` and `PRODUCT`. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/03_reduce.xlsx)
+-   `SCAN`. Reduces an array, but keeps the output for all consecutive subarrays. Generalizes the cumulative `SUM`.[Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/05_scan.xlsx)
 
-    2.  Compared to CHOOSEROWS.
+In addition, we cover the FILTER-MAP-REDUCE pattern. Most data analysis tasks can be done using a combination of `FILTER`, `MAP`, and `REDUCE/SCAN`, where array manipulation (e.g. `CHOOSEROWS` and `HSTACK`) and local variable (`LET`) are used as needed. [Lecture notes.](https://github.com/BI-DS/ELE-3915/blob/main/slides/lecture06/04_map-filter-reduce.xlsx)
 
-    3.  Is oldschool and does not work with dynamic arrays.
-3.  `REDUCE`
-    1.  [Excel REDUCE Function - LAMBDA Array Formulas in Excel & Google Sheets](https://www.youtube.com/watch?v=Gt7_BtFYfBw&ab_channel=LearnGoogleSheets%26ExcelSpreadsheets)
-
-    2.  Reduces an array into a single output.
-
-    3.  Generalizes `SUM` and `PRODUCT`.
-4.  `SCAN`.
-    1.  Reduces an array, but keeps the output for all consecutive subarrays.
-
-    2.  Generalizes the cumulative `SUM`.
 
 ## Exercises
 
-### Utility functions
-
-Recall that `FILTER` does not take the same sort of arguments as e.g. `MAP`. Its second argument is an array of truth values, not a `LAMBDA` function. That is OK, but it's inconsistent with most ofther functions of dynamic arrays. Make a function
-
--   `FILTER_(array; lambda)` Returns the array consisting of elements from `array` where `lambda(x)` is `TRUE`.
--   `TAKEWHILE(array; lambda)` Takes elements from `array` until the `LAMBDA` function `lambda` returns false.
--   `MAPWHILE(array;mapper;predicate)` Maps `mapper` onto array until the `predicate` function returns `FALSE`.
--   `FILTERBY(out;filter_array;lambda)` Returns the array consisting of elements from `out` where `lambda(x)` evaluates to `TRUE`.
--   `ENUMERATE(array)` Takes a one-dimensional array (a column) merges it with `SEQUENCE(R)`, yielding a two-dimensional array.
-
-## Recommended resources
+Most of the lecture notes above contain small exercises. I recommend you do them before attempting starting on the main exercise sheet. The main exercises are [here](https://github.com/BI-DS/ELE-3915/blob/main/exercises/exercises06.xlsx), with solution proposals included. 

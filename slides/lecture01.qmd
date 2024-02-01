@@ -29,10 +29,11 @@ format:
 -   Tell me if something doesn't work, e.g., you don't see what I'm doing.
 
 ## Curriculum + exam
--  The webpage at https://bi-ds.github.io/ELE-3915/ contains the curriculum, lecture slides, and exercises. Bookmark this page, as you will use it every week. 
--  The webpage contains links to e.g. slides, *not* It's learning.
--  The lecture chapters contain links to ExcelJet.com and other resources. For instance, documentation and examples for the `SUM` function. These links can be regarded as the textbook for this course.
--  One week exam project at the end of the semester. Expect the exam to be challenging.
+
+-   The webpage at https://bi-ds.github.io/ELE-3915/ contains the curriculum, lecture slides, and exercises. Bookmark this page, as you will use it every week.
+-   The webpage contains links to e.g. slides, *not* It's learning.
+-   The lecture chapters contain links to ExcelJet.com and other resources. For instance, documentation and examples for the `SUM` function. These links can be regarded as the textbook for this course.
+-   One week exam project at the end of the semester. Expect the exam to be challenging.
 
 ## Excel versions
 
