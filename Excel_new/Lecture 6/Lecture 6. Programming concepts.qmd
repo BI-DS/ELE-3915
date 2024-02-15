@@ -1,0 +1,16 @@
+---
+title: "Lecture 6. Programming concepts"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+## Curriculum
+
+- [`LET`](https://exceljet.net/functions/let-function) to simplify formulas.
+- [`LET`](https://exceljet.net/functions/let-function) to construct advanced functions.
+- Using [`REDUCE`](https://exceljet.net/functions/reduce-function) to reduce data into one point.
+- Applying the `MAP`-`FILTER`-`REDUCE` idiom for complex manipulations.
+- Optional arguments with [`ISOMITTED`](https://exceljet.net/functions/isomitted-function).
+
