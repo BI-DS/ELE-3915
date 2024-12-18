@@ -1,0 +1,143 @@
+// --- Workbook module ---
+// A file of name definitions of the form:
+//    name = definition;;
+temp = FILTER(eliteserien; eliteserien[Season] = 2009);;
+
+// --- Bodybuilders --- //
+CHEAPEST = LAMBDA(
+    LET(
+        new_tab; FILTER(
+            Bodybuilder;
+            --(Bodybuilder[Type] = "Creatine") * --(Bodybuilder[Form] = "Powder")
+        );
+        out_tab; HSTACK(new_tab; INDEX(new_tab; ; 3) / INDEX(new_tab; ; 2));
+        SORT(out_tab; 9; 1)
+    )
+);;
+
+BEST_DEAL = LAMBDA(product; store;
+    LET(
+        new_tab; FILTER(
+            Bodybuilder;
+            --(Bodybuilder[Type] = product) * --(Bodybuilder[Store] = store)
+        );
+        out_tab; HSTACK(new_tab; INDEX(new_tab; ; 3) / INDEX(new_tab; ; 2));
+        TAKE(SORT(out_tab; 9; 1); 1)
+    )
+);;
+
+// --- Solution proposal for BESTFRIENDS --- //
+// There are many ways to solve this exercise; here are two possibilities.
+BESTFRIEND = LAMBDA(txt; a; b;
+    SUM(--MAP(TEXTSPLIT(txt; a); LAMBDA(x; LEFT(x) = b))) = LEN(txt) - LEN(SUBSTITUTE(txt; a; ""))
+);;
+
+BESTFRIENDx = LAMBDA(txt; a; b;
+    COLUMNS(TEXTSPLIT(txt; CONCAT(a; b))) = COLUMNS(TEXTSPLIT(txt; a))
+);;
+
+// --- Solution proposal for TEAMS --- //
+TEAMS = LAMBDA(season; UNIQUE(FILTER(eliteserien[HomeTeam]; eliteserien[Season] = season)));;
+
+// --- Solution proposal for SCORE --- //
+SCORE = LAMBDA(team; season;
+    LET(
+        home_goals_for; FILTER(
+            eliteserien[HomeScore];
+            --(eliteserien[HomeTeam] = team) * --(eliteserien[Season] = season)
+        );
+        home_goals_against; FILTER(
+            eliteserien[AwayScore];
+            --(eliteserien[HomeTeam] = team) * --(eliteserien[Season] = season)
+        );
+        away_goals_for; FILTER(
+            eliteserien[AwayScore];
+            --(eliteserien[AwayTeam] = team) * --(eliteserien[Season] = season)
+        );
+        away_goals_against; FILTER(
+            eliteserien[HomeScore];
+            --(eliteserien[AwayTeam] = team) * --(eliteserien[Season] = season)
+        );
+        LET(
+            home_score; --((home_goals_for - home_goals_against) > 0) * 3 +
+                --((home_goals_for - home_goals_against) = 0);
+            away_score; --((away_goals_for - away_goals_against) > 0) * 3 +
+                --((away_goals_for - away_goals_against) = 0);
+            SUM(home_score) + SUM(away_score)
+        )
+    )
+);;
+
+// --- Solution proposal for GOALS --- //
+GOALS = LAMBDA(team; season;
+    LET(
+        home_goals_for; FILTER(
+            eliteserien[HomeScore];
+            --(eliteserien[HomeTeam] = team) * --(eliteserien[Season] = season)
+        );
+        home_goals_against; FILTER(
+            eliteserien[AwayScore];
+            --(eliteserien[HomeTeam] = team) * --(eliteserien[Season] = season)
+        );
+        away_goals_for; FILTER(
+            eliteserien[AwayScore];
+            --(eliteserien[AwayTeam] = team) * --(eliteserien[Season] = season)
+        );
+        away_goals_against; FILTER(
+            eliteserien[HomeScore];
+            --(eliteserien[AwayTeam] = team) * --(eliteserien[Season] = season)
+        );
+        HSTACK(SUM(home_goals_for + away_goals_for); SUM(home_goals_against + away_goals_against))
+    )
+);;
+
+// --- Solution proposal for LEAGUETABLE --- //
+
+// In this solution we use the helper functions GOALDIFFERENCE and GOALSCORED.
+// There are better options here, as we calculate goals twice.
+GOALDIFFERENCE = LAMBDA(team; season;
+    LET(goals; GOALS(team; season); INDEX(goals; ; 1) - INDEX(goals; ; 2))
+);;
+
+GOALSSCORED = LAMBDA(team; season; LET(goals; GOALS(team; season); INDEX(goals; ; 1)));;
+
+LEAGUETABLE = LAMBDA(season;
+    LET(
+        teams; TEAMS(season);
+        table; HSTACK(
+            teams;
+            MAP(teams; LAMBDA(team; SCORE(team; season)));
+            MAP(teams; LAMBDA(team; GOALDIFFERENCE(team; season)));
+            MAP(teams; LAMBDA(team; GOALSSCORED(team; season)))
+        );
+        VSTACK(
+            {"Pos"\ "Team"\ "Points"\ "GD"\ "Scored"};
+            HSTACK(SEQUENCE(ROWS(teams)); SORT(SORT(SORT(table; 4; -1); 3; -1); 2; -1))
+        )
+    )
+);;
+
+// --- Solution proposal for POSITIONS --- //
+
+// Here we need to use the LEAGUETABLE from the previous exercise. //
+POSITIONS = LAMBDA(team;
+    LET(
+        seasons; UNIQUE(eliteserien[Season]);
+        tab; HSTACK(
+            seasons;
+            MAP(seasons; LAMBDA(season; IFERROR(SCORE(team; season); "Not present")))
+        );
+        pos; MAP(
+            seasons;
+            LAMBDA(season;
+                LET(
+                    league; LEAGUETABLE(season);
+                    names; INDEX(league; ; 2);
+                    positions; INDEX(league; ; 1);
+                    XLOOKUP(team; names; positions; "Not present")
+                )
+            )
+        );
+        VSTACK(HSTACK("Season"; CONCAT(team; " score"); "Position"); HSTACK(tab; pos))
+    )
+);;

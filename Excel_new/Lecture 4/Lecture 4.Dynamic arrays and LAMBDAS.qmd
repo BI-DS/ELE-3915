@@ -1,0 +1,17 @@
+---
+title: "Lecture 4. Dynamic arrays and LAMBDAs"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+## Curriculum
+
+* [Dynamic arrays](https://exceljet.net/articles/dynamic-array-formulas-in-excel), including [array constants](https://exceljet.net/glossary/array-constant).
+* [`CHOOSECOLS`](https://exceljet.net/functions/choosecols-function) and [`CHOOSEROWS`](https://exceljet.net/functions/chooserows-function) to select columns or rows. Can be used instead of INDEX to convey intent better.
+* [`TAKE`](https://exceljet.net/functions/take-function) and [`DROP`](https://exceljet.net/functions/drop-function) for taking or dropping a certain number of elements from an array.
+* Dynamic array GOTCHAS; not all functions work with dynamic arrays. In particular, dynamic arrays do not work with [`SUMIFS`](https://exceljet.net/functions/sumifs-function)-type functions. You need to use the `--x`- trick instead.
+* The [`SEQUENCE`](https://exceljet.net/functions/sequence-function) function, used to create arrays of numbers such as `1,2,3,4`.
+* Usage of the Excel labs add-in.
+* Basics of [`LAMBDA`](https://exceljet.net/functions/lambda-function)s.

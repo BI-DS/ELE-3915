@@ -1,0 +1,14 @@
+---
+title: "Lecture 5. The MAP function"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+## Curriculum
+
+* [`HSTACK`](https://exceljet.net/functions/hstack-function) and [`VSTACK`](https://exceljet.net/functions/vstack-function) for stacking of array horizontally or vertically.
+* More work with [`LAMBDA`](https://exceljet.net/functions/lambda-function)s to create functions.
+* The important [`MAP`](https://exceljet.net/functions/map-function) function and how it is used.
+* The [`TOCOL`](https://exceljet.net/functions/tocol-function) and [`TOROW`](https://exceljet.net/functions/torow-function) functions.

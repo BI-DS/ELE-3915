@@ -1,0 +1,170 @@
+// Recap
+/**
+ * Simple wordcount.
+ */
+WORDCOUNT = LAMBDA(x; LEN(x) - LEN(SUBSTITUTE(x; " "; "")) + 1);;
+
+// Local variables
+/**
+ * Use LET to compute values without N/A.
+ */
+UNIQUE_WITHOUT_NA = LAMBDA(x; LET(x; SORT(UNIQUE(x)); FILTER(x; x <> "N/A")));;
+
+// Simplify functions
+/**
+ * Better wordcount.
+ */
+WORDCOUNT2 = LAMBDA(x;
+    LET(
+        S; LAMBDA(x; y; SUBSTITUTE(x; y; ""));
+        subs; S(x; ".");
+        subs1; S(subs; "?");
+        subs2; S(subs1; ",");
+        subs3; S(subs2; ",");
+        subs4; S(subs3; ",");
+        subs5; TRIM(subs4);
+        LEN(subs5) - LEN(S(subs5; " ")) + 1
+    )
+);;
+
+// Optional arguments with ISOMITTED
+/**
+ * Example function.
+ */
+FUN = LAMBDA([x]; LET(x; IF(ISOMITTED(x); 0; x); x + 1));;
+
+/**
+ * Example function.
+ */
+FOOBAR = LAMBDA(x; [y]; [z];
+    LET(x; IF(ISOMITTED(x); 0; x); z; IF(ISOMITTED(z); 0; z); x + y + z)
+);;
+
+/**
+ * Example function.
+ */
+FOO = LAMBDA([x]; LET(x; IF(ISOMITTED(x); 0; x); x ^ 2));;
+
+/**
+ * Example function.
+ */
+BAR = LAMBDA([x]; [y]; LET(x; IF(ISOMITTED(x); 0; x); x ^ 2));;
+
+/**
+ * Take average of n largest / smallest values.
+ */
+AVERAGEN = LAMBDA(arr; n; [largest];
+    LET(
+        largest; IF(ISOMITTED(largest); TRUE; largest);
+        arr; IF(largest; LARGE(arr; SEQUENCE(n)); SMALL(arr; SEQUENCE(n)));
+        AVERAGE(arr)
+    )
+);;
+
+/**
+ * Take median of n largest / smallest values.
+ */
+MEDIANN = LAMBDA(arr; n; [largest];
+    LET(
+        largest; IF(ISOMITTED(largest); TRUE; largest);
+        arr; IF(largest; LARGE(arr; SEQUENCE(n)); SMALL(arr; SEQUENCE(n)));
+        MEDIAN(arr)
+    )
+);;
+
+/**
+ * Apply function to n largest / smallest values.
+ */
+FUNN = LAMBDA(arr; n; fun; [largest];
+    LET(
+        largest; IF(ISOMITTED(largest); TRUE; largest);
+        arr; IF(largest; LARGE(arr; SEQUENCE(n)); SMALL(arr; SEQUENCE(n)));
+        fun(arr)
+    )
+);;
+
+// REDUCE
+
+
+/**
+ * New sum function.
+ */
+SUMNEW = LAMBDA(array; REDUCE(0; array; LAMBDA(acc; curr; acc + curr)));;
+
+/**
+ * New product function.
+ */
+PRODUCTNEW = LAMBDA(array; REDUCE(1; array; LAMBDA(acc; curr; acc * curr)));;
+
+/**
+ * New min function.
+ */
+MINNEW = LAMBDA(array; REDUCE(1; array; LAMBDA(acc; curr; IF(acc<curr;acc;curr))));;
+
+/**
+ * Returns TRUE if a text contains a vowel.
+ */
+HASVOWEL=LAMBDA(text;LET(
+    text; LOWER(text);
+    REMOVE; LAMBDA(text; char; SUBSTITUTE(text; char; ""));
+    vowels; {"a"; "e"; "i"; "o"; "u"};
+    result; REDUCE(text; vowels; LAMBDA(text; char; REMOVE(text; char)));
+    LEN(result) <> LEN(text)
+));;
+
+/**
+ * Returns TRUE if a text contains a consonant.
+ */
+HASCONSONANT = LAMBDA(text;
+    LET(
+        REMOVE; LAMBDA(text; char; SUBSTITUTE(text; char; ""));
+        lower; LOWER(text);
+        consonants; {
+            "b";
+            "c";
+            "d";
+            "f";
+            "g";
+            "h";
+            "j";
+            "k";
+            "l";
+            "m";
+            "n";
+            "p";
+            "q";
+            "r";
+            "s";
+            "t";
+            "v";
+            "w";
+            "x";
+            "y";
+            "z"
+        };
+        result; REDUCE(text; consonants; LAMBDA(text; char; REMOVE(text; char)));
+        LEN(result) = LEN(text)
+    )
+);;
+
+
+// MAP-FILTER-REDUCE
+
+/**
+ * Returns TRUE if a text contains a vowel.
+ */
+PERCENT = LAMBDA(platform;
+    LET(
+        nn; FILTER(VGSales[Global_Sales]; VGSales[Platform] = platform);
+        AVERAGE(--(nn > 1))
+    )
+);;
+
+/**
+ * Find the console with largest percentage of games selling more than 1 million.
+ */
+APP = LET(
+    platforms; UNIQUE(VGSales[Platform]);
+    percentages; MAP(platforms; PERCENT);
+    XLOOKUP(MAX(percentages); percentages; HSTACK(platforms; percentages))
+);;

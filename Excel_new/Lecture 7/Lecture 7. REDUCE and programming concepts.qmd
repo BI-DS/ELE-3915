@@ -1,0 +1,15 @@
+---
+title: "Lecture 7. `REDUCE` and programming concepts"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+## Curriculum
+
+We cover the following:
+
+- How to think about constructing complex functions: Break everything down into steps, make sure every step works, and combine.
+- [`REDUCE`](https://exceljet.net/functions/let-function) to do similar operations over and over. `REDUCE` can be thought of as Excel's variant of the `for` loop in imperative programming languages such as Python and R. 
+- The `MAP`-`FILTER`-`REDUCE` idiom and why it is useful.
